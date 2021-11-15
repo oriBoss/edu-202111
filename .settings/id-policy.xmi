@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:settings="kr.co.tomatosystem.exbuilder.model.ui.settings">
+  <settings:IDPolicy type="Accordion" pattern="acd" use="true"/>
+  <settings:IDPolicy type="Audio" pattern="audio" use="true"/>
+  <settings:IDPolicy type="Button" pattern="btn" use="true"/>
+  <settings:IDPolicy type="Calendar" pattern="cal" use="true"/>
+  <settings:IDPolicy type="CheckBox" pattern="cbx" use="true"/>
+  <settings:IDPolicy type="CheckBoxGroup" pattern="cbg" use="true"/>
+  <settings:IDPolicy type="ComboBox" pattern="cmb" use="true"/>
+  <settings:IDPolicy type="DataMap" pattern="dm" use="true"/>
+  <settings:IDPolicy type="DataSet" pattern="ds" use="true"/>
+  <settings:IDPolicy type="DataView" pattern="dv" use="true"/>
+  <settings:IDPolicy type="DataWindow" pattern="dw" use="true"/>
+  <settings:IDPolicy type="DateInput" pattern="dti" use="true"/>
+  <settings:IDPolicy type="EmbeddedApp" pattern="ea" use="true"/>
+  <settings:IDPolicy type="EmbeddedPage" pattern="ep" use="true"/>
+  <settings:IDPolicy type="FileInput" pattern="fi" use="true"/>
+  <settings:IDPolicy type="FileUpload" pattern="fud" use="true"/>
+  <settings:IDPolicy type="Grid" pattern="grd" use="true"/>
+  <settings:IDPolicy type="Group" pattern="grp" use="true"/>
+  <settings:IDPolicy type="HTMLObject" pattern="htm" use="true"/>
+  <settings:IDPolicy type="HTMLSnippet" pattern="hsp" use="true"/>
+  <settings:IDPolicy type="Image" pattern="img" use="true"/>
+  <settings:IDPolicy type="InputBox" pattern="ipb" use="true"/>
+  <settings:IDPolicy type="LinkedComboBox" pattern="lcb" use="true"/>
+  <settings:IDPolicy type="LinkedListBox" pattern="llb" use="true"/>
+  <settings:IDPolicy type="ListBox" pattern="lbx" use="true"/>
+  <settings:IDPolicy type="MaskEditor" pattern="mse" use="true"/>
+  <settings:IDPolicy type="MatrixSubmission" pattern="msm" use="true"/>
+  <settings:IDPolicy type="MDIFolder" pattern="mdi" use="true"/>
+  <settings:IDPolicy type="Menu" pattern="mnu" use="true"/>
+  <settings:IDPolicy type="NavigationBar" pattern="ngb" use="true"/>
+  <settings:IDPolicy type="Notifier" pattern="noti" use="true"/>
+  <settings:IDPolicy type="NumberEditor" pattern="nbe" use="true"/>
+  <settings:IDPolicy type="Output" pattern="opt" use="true"/>
+  <settings:IDPolicy type="PageIndexer" pattern="pgi" use="true"/>
+  <settings:IDPolicy type="Progress" pattern="pgr" use="true"/>
+  <settings:IDPolicy type="RadioButton" pattern="rdb" use="true"/>
+  <settings:IDPolicy type="SearchInput" pattern="sinp" use="true"/>
+  <settings:IDPolicy type="Slider" pattern="sld" use="true"/>
+  <settings:IDPolicy type="Submission" pattern="sms" use="true"/>
+  <settings:IDPolicy type="TabFolder" pattern="fld" use="true"/>
+  <settings:IDPolicy type="TextArea" pattern="txa" use="true"/>
+  <settings:IDPolicy type="Tree" pattern="tre" use="true"/>
+  <settings:IDPolicy type="UIControlShell" pattern="shl" use="true"/>
+  <settings:IDPolicy type="Video" pattern="video" use="true"/>
+  <settings:IDPolicy type="udc.MrcResourceField.MrcResourceField" pattern="mrf" use="true"/>
+  <settings:IDPolicy type="udc.MrcCodeView.MrcCodeView" pattern="mcv" use="true"/>
+  <settings:IDPolicy type="udc.MrcDateComboBox.MrcDateComboBox" pattern="mdc" use="true"/>
+  <settings:IDPolicy type="udc.MrcAlert.MrcAlert" pattern="mma" use="true"/>
+  <settings:IDPolicy type="udc.MrcNumberPad.MrcNumberPad" pattern="mnp" use="true"/>
+  <settings:IDPolicy type="udc.MrcCodeView.MrcCodeViewPopup" pattern="mrcCodeViewPopup"/>
+  <settings:IDPolicy type="udc.MrcConfirm.MrcConfirm" pattern="mmc" use="true"/>
+  <settings:IDPolicy type="udc.MrcSourceEditor.MrcSourceEditor" pattern="mser" use="true"/>
+  <settings:IDPolicy type="udc.MrcCalendar.MrcCalendar" pattern="mcl" use="true"/>
+  <settings:IDPolicy type="udc.MrcHorizontalSplitter.MrcHorizontalSplitter" pattern="mhs" use="true"/>
+  <settings:IDPolicy type="udc.MrcCalendar.MrcDay" pattern="mrcday"/>
+  <settings:IDPolicy type="udc.MrcCodeOutput.MrcCodeOutput" pattern="mco" use="true"/>
+  <settings:IDPolicy type="udc.MrcDateRangePicker.MrcDateRangePicker" pattern="mdrp" use="true"/>
+  <settings:IDPolicy type="udc.MrcPageIndexer.MrcPageIndexer" pattern="mpi" use="true"/>
+</xmi:XMI>

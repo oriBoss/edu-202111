@@ -1,0 +1,21 @@
+@import "../settings.part.less";
+
+/* 아웃풋 */	
+.cl-output {
+	font: @default-font;
+	color: @default-text-color;
+
+	&.cl-disabled{
+		color: @disabled-text-color;
+	}
+	
+	/* 필수 입력 표시 */
+	&.required {
+		.cl-text {
+			&:after {
+				content: " *";
+				color: red;
+			}
+		}
+	}
+}

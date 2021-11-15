@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-c9914590" version="1.0.3167">
+  <head std:sid="head-dcfe975f">
+    <screen std:sid="screen-062cddfb" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-6d71db8f" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-2a5a0741" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-31d40b0c"/>
+    <cl:appspec preferred-width="1280" title="[일반] 좌우 복합형 레이아웃"/>
+  </head>
+  <body std:sid="body-f5af1d3c">
+    <cl:group std:sid="group-fdcbc91b" id="grpBottom">
+      <cl:formdata std:sid="f-data-50a1d8e5" row="1" col="0"/>
+      <cl:group std:sid="group-c172e412" id="grpLeft">
+        <cl:formdata std:sid="f-data-d1a01173" row="0" col="0"/>
+        <cl:formlayout std:sid="f-layout-3da56ef3" scrollable="false" hspace="0px" vspace="30px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-77a9be88" scrollable="false" hspace="30px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-56df0e71" hspace="40px" vspace="30px" top-margin="30px" right-margin="30px" bottom-margin="30px" left-margin="30px">
+      <cl:rows length="72" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

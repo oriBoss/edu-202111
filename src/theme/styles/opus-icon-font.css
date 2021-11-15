@@ -1,0 +1,4767 @@
+@font-face {
+	font-family: 'OPUS Icon';
+	src: url("../fonts/opus-icon-font.eot");
+	src: url("../fonts/opus-icon-font.eot#iefix") format('embedded-opentype'),
+		url("../fonts/opus-icon-font.woff2") format('woff2'),
+		url("../fonts/opus-icon-font.woff") format('woff'),
+		url("../fonts/opus-icon-font.ttf") format('truetype'),
+		url("../fonts/opus-icon-font.svg#opus-icon-font") format('svg');
+	font-weight: normal;
+	font-style: normal
+}
+
+[class^="opus-ic-"] .cl-text:before, [class*=" opus-ic-"] .cl-text:before {
+	font-family: "OPUS Icon";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+[class$="-l"] {
+	font-size: 60px !important
+}
+
+[class$="-m"] {
+	font-size: 30px !important
+}
+
+[class$="-s"] {
+	font-size: 15px !important
+}
+
+.opus-ic-home-line-l .cl-text:before {
+	content: '\e8a8'
+}
+
+.opus-ic-home-line-m .cl-text:before {
+	content: '\e8a9'
+}
+
+.opus-ic-home-line-s .cl-text:before {
+	content: '\e8aa'
+}
+
+.opus-ic-home-pictogram-l .cl-text:before {
+	content: '\e8ab'
+}
+
+.opus-ic-home-pictogram-m .cl-text:before {
+	content: '\e8ac'
+}
+
+.opus-ic-home-pictogram-s .cl-text:before {
+	content: '\e8ad'
+}
+
+.opus-ic-log-in-line-l .cl-text:before {
+	content: '\e8ae'
+}
+
+.opus-ic-log-in-line-m .cl-text:before {
+	content: '\e8af'
+}
+
+.opus-ic-log-in-line-s .cl-text:before {
+	content: '\e8b0'
+}
+
+.opus-ic-log-in-pictogram-l .cl-text:before {
+	content: '\e8b1'
+}
+
+.opus-ic-log-in-pictogram-m .cl-text:before {
+	content: '\e8b2'
+}
+
+.opus-ic-log-in-pictogram-s .cl-text:before {
+	content: '\e8b3'
+}
+
+.opus-ic-log-out-line-l .cl-text:before {
+	content: '\e8b4'
+}
+
+.opus-ic-log-out-line-m .cl-text:before {
+	content: '\e8b5'
+}
+
+.opus-ic-log-out-line-s .cl-text:before {
+	content: '\e8b6'
+}
+
+.opus-ic-log-out-pictogram-l .cl-text:before {
+	content: '\e8b7'
+}
+
+.opus-ic-log-out-pictogram-m .cl-text:before {
+	content: '\e8b8'
+}
+
+.opus-ic-log-out-pictogram-s .cl-text:before {
+	content: '\e8b9'
+}
+
+.opus-ic-more-option-line-l .cl-text:before {
+	content: '\e8ba'
+}
+
+.opus-ic-more-option-line-m .cl-text:before {
+	content: '\e8bb'
+}
+
+.opus-ic-more-option-line-s .cl-text:before {
+	content: '\e8bc'
+}
+
+.opus-ic-more-option-pictogram-l .cl-text:before {
+	content: '\e8bd'
+}
+
+.opus-ic-more-option-pictogram-m .cl-text:before {
+	content: '\e8be'
+}
+
+.opus-ic-more-option-pictogram-s .cl-text:before {
+	content: '\e8bf'
+}
+
+.opus-ic-setting-line-l .cl-text:before {
+	content: '\e8c0'
+}
+
+.opus-ic-setting-line-m .cl-text:before {
+	content: '\e8c1'
+}
+
+.opus-ic-setting-line-s .cl-text:before {
+	content: '\e8c2'
+}
+
+.opus-ic-setting-pictogram-l .cl-text:before {
+	content: '\e8c3'
+}
+
+.opus-ic-setting-pictogram-m .cl-text:before {
+	content: '\e8c4'
+}
+
+.opus-ic-setting-pictogram-s .cl-text:before {
+	content: '\e8c5'
+}
+
+.opus-ic-search-line-l .cl-text:before {
+	content: '\e8c6'
+}
+
+.opus-ic-search-line-m .cl-text:before {
+	content: '\e8c7'
+}
+
+.opus-ic-search-line-s .cl-text:before {
+	content: '\e8c8'
+}
+
+.opus-ic-search-pictogram-l .cl-text:before {
+	content: '\e8c9'
+}
+
+.opus-ic-search-pictogram-m .cl-text:before {
+	content: '\e8ca'
+}
+
+.opus-ic-search-pictogram-s .cl-text:before {
+	content: '\e8cb'
+}
+
+.opus-ic-back-to-list-line-l .cl-text:before {
+	content: '\e8cc'
+}
+
+.opus-ic-back-to-list-line-m .cl-text:before {
+	content: '\e8cd'
+}
+
+.opus-ic-back-to-list-line-s .cl-text:before {
+	content: '\e8ce'
+}
+
+.opus-ic-back-to-list-pictogram-l .cl-text:before {
+	content: '\e8cf'
+}
+
+.opus-ic-back-to-list-pictogram-m .cl-text:before {
+	content: '\e8d0'
+}
+
+.opus-ic-back-to-list-pictogram-s .cl-text:before {
+	content: '\e8d1'
+}
+
+.opus-ic-drawer-line-l .cl-text:before {
+	content: '\e8d2'
+}
+
+.opus-ic-drawer-line-m .cl-text:before {
+	content: '\e8d3'
+}
+
+.opus-ic-drawer-line-s .cl-text:before {
+	content: '\e8d4'
+}
+
+.opus-ic-drawer-pictogram-l .cl-text:before {
+	content: '\e8d5'
+}
+
+.opus-ic-drawer-pictogram-m .cl-text:before {
+	content: '\e8d6'
+}
+
+.opus-ic-drawer-pictogram-s .cl-text:before {
+	content: '\e8d7'
+}
+
+.opus-ic-album-view-line-l .cl-text:before {
+	content: '\e8d8'
+}
+
+.opus-ic-album-view-line-m .cl-text:before {
+	content: '\e8d9'
+}
+
+.opus-ic-album-view-line-s .cl-text:before {
+	content: '\e8da'
+}
+
+.opus-ic-album-view-pictogram-l .cl-text:before {
+	content: '\e8db'
+}
+
+.opus-ic-album-view-pictogram-m .cl-text:before {
+	content: '\e8dc'
+}
+
+.opus-ic-album-view-pictogram-s .cl-text:before {
+	content: '\e8dd'
+}
+
+.opus-ic-sort-by-line-l .cl-text:before {
+	content: '\e8de'
+}
+
+.opus-ic-sort-by-line-m .cl-text:before {
+	content: '\e8df'
+}
+
+.opus-ic-sort-by-line-s .cl-text:before {
+	content: '\e8e0'
+}
+
+.opus-ic-sort-by-pictogram-l .cl-text:before {
+	content: '\e8e1'
+}
+
+.opus-ic-sort-by-pictogram-m .cl-text:before {
+	content: '\e8e2'
+}
+
+.opus-ic-sort-by-pictogram-s .cl-text:before {
+	content: '\e8e3'
+}
+
+.opus-ic-thumbnail-view-line-l .cl-text:before {
+	content: '\e8e4'
+}
+
+.opus-ic-thumbnail-view-line-m .cl-text:before {
+	content: '\e8e5'
+}
+
+.opus-ic-thumbnail-view-line-s .cl-text:before {
+	content: '\e8e6'
+}
+
+.opus-ic-thumbnail-view-pictogram-l .cl-text:before {
+	content: '\e8e7'
+}
+
+.opus-ic-thumbnail-view-pictogram-m .cl-text:before {
+	content: '\e8e8'
+}
+
+.opus-ic-thumbnail-view-pictogram-s .cl-text:before {
+	content: '\e8e9'
+}
+
+.opus-ic-gallery-view-line-l .cl-text:before {
+	content: '\e8ea'
+}
+
+.opus-ic-gallery-view-line-m .cl-text:before {
+	content: '\e8eb'
+}
+
+.opus-ic-gallery-view-line-s .cl-text:before {
+	content: '\e8ec'
+}
+
+.opus-ic-gallery-view-pictogram-l .cl-text:before {
+	content: '\e8ed'
+}
+
+.opus-ic-gallery-view-pictogram-m .cl-text:before {
+	content: '\e8ee'
+}
+
+.opus-ic-gallery-view-pictogram-s .cl-text:before {
+	content: '\e8ef'
+}
+
+.opus-ic-new-window-plus-line-l .cl-text:before {
+	content: '\e8f0'
+}
+
+.opus-ic-new-window-plus-line-m .cl-text:before {
+	content: '\e8f1'
+}
+
+.opus-ic-new-window-plus-line-s .cl-text:before {
+	content: '\e8f2'
+}
+
+.opus-ic-new-window-plus-pictogram-l .cl-text:before {
+	content: '\e8f3'
+}
+
+.opus-ic-new-window-plus-pictogram-m .cl-text:before {
+	content: '\e8f4'
+}
+
+.opus-ic-new-window-plus-pictogram-s .cl-text:before {
+	content: '\e8f5'
+}
+
+.opus-ic-organization-line-l .cl-text:before {
+	content: '\e8f6'
+}
+
+.opus-ic-organization-line-m .cl-text:before {
+	content: '\e8f7'
+}
+
+.opus-ic-organization-line-s .cl-text:before {
+	content: '\e8f8'
+}
+
+.opus-ic-organization-pictogram-l .cl-text:before {
+	content: '\e8f9'
+}
+
+.opus-ic-organization-pictogram-m .cl-text:before {
+	content: '\e8fa'
+}
+
+.opus-ic-organization-pictogram-s .cl-text:before {
+	content: '\e8fb'
+}
+
+.opus-ic-horizontal-view-line-l .cl-text:before {
+	content: '\e8fc'
+}
+
+.opus-ic-horizontal-view-line-m .cl-text:before {
+	content: '\e8fd'
+}
+
+.opus-ic-horizontal-view-line-s .cl-text:before {
+	content: '\e8fe'
+}
+
+.opus-ic-horizontal-view-pictogram-l .cl-text:before {
+	content: '\e8ff'
+}
+
+.opus-ic-horizontal-view-pictogram-m .cl-text:before {
+	content: '\e900'
+}
+
+.opus-ic-horizontal-view-pictogram-s .cl-text:before {
+	content: '\e901'
+}
+
+.opus-ic-vertical-view-line-l .cl-text:before {
+	content: '\e902'
+}
+
+.opus-ic-vertical-view-line-m .cl-text:before {
+	content: '\e903'
+}
+
+.opus-ic-vertical-view-line-s .cl-text:before {
+	content: '\e904'
+}
+
+.opus-ic-vertical-view-pictogram-l .cl-text:before {
+	content: '\e905'
+}
+
+.opus-ic-vertical-view-pictogram-m .cl-text:before {
+	content: '\e906'
+}
+
+.opus-ic-vertical-view-pictogram-s .cl-text:before {
+	content: '\e907'
+}
+
+.opus-ic-list-view-line-l .cl-text:before {
+	content: '\e908'
+}
+
+.opus-ic-list-view-line-m .cl-text:before {
+	content: '\e909'
+}
+
+.opus-ic-list-view-line-s .cl-text:before {
+	content: '\e90a'
+}
+
+.opus-ic-list-view-pictogram-l .cl-text:before {
+	content: '\e90b'
+}
+
+.opus-ic-list-view-pictogram-m .cl-text:before {
+	content: '\e90c'
+}
+
+.opus-ic-list-view-pictogram-s .cl-text:before {
+	content: '\e90d'
+}
+
+.opus-ic-new-window-overlap-line-l .cl-text:before {
+	content: '\e90e'
+}
+
+.opus-ic-new-window-overlap-line-m .cl-text:before {
+	content: '\e90f'
+}
+
+.opus-ic-new-window-overlap-line-s .cl-text:before {
+	content: '\e910'
+}
+
+.opus-ic-new-window-overlap-pictogram-l .cl-text:before {
+	content: '\e911'
+}
+
+.opus-ic-new-window-overlap-pictogram-m .cl-text:before {
+	content: '\e912'
+}
+
+.opus-ic-new-window-overlap-pictogram-s .cl-text:before {
+	content: '\e913'
+}
+
+.opus-ic-aside-line-l .cl-text:before {
+	content: '\e914'
+}
+
+.opus-ic-aside-line-m .cl-text:before {
+	content: '\e915'
+}
+
+.opus-ic-aside-line-s .cl-text:before {
+	content: '\e916'
+}
+
+.opus-ic-aside-pictogram-l .cl-text:before {
+	content: '\e917'
+}
+
+.opus-ic-aside-pictogram-m .cl-text:before {
+	content: '\e918'
+}
+
+.opus-ic-aside-pictogram-s .cl-text:before {
+	content: '\e919'
+}
+
+.opus-ic-detail-view-line-l .cl-text:before {
+	content: '\e91a'
+}
+
+.opus-ic-detail-view-line-m .cl-text:before {
+	content: '\e91b'
+}
+
+.opus-ic-detail-view-line-s .cl-text:before {
+	content: '\e91c'
+}
+
+.opus-ic-detail-view-pictogram-l .cl-text:before {
+	content: '\e91d'
+}
+
+.opus-ic-detail-view-pictogram-m .cl-text:before {
+	content: '\e91e'
+}
+
+.opus-ic-detail-view-pictogram-s .cl-text:before {
+	content: '\e91f'
+}
+
+.opus-ic-text-input-line-l .cl-text:before {
+	content: '\e920'
+}
+
+.opus-ic-text-input-line-m .cl-text:before {
+	content: '\e921'
+}
+
+.opus-ic-text-input-line-s .cl-text:before {
+	content: '\e922'
+}
+
+.opus-ic-text-input-pictogram-l .cl-text:before {
+	content: '\e923'
+}
+
+.opus-ic-text-input-pictogram-m .cl-text:before {
+	content: '\e924'
+}
+
+.opus-ic-text-input-pictogram-s .cl-text:before {
+	content: '\e925'
+}
+
+.opus-ic-add-schedule-line-l .cl-text:before {
+	content: '\e926'
+}
+
+.opus-ic-add-schedule-line-m .cl-text:before {
+	content: '\e927'
+}
+
+.opus-ic-add-schedule-line-s .cl-text:before {
+	content: '\e928'
+}
+
+.opus-ic-add-schedule-pictogram-l .cl-text:before {
+	content: '\e929'
+}
+
+.opus-ic-add-schedule-pictogram-m .cl-text:before {
+	content: '\e92a'
+}
+
+.opus-ic-add-schedule-pictogram-s .cl-text:before {
+	content: '\e92b'
+}
+
+.opus-ic-departure-point-line-l .cl-text:before {
+	content: '\e92c'
+}
+
+.opus-ic-departure-point-line-m .cl-text:before {
+	content: '\e92d'
+}
+
+.opus-ic-departure-point-line-s .cl-text:before {
+	content: '\e92e'
+}
+
+.opus-ic-departure-point-pictogram-l .cl-text:before {
+	content: '\e92f'
+}
+
+.opus-ic-departure-point-pictogram-m .cl-text:before {
+	content: '\e930'
+}
+
+.opus-ic-departure-point-pictogram-s .cl-text:before {
+	content: '\e931'
+}
+
+.opus-ic-arrival-point-line-l .cl-text:before {
+	content: '\e932'
+}
+
+.opus-ic-arrival-point-line-m .cl-text:before {
+	content: '\e933'
+}
+
+.opus-ic-arrival-point-line-s .cl-text:before {
+	content: '\e934'
+}
+
+.opus-ic-arrival-point-pictogram-l .cl-text:before {
+	content: '\e935'
+}
+
+.opus-ic-arrival-point-pictogram-m .cl-text:before {
+	content: '\e936'
+}
+
+.opus-ic-arrival-point-pictogram-s .cl-text:before {
+	content: '\e937'
+}
+
+.opus-ic-auto-time-saved-line-l .cl-text:before {
+	content: '\e938'
+}
+
+.opus-ic-auto-time-saved-line-m .cl-text:before {
+	content: '\e939'
+}
+
+.opus-ic-auto-time-saved-line-s .cl-text:before {
+	content: '\e93a'
+}
+
+.opus-ic-auto-time-saved-pictogram-l .cl-text:before {
+	content: '\e93b'
+}
+
+.opus-ic-auto-time-saved-pictogram-m .cl-text:before {
+	content: '\e93c'
+}
+
+.opus-ic-auto-time-saved-pictogram-s .cl-text:before {
+	content: '\e93d'
+}
+
+.opus-ic-write-line-l .cl-text:before {
+	content: '\e93e'
+}
+
+.opus-ic-write-line-m .cl-text:before {
+	content: '\e93f'
+}
+
+.opus-ic-write-line-s .cl-text:before {
+	content: '\e940'
+}
+
+.opus-ic-write-pictogram-l .cl-text:before {
+	content: '\e941'
+}
+
+.opus-ic-write-pictogram-m .cl-text:before {
+	content: '\e942'
+}
+
+.opus-ic-write-pictogram-s .cl-text:before {
+	content: '\e943'
+}
+
+.opus-ic-edit-line-l .cl-text:before {
+	content: '\e944'
+}
+
+.opus-ic-edit-line-m .cl-text:before {
+	content: '\e945'
+}
+
+.opus-ic-edit-line-s .cl-text:before {
+	content: '\e946'
+}
+
+.opus-ic-edit-pictogram-l .cl-text:before {
+	content: '\e947'
+}
+
+.opus-ic-edit-pictogram-m .cl-text:before {
+	content: '\e948'
+}
+
+.opus-ic-edit-pictogram-s .cl-text:before {
+	content: '\e949'
+}
+
+.opus-ic-approval-line-l .cl-text:before {
+	content: '\e94a'
+}
+
+.opus-ic-approval-line-m .cl-text:before {
+	content: '\e94b'
+}
+
+.opus-ic-approval-line-s .cl-text:before {
+	content: '\e94c'
+}
+
+.opus-ic-approval-pictogram-l .cl-text:before {
+	content: '\e94d'
+}
+
+.opus-ic-approval-pictogram-m .cl-text:before {
+	content: '\e94e'
+}
+
+.opus-ic-approval-pictogram-s .cl-text:before {
+	content: '\e94f'
+}
+
+.opus-ic-clear-all-line-l .cl-text:before {
+	content: '\e950'
+}
+
+.opus-ic-clear-all-line-m .cl-text:before {
+	content: '\e951'
+}
+
+.opus-ic-clear-all-line-s .cl-text:before {
+	content: '\e952'
+}
+
+.opus-ic-clear-all-pictogram-l .cl-text:before {
+	content: '\e953'
+}
+
+.opus-ic-clear-all-pictogram-m .cl-text:before {
+	content: '\e954'
+}
+
+.opus-ic-clear-all-pictogram-s .cl-text:before {
+	content: '\e955'
+}
+
+.opus-ic-add-line-l .cl-text:before {
+	content: '\e956'
+}
+
+.opus-ic-add-line-m .cl-text:before {
+	content: '\e957'
+}
+
+.opus-ic-add-line-s .cl-text:before {
+	content: '\e958'
+}
+
+.opus-ic-add-pictogram-l .cl-text:before {
+	content: '\e959'
+}
+
+.opus-ic-add-pictogram-m .cl-text:before {
+	content: '\e95a'
+}
+
+.opus-ic-add-pictogram-s .cl-text:before {
+	content: '\e95b'
+}
+
+.opus-ic-remove-line-l .cl-text:before {
+	content: '\e95c'
+}
+
+.opus-ic-remove-line-m .cl-text:before {
+	content: '\e95d'
+}
+
+.opus-ic-remove-line-s .cl-text:before {
+	content: '\e95e'
+}
+
+.opus-ic-remove-pictogram-l .cl-text:before {
+	content: '\e95f'
+}
+
+.opus-ic-remove-pictogram-m .cl-text:before {
+	content: '\e960'
+}
+
+.opus-ic-remove-pictogram-s .cl-text:before {
+	content: '\e961'
+}
+
+.opus-ic-zoom-in-line-l .cl-text:before {
+	content: '\e962'
+}
+
+.opus-ic-zoom-in-line-m .cl-text:before {
+	content: '\e963'
+}
+
+.opus-ic-zoom-in-line-s .cl-text:before {
+	content: '\e964'
+}
+
+.opus-ic-zoom-in-pictogram-l .cl-text:before {
+	content: '\e965'
+}
+
+.opus-ic-zoom-in-pictogram-m .cl-text:before {
+	content: '\e966'
+}
+
+.opus-ic-zoom-in-pictogram-s .cl-text:before {
+	content: '\e967'
+}
+
+.opus-ic-zoom-out-line-l .cl-text:before {
+	content: '\e968'
+}
+
+.opus-ic-zoom-out-line-m .cl-text:before {
+	content: '\e969'
+}
+
+.opus-ic-zoom-out-line-s .cl-text:before {
+	content: '\e96a'
+}
+
+.opus-ic-zoom-out-pictogram-l .cl-text:before {
+	content: '\e96b'
+}
+
+.opus-ic-zoom-out-pictogram-m .cl-text:before {
+	content: '\e96c'
+}
+
+.opus-ic-zoom-out-pictogram-s .cl-text:before {
+	content: '\e96d'
+}
+
+.opus-ic-save-line-l .cl-text:before {
+	content: '\e96e'
+}
+
+.opus-ic-save-line-m .cl-text:before {
+	content: '\e96f'
+}
+
+.opus-ic-save-line-s .cl-text:before {
+	content: '\e970'
+}
+
+.opus-ic-save-pictogram-l .cl-text:before {
+	content: '\e971'
+}
+
+.opus-ic-save-pictogram-m .cl-text:before {
+	content: '\e972'
+}
+
+.opus-ic-save-pictogram-s .cl-text:before {
+	content: '\e973'
+}
+
+.opus-ic-delete-line-l .cl-text:before {
+	content: '\e974'
+}
+
+.opus-ic-delete-line-m .cl-text:before {
+	content: '\e975'
+}
+
+.opus-ic-delete-line-s .cl-text:before {
+	content: '\e976'
+}
+
+.opus-ic-delete-pictogram-l .cl-text:before {
+	content: '\e977'
+}
+
+.opus-ic-delete-pictogram-m .cl-text:before {
+	content: '\e978'
+}
+
+.opus-ic-delete-pictogram-s .cl-text:before {
+	content: '\e979'
+}
+
+.opus-ic-restoration-line-l .cl-text:before {
+	content: '\e97a'
+}
+
+.opus-ic-restoration-line-m .cl-text:before {
+	content: '\e97b'
+}
+
+.opus-ic-restoration-line-s .cl-text:before {
+	content: '\e97c'
+}
+
+.opus-ic-restoration-pictogram-l .cl-text:before {
+	content: '\e97d'
+}
+
+.opus-ic-restoration-pictogram-m .cl-text:before {
+	content: '\e97e'
+}
+
+.opus-ic-restoration-pictogram-s .cl-text:before {
+	content: '\e97f'
+}
+
+.opus-ic-security-unlock-line-l .cl-text:before {
+	content: '\e980'
+}
+
+.opus-ic-security-unlock-line-m .cl-text:before {
+	content: '\e981'
+}
+
+.opus-ic-security-unlock-line-s .cl-text:before {
+	content: '\e982'
+}
+
+.opus-ic-security-unlock-pictogram-l .cl-text:before {
+	content: '\e983'
+}
+
+.opus-ic-security-unlock-pictogram-m .cl-text:before {
+	content: '\e984'
+}
+
+.opus-ic-security-unlock-pictogram-s .cl-text:before {
+	content: '\e985'
+}
+
+.opus-ic-security-lock-line-l .cl-text:before {
+	content: '\e986'
+}
+
+.opus-ic-security-lock-line-m .cl-text:before {
+	content: '\e987'
+}
+
+.opus-ic-security-lock-line-s .cl-text:before {
+	content: '\e988'
+}
+
+.opus-ic-security-lock-pictogram-l .cl-text:before {
+	content: '\e989'
+}
+
+.opus-ic-security-lock-pictogram-m .cl-text:before {
+	content: '\e98a'
+}
+
+.opus-ic-security-lock-pictogram-s .cl-text:before {
+	content: '\e98b'
+}
+
+.opus-ic-calendar-line-l .cl-text:before {
+	content: '\e98c'
+}
+
+.opus-ic-calendar-line-m .cl-text:before {
+	content: '\e98d'
+}
+
+.opus-ic-calendar-line-s .cl-text:before {
+	content: '\e98e'
+}
+
+.opus-ic-calendar-pictogram-l .cl-text:before {
+	content: '\e98f'
+}
+
+.opus-ic-calendar-pictogram-m .cl-text:before {
+	content: '\e990'
+}
+
+.opus-ic-calendar-pictogram-s .cl-text:before {
+	content: '\e991'
+}
+
+.opus-ic-map-line-l .cl-text:before {
+	content: '\e992'
+}
+
+.opus-ic-map-line-m .cl-text:before {
+	content: '\e993'
+}
+
+.opus-ic-map-line-s .cl-text:before {
+	content: '\e994'
+}
+
+.opus-ic-map-pictogram-l .cl-text:before {
+	content: '\e995'
+}
+
+.opus-ic-map-pictogram-m .cl-text:before {
+	content: '\e996'
+}
+
+.opus-ic-map-pictogram-s .cl-text:before {
+	content: '\e997'
+}
+
+.opus-ic-local-information-line-l .cl-text:before {
+	content: '\e998'
+}
+
+.opus-ic-local-information-line-m .cl-text:before {
+	content: '\e999'
+}
+
+.opus-ic-local-information-line-s .cl-text:before {
+	content: '\e99a'
+}
+
+.opus-ic-local-information-pictogram-l .cl-text:before {
+	content: '\e99b'
+}
+
+.opus-ic-local-information-pictogram-m .cl-text:before {
+	content: '\e99c'
+}
+
+.opus-ic-local-information-pictogram-s .cl-text:before {
+	content: '\e99d'
+}
+
+.opus-ic-best-match-line-l .cl-text:before {
+	content: '\e99e'
+}
+
+.opus-ic-best-match-line-m .cl-text:before {
+	content: '\e99f'
+}
+
+.opus-ic-best-match-line-s .cl-text:before {
+	content: '\e9a0'
+}
+
+.opus-ic-best-match-pictogram-l .cl-text:before {
+	content: '\e9a1'
+}
+
+.opus-ic-best-match-pictogram-m .cl-text:before {
+	content: '\e9a2'
+}
+
+.opus-ic-best-match-pictogram-s .cl-text:before {
+	content: '\e9a3'
+}
+
+.opus-ic-tracking-line-l .cl-text:before {
+	content: '\e9a4'
+}
+
+.opus-ic-tracking-line-m .cl-text:before {
+	content: '\e9a5'
+}
+
+.opus-ic-tracking-line-s .cl-text:before {
+	content: '\e9a6'
+}
+
+.opus-ic-tracking-pictogram-l .cl-text:before {
+	content: '\e9a7'
+}
+
+.opus-ic-tracking-pictogram-m .cl-text:before {
+	content: '\e9a8'
+}
+
+.opus-ic-tracking-pictogram-s .cl-text:before {
+	content: '\e9a9'
+}
+
+.opus-ic-location-line-l .cl-text:before {
+	content: '\e9aa'
+}
+
+.opus-ic-location-line-m .cl-text:before {
+	content: '\e9ab'
+}
+
+.opus-ic-location-line-s .cl-text:before {
+	content: '\e9ac'
+}
+
+.opus-ic-location-pictogram-l .cl-text:before {
+	content: '\e9ad'
+}
+
+.opus-ic-location-pictogram-m .cl-text:before {
+	content: '\e9ae'
+}
+
+.opus-ic-location-pictogram-s .cl-text:before {
+	content: '\e9af'
+}
+
+.opus-ic-country-line-l .cl-text:before {
+	content: '\e9b0'
+}
+
+.opus-ic-country-line-m .cl-text:before {
+	content: '\e9b1'
+}
+
+.opus-ic-country-line-s .cl-text:before {
+	content: '\e9b2'
+}
+
+.opus-ic-country-pictogram-l .cl-text:before {
+	content: '\e9b3'
+}
+
+.opus-ic-country-pictogram-m .cl-text:before {
+	content: '\e9b4'
+}
+
+.opus-ic-country-pictogram-s .cl-text:before {
+	content: '\e9b5'
+}
+
+.opus-ic-time-line-l .cl-text:before {
+	content: '\e9b6'
+}
+
+.opus-ic-time-line-m .cl-text:before {
+	content: '\e9b7'
+}
+
+.opus-ic-time-line-s .cl-text:before {
+	content: '\e9b8'
+}
+
+.opus-ic-time-pictogram-l .cl-text:before {
+	content: '\e9b9'
+}
+
+.opus-ic-time-pictogram-m .cl-text:before {
+	content: '\e9ba'
+}
+
+.opus-ic-time-pictogram-s .cl-text:before {
+	content: '\e9bb'
+}
+
+.opus-ic-company-line-l .cl-text:before {
+	content: '\e9bc'
+}
+
+.opus-ic-company-line-m .cl-text:before {
+	content: '\e9bd'
+}
+
+.opus-ic-company-line-s .cl-text:before {
+	content: '\e9be'
+}
+
+.opus-ic-company-pictogram-l .cl-text:before {
+	content: '\e9bf'
+}
+
+.opus-ic-company-pictogram-m .cl-text:before {
+	content: '\e9c0'
+}
+
+.opus-ic-company-pictogram-s .cl-text:before {
+	content: '\e9c1'
+}
+
+.opus-ic-translation-line-l .cl-text:before {
+	content: '\e9c2'
+}
+
+.opus-ic-translation-line-m .cl-text:before {
+	content: '\e9c3'
+}
+
+.opus-ic-translation-line-s .cl-text:before {
+	content: '\e9c4'
+}
+
+.opus-ic-translation-pictogram-l .cl-text:before {
+	content: '\e9c5'
+}
+
+.opus-ic-translation-pictogram-m .cl-text:before {
+	content: '\e9c6'
+}
+
+.opus-ic-translation-pictogram-s .cl-text:before {
+	content: '\e9c7'
+}
+
+.opus-ic-filter-line-l .cl-text:before {
+	content: '\e9c8'
+}
+
+.opus-ic-filter-line-m .cl-text:before {
+	content: '\e9c9'
+}
+
+.opus-ic-filter-line-s .cl-text:before {
+	content: '\e9ca'
+}
+
+.opus-ic-filter-pictogram-l .cl-text:before {
+	content: '\e9cb'
+}
+
+.opus-ic-filter-pictogram-m .cl-text:before {
+	content: '\e9cc'
+}
+
+.opus-ic-filter-pictogram-s .cl-text:before {
+	content: '\e9cd'
+}
+
+.opus-ic-poll-line-l .cl-text:before {
+	content: '\e9ce'
+}
+
+.opus-ic-poll-line-m .cl-text:before {
+	content: '\e9cf'
+}
+
+.opus-ic-poll-line-s .cl-text:before {
+	content: '\e9d0'
+}
+
+.opus-ic-poll-pictogram-l .cl-text:before {
+	content: '\e9d1'
+}
+
+.opus-ic-poll-pictogram-m .cl-text:before {
+	content: '\e9d2'
+}
+
+.opus-ic-poll-pictogram-s .cl-text:before {
+	content: '\e9d3'
+}
+
+.opus-ic-graph-line-line-l .cl-text:before {
+	content: '\e9d4'
+}
+
+.opus-ic-graph-line-line-m .cl-text:before {
+	content: '\e9d5'
+}
+
+.opus-ic-graph-line-line-s .cl-text:before {
+	content: '\e9d6'
+}
+
+.opus-ic-graph-line-pictogram-l .cl-text:before {
+	content: '\e9d7'
+}
+
+.opus-ic-graph-line-pictogram-m .cl-text:before {
+	content: '\e9d8'
+}
+
+.opus-ic-graph-line-pictogram-s .cl-text:before {
+	content: '\e9d9'
+}
+
+.opus-ic-graph-pie-line-l .cl-text:before {
+	content: '\e9da'
+}
+
+.opus-ic-graph-pie-line-m .cl-text:before {
+	content: '\e9db'
+}
+
+.opus-ic-graph-pie-line-s .cl-text:before {
+	content: '\e9dc'
+}
+
+.opus-ic-graph-pie-pictogram-l .cl-text:before {
+	content: '\e9dd'
+}
+
+.opus-ic-graph-pie-pictogram-m .cl-text:before {
+	content: '\e9de'
+}
+
+.opus-ic-graph-pie-pictogram-s .cl-text:before {
+	content: '\e9df'
+}
+
+.opus-ic-repair-line-l .cl-text:before {
+	content: '\e9e0'
+}
+
+.opus-ic-repair-line-m .cl-text:before {
+	content: '\e9e1'
+}
+
+.opus-ic-repair-line-s .cl-text:before {
+	content: '\e9e2'
+}
+
+.opus-ic-repair-pictogram-l .cl-text:before {
+	content: '\e9e3'
+}
+
+.opus-ic-repair-pictogram-m .cl-text:before {
+	content: '\e9e4'
+}
+
+.opus-ic-repair-pictogram-s .cl-text:before {
+	content: '\e9e5'
+}
+
+.opus-ic-add-to-favorite-line-l .cl-text:before {
+	content: '\e9e6'
+}
+
+.opus-ic-add-to-favorite-line-m .cl-text:before {
+	content: '\e9e7'
+}
+
+.opus-ic-add-to-favorite-line-s .cl-text:before {
+	content: '\e9e8'
+}
+
+.opus-ic-add-to-favorite-pictogram-l .cl-text:before {
+	content: '\e9e9'
+}
+
+.opus-ic-add-to-favorite-pictogram-m .cl-text:before {
+	content: '\e9ea'
+}
+
+.opus-ic-add-to-favorite-pictogram-s .cl-text:before {
+	content: '\e9eb'
+}
+
+.opus-ic-remove-from-favorite-line-l .cl-text:before {
+	content: '\e9ec'
+}
+
+.opus-ic-remove-from-favorite-line-m .cl-text:before {
+	content: '\e9ed'
+}
+
+.opus-ic-remove-from-favorite-line-s .cl-text:before {
+	content: '\e9ee'
+}
+
+.opus-ic-remove-from-favorite-pictogram-l .cl-text:before {
+	content: '\e9ef'
+}
+
+.opus-ic-remove-from-favorite-pictogram-m .cl-text:before {
+	content: '\e9f0'
+}
+
+.opus-ic-remove-from-favorite-pictogram-s .cl-text:before {
+	content: '\e9f1'
+}
+
+.opus-ic-like-count-line-l .cl-text:before {
+	content: '\e9f2'
+}
+
+.opus-ic-like-count-line-m .cl-text:before {
+	content: '\e9f3'
+}
+
+.opus-ic-like-count-line-s .cl-text:before {
+	content: '\e9f4'
+}
+
+.opus-ic-like-count-pictogram-l .cl-text:before {
+	content: '\e9f5'
+}
+
+.opus-ic-like-count-pictogram-m .cl-text:before {
+	content: '\e9f6'
+}
+
+.opus-ic-like-count-pictogram-s .cl-text:before {
+	content: '\e9f7'
+}
+
+.opus-ic-my-bookmark-line-l .cl-text:before {
+	content: '\e9f8'
+}
+
+.opus-ic-my-bookmark-line-m .cl-text:before {
+	content: '\e9f9'
+}
+
+.opus-ic-my-bookmark-line-s .cl-text:before {
+	content: '\e9fa'
+}
+
+.opus-ic-my-bookmark-pictogram-l .cl-text:before {
+	content: '\e9fb'
+}
+
+.opus-ic-my-bookmark-pictogram-m .cl-text:before {
+	content: '\e9fc'
+}
+
+.opus-ic-my-bookmark-pictogram-s .cl-text:before {
+	content: '\e9fd'
+}
+
+.opus-ic-confirm-read-line-l .cl-text:before {
+	content: '\e9fe'
+}
+
+.opus-ic-confirm-read-line-m .cl-text:before {
+	content: '\e9ff'
+}
+
+.opus-ic-confirm-read-line-s .cl-text:before {
+	content: '\ea00'
+}
+
+.opus-ic-confirm-read-pictogram-l .cl-text:before {
+	content: '\ea01'
+}
+
+.opus-ic-confirm-read-pictogram-m .cl-text:before {
+	content: '\ea02'
+}
+
+.opus-ic-confirm-read-pictogram-s .cl-text:before {
+	content: '\ea03'
+}
+
+.opus-ic-co-sign-line-l .cl-text:before {
+	content: '\ea04'
+}
+
+.opus-ic-co-sign-line-m .cl-text:before {
+	content: '\ea05'
+}
+
+.opus-ic-co-sign-line-s .cl-text:before {
+	content: '\ea06'
+}
+
+.opus-ic-co-sign-pictogram-l .cl-text:before {
+	content: '\ea07'
+}
+
+.opus-ic-co-sign-pictogram-m .cl-text:before {
+	content: '\ea08'
+}
+
+.opus-ic-co-sign-pictogram-s .cl-text:before {
+	content: '\ea09'
+}
+
+.opus-ic-mail-attach-line-l .cl-text:before {
+	content: '\ea0a'
+}
+
+.opus-ic-mail-attach-line-m .cl-text:before {
+	content: '\ea0b'
+}
+
+.opus-ic-mail-attach-line-s .cl-text:before {
+	content: '\ea0c'
+}
+
+.opus-ic-mail-attach-pictogram-l .cl-text:before {
+	content: '\ea0d'
+}
+
+.opus-ic-mail-attach-pictogram-m .cl-text:before {
+	content: '\ea0e'
+}
+
+.opus-ic-mail-attach-pictogram-s .cl-text:before {
+	content: '\ea0f'
+}
+
+.opus-ic-receive-mail-line-l .cl-text:before {
+	content: '\ea10'
+}
+
+.opus-ic-receive-mail-line-m .cl-text:before {
+	content: '\ea11'
+}
+
+.opus-ic-receive-mail-line-s .cl-text:before {
+	content: '\ea12'
+}
+
+.opus-ic-receive-mail-pictogram-l .cl-text:before {
+	content: '\ea13'
+}
+
+.opus-ic-receive-mail-pictogram-m .cl-text:before {
+	content: '\ea14'
+}
+
+.opus-ic-receive-mail-pictogram-s .cl-text:before {
+	content: '\ea15'
+}
+
+.opus-ic-send-mail-line-l .cl-text:before {
+	content: '\ea16'
+}
+
+.opus-ic-send-mail-line-m .cl-text:before {
+	content: '\ea17'
+}
+
+.opus-ic-send-mail-line-s .cl-text:before {
+	content: '\ea18'
+}
+
+.opus-ic-send-mail-pictogram-l .cl-text:before {
+	content: '\ea19'
+}
+
+.opus-ic-send-mail-pictogram-m .cl-text:before {
+	content: '\ea1a'
+}
+
+.opus-ic-send-mail-pictogram-s .cl-text:before {
+	content: '\ea1b'
+}
+
+.opus-ic-favorite-line-l .cl-text:before {
+	content: '\ea1c'
+}
+
+.opus-ic-favorite-line-m .cl-text:before {
+	content: '\ea1d'
+}
+
+.opus-ic-favorite-line-s .cl-text:before {
+	content: '\ea1e'
+}
+
+.opus-ic-favorite-pictogram-l .cl-text:before {
+	content: '\ea1f'
+}
+
+.opus-ic-favorite-pictogram-m .cl-text:before {
+	content: '\ea20'
+}
+
+.opus-ic-favorite-pictogram-s .cl-text:before {
+	content: '\ea21'
+}
+
+.opus-ic-like-heart-line-l .cl-text:before {
+	content: '\ea22'
+}
+
+.opus-ic-like-heart-line-m .cl-text:before {
+	content: '\ea23'
+}
+
+.opus-ic-like-heart-line-s .cl-text:before {
+	content: '\ea24'
+}
+
+.opus-ic-like-heart-pictogram-l .cl-text:before {
+	content: '\ea25'
+}
+
+.opus-ic-like-heart-pictogram-m .cl-text:before {
+	content: '\ea26'
+}
+
+.opus-ic-like-heart-pictogram-s .cl-text:before {
+	content: '\ea27'
+}
+
+.opus-ic-hits-line-l .cl-text:before {
+	content: '\ea28'
+}
+
+.opus-ic-hits-line-m .cl-text:before {
+	content: '\ea29'
+}
+
+.opus-ic-hits-line-s .cl-text:before {
+	content: '\ea2a'
+}
+
+.opus-ic-hits-pictogram-l .cl-text:before {
+	content: '\ea2b'
+}
+
+.opus-ic-hits-pictogram-m .cl-text:before {
+	content: '\ea2c'
+}
+
+.opus-ic-hits-pictogram-s .cl-text:before {
+	content: '\ea2d'
+}
+
+.opus-ic-bookmark-line-l .cl-text:before {
+	content: '\ea2e'
+}
+
+.opus-ic-bookmark-line-m .cl-text:before {
+	content: '\ea2f'
+}
+
+.opus-ic-bookmark-line-s .cl-text:before {
+	content: '\ea30'
+}
+
+.opus-ic-bookmark-pictogram-l .cl-text:before {
+	content: '\ea31'
+}
+
+.opus-ic-bookmark-pictogram-m .cl-text:before {
+	content: '\ea32'
+}
+
+.opus-ic-bookmark-pictogram-s .cl-text:before {
+	content: '\ea33'
+}
+
+.opus-ic-emoticon-line-l .cl-text:before {
+	content: '\ea34'
+}
+
+.opus-ic-emoticon-line-m .cl-text:before {
+	content: '\ea35'
+}
+
+.opus-ic-emoticon-line-s .cl-text:before {
+	content: '\ea36'
+}
+
+.opus-ic-emoticon-pictogram-l .cl-text:before {
+	content: '\ea37'
+}
+
+.opus-ic-emoticon-pictogram-m .cl-text:before {
+	content: '\ea38'
+}
+
+.opus-ic-emoticon-pictogram-s .cl-text:before {
+	content: '\ea39'
+}
+
+.opus-ic-comment-line-l .cl-text:before {
+	content: '\ea3a'
+}
+
+.opus-ic-comment-line-m .cl-text:before {
+	content: '\ea3b'
+}
+
+.opus-ic-comment-line-s .cl-text:before {
+	content: '\ea3c'
+}
+
+.opus-ic-comment-pictogram-l .cl-text:before {
+	content: '\ea3d'
+}
+
+.opus-ic-comment-pictogram-m .cl-text:before {
+	content: '\ea3e'
+}
+
+.opus-ic-comment-pictogram-s .cl-text:before {
+	content: '\ea3f'
+}
+
+.opus-ic-messenger-line-l .cl-text:before {
+	content: '\ea40'
+}
+
+.opus-ic-messenger-line-m .cl-text:before {
+	content: '\ea41'
+}
+
+.opus-ic-messenger-line-s .cl-text:before {
+	content: '\ea42'
+}
+
+.opus-ic-messenger-pictogram-l .cl-text:before {
+	content: '\ea43'
+}
+
+.opus-ic-messenger-pictogram-m .cl-text:before {
+	content: '\ea44'
+}
+
+.opus-ic-messenger-pictogram-s .cl-text:before {
+	content: '\ea45'
+}
+
+.opus-ic-pad-line-l .cl-text:before {
+	content: '\ea46'
+}
+
+.opus-ic-pad-line-m .cl-text:before {
+	content: '\ea47'
+}
+
+.opus-ic-pad-line-s .cl-text:before {
+	content: '\ea48'
+}
+
+.opus-ic-pad-pictogram-l .cl-text:before {
+	content: '\ea49'
+}
+
+.opus-ic-pad-pictogram-m .cl-text:before {
+	content: '\ea4a'
+}
+
+.opus-ic-pad-pictogram-s .cl-text:before {
+	content: '\ea4b'
+}
+
+.opus-ic-mail-line-l .cl-text:before {
+	content: '\ea4c'
+}
+
+.opus-ic-mail-line-m .cl-text:before {
+	content: '\ea4d'
+}
+
+.opus-ic-mail-line-s .cl-text:before {
+	content: '\ea4e'
+}
+
+.opus-ic-mail-pictogram-l .cl-text:before {
+	content: '\ea4f'
+}
+
+.opus-ic-mail-pictogram-m .cl-text:before {
+	content: '\ea50'
+}
+
+.opus-ic-mail-pictogram-s .cl-text:before {
+	content: '\ea51'
+}
+
+.opus-ic-sending-line-l .cl-text:before {
+	content: '\ea52'
+}
+
+.opus-ic-sending-line-m .cl-text:before {
+	content: '\ea53'
+}
+
+.opus-ic-sending-line-s .cl-text:before {
+	content: '\ea54'
+}
+
+.opus-ic-sending-pictogram-l .cl-text:before {
+	content: '\ea55'
+}
+
+.opus-ic-sending-pictogram-m .cl-text:before {
+	content: '\ea56'
+}
+
+.opus-ic-sending-pictogram-s .cl-text:before {
+	content: '\ea57'
+}
+
+.opus-ic-forward-line-l .cl-text:before {
+	content: '\ea58'
+}
+
+.opus-ic-forward-line-m .cl-text:before {
+	content: '\ea59'
+}
+
+.opus-ic-forward-line-s .cl-text:before {
+	content: '\ea5a'
+}
+
+.opus-ic-forward-pictogram-l .cl-text:before {
+	content: '\ea5b'
+}
+
+.opus-ic-forward-pictogram-m .cl-text:before {
+	content: '\ea5c'
+}
+
+.opus-ic-forward-pictogram-s .cl-text:before {
+	content: '\ea5d'
+}
+
+.opus-ic-mail-reply-line-l .cl-text:before {
+	content: '\ea5e'
+}
+
+.opus-ic-mail-reply-line-m .cl-text:before {
+	content: '\ea5f'
+}
+
+.opus-ic-mail-reply-line-s .cl-text:before {
+	content: '\ea60'
+}
+
+.opus-ic-mail-reply-pictogram-l .cl-text:before {
+	content: '\ea61'
+}
+
+.opus-ic-mail-reply-pictogram-m .cl-text:before {
+	content: '\ea62'
+}
+
+.opus-ic-mail-reply-pictogram-s .cl-text:before {
+	content: '\ea63'
+}
+
+.opus-ic-share-line-l .cl-text:before {
+	content: '\ea64'
+}
+
+.opus-ic-share-line-m .cl-text:before {
+	content: '\ea65'
+}
+
+.opus-ic-share-line-s .cl-text:before {
+	content: '\ea66'
+}
+
+.opus-ic-share-pictogram-l .cl-text:before {
+	content: '\ea67'
+}
+
+.opus-ic-share-pictogram-m .cl-text:before {
+	content: '\ea68'
+}
+
+.opus-ic-share-pictogram-s .cl-text:before {
+	content: '\ea69'
+}
+
+.opus-ic-link-line-l .cl-text:before {
+	content: '\ea6a'
+}
+
+.opus-ic-link-line-m .cl-text:before {
+	content: '\ea6b'
+}
+
+.opus-ic-link-line-s .cl-text:before {
+	content: '\ea6c'
+}
+
+.opus-ic-link-pictogram-l .cl-text:before {
+	content: '\ea6d'
+}
+
+.opus-ic-link-pictogram-m .cl-text:before {
+	content: '\ea6e'
+}
+
+.opus-ic-link-pictogram-s .cl-text:before {
+	content: '\ea6f'
+}
+
+.opus-ic-conference-line-l .cl-text:before {
+	content: '\ea70'
+}
+
+.opus-ic-conference-line-m .cl-text:before {
+	content: '\ea71'
+}
+
+.opus-ic-conference-line-s .cl-text:before {
+	content: '\ea72'
+}
+
+.opus-ic-conference-pictogram-l .cl-text:before {
+	content: '\ea73'
+}
+
+.opus-ic-conference-pictogram-m .cl-text:before {
+	content: '\ea74'
+}
+
+.opus-ic-conference-pictogram-s .cl-text:before {
+	content: '\ea75'
+}
+
+.opus-ic-enter-conference-line-l .cl-text:before {
+	content: '\ea76'
+}
+
+.opus-ic-enter-conference-line-m .cl-text:before {
+	content: '\ea77'
+}
+
+.opus-ic-enter-conference-line-s .cl-text:before {
+	content: '\ea78'
+}
+
+.opus-ic-enter-conference-pictogram-l .cl-text:before {
+	content: '\ea79'
+}
+
+.opus-ic-enter-conference-pictogram-m .cl-text:before {
+	content: '\ea7a'
+}
+
+.opus-ic-enter-conference-pictogram-s .cl-text:before {
+	content: '\ea7b'
+}
+
+.opus-ic-exit-conference-line-l .cl-text:before {
+	content: '\ea7c'
+}
+
+.opus-ic-exit-conference-line-m .cl-text:before {
+	content: '\ea7d'
+}
+
+.opus-ic-exit-conference-line-s .cl-text:before {
+	content: '\ea7e'
+}
+
+.opus-ic-exit-conference-pictogram-l .cl-text:before {
+	content: '\ea7f'
+}
+
+.opus-ic-exit-conference-pictogram-m .cl-text:before {
+	content: '\ea80'
+}
+
+.opus-ic-exit-conference-pictogram-s .cl-text:before {
+	content: '\ea81'
+}
+
+.opus-ic-add-document-line-l .cl-text:before {
+	content: '\ea82'
+}
+
+.opus-ic-add-document-line-m .cl-text:before {
+	content: '\ea83'
+}
+
+.opus-ic-add-document-line-s .cl-text:before {
+	content: '\ea84'
+}
+
+.opus-ic-add-document-pictogram-l .cl-text:before {
+	content: '\ea85'
+}
+
+.opus-ic-add-document-pictogram-m .cl-text:before {
+	content: '\ea86'
+}
+
+.opus-ic-add-document-pictogram-s .cl-text:before {
+	content: '\ea87'
+}
+
+.opus-ic-new-folder-line-l .cl-text:before {
+	content: '\ea88'
+}
+
+.opus-ic-new-folder-line-m .cl-text:before {
+	content: '\ea89'
+}
+
+.opus-ic-new-folder-line-s .cl-text:before {
+	content: '\ea8a'
+}
+
+.opus-ic-new-folder-pictogram-l .cl-text:before {
+	content: '\ea8b'
+}
+
+.opus-ic-new-folder-pictogram-m .cl-text:before {
+	content: '\ea8c'
+}
+
+.opus-ic-new-folder-pictogram-s .cl-text:before {
+	content: '\ea8d'
+}
+
+.opus-ic-open-folder-line-l .cl-text:before {
+	content: '\ea8e'
+}
+
+.opus-ic-open-folder-line-m .cl-text:before {
+	content: '\ea8f'
+}
+
+.opus-ic-open-folder-line-s .cl-text:before {
+	content: '\ea90'
+}
+
+.opus-ic-open-folder-pictogram-l .cl-text:before {
+	content: '\ea91'
+}
+
+.opus-ic-open-folder-pictogram-m .cl-text:before {
+	content: '\ea92'
+}
+
+.opus-ic-open-folder-pictogram-s .cl-text:before {
+	content: '\ea93'
+}
+
+.opus-ic-shared-excel-line-l .cl-text:before {
+	content: '\ea94'
+}
+
+.opus-ic-shared-excel-line-m .cl-text:before {
+	content: '\ea95'
+}
+
+.opus-ic-shared-excel-line-s .cl-text:before {
+	content: '\ea96'
+}
+
+.opus-ic-shared-excel-pictogram-l .cl-text:before {
+	content: '\ea97'
+}
+
+.opus-ic-shared-excel-pictogram-m .cl-text:before {
+	content: '\ea98'
+}
+
+.opus-ic-shared-excel-pictogram-s .cl-text:before {
+	content: '\ea99'
+}
+
+.opus-ic-shared-word-line-l .cl-text:before {
+	content: '\ea9a'
+}
+
+.opus-ic-shared-word-line-m .cl-text:before {
+	content: '\ea9b'
+}
+
+.opus-ic-shared-word-line-s .cl-text:before {
+	content: '\ea9c'
+}
+
+.opus-ic-shared-word-pictogram-l .cl-text:before {
+	content: '\ea9d'
+}
+
+.opus-ic-shared-word-pictogram-m .cl-text:before {
+	content: '\ea9e'
+}
+
+.opus-ic-shared-word-pictogram-s .cl-text:before {
+	content: '\ea9f'
+}
+
+.opus-ic-shared-powerpoint-line-l .cl-text:before {
+	content: '\eaa0'
+}
+
+.opus-ic-shared-powerpoint-line-m .cl-text:before {
+	content: '\eaa1'
+}
+
+.opus-ic-shared-powerpoint-line-s .cl-text:before {
+	content: '\eaa2'
+}
+
+.opus-ic-shared-powerpoint-pictogram-l .cl-text:before {
+	content: '\eaa3'
+}
+
+.opus-ic-shared-powerpoint-pictogram-m .cl-text:before {
+	content: '\eaa4'
+}
+
+.opus-ic-shared-powerpoint-pictogram-s .cl-text:before {
+	content: '\eaa5'
+}
+
+.opus-ic-shared-pdf-line-l .cl-text:before {
+	content: '\eaa6'
+}
+
+.opus-ic-shared-pdf-line-m .cl-text:before {
+	content: '\eaa7'
+}
+
+.opus-ic-shared-pdf-line-s .cl-text:before {
+	content: '\eaa8'
+}
+
+.opus-ic-shared-pdf-pictogram-l .cl-text:before {
+	content: '\eaa9'
+}
+
+.opus-ic-shared-pdf-pictogram-m .cl-text:before {
+	content: '\eaaa'
+}
+
+.opus-ic-shared-pdf-pictogram-s .cl-text:before {
+	content: '\eaab'
+}
+
+.opus-ic-shared-image-line-l .cl-text:before {
+	content: '\eaac'
+}
+
+.opus-ic-shared-image-line-m .cl-text:before {
+	content: '\eaad'
+}
+
+.opus-ic-shared-image-line-s .cl-text:before {
+	content: '\eaae'
+}
+
+.opus-ic-shared-image-pictogram-l .cl-text:before {
+	content: '\eaaf'
+}
+
+.opus-ic-shared-image-pictogram-m .cl-text:before {
+	content: '\eab0'
+}
+
+.opus-ic-shared-image-pictogram-s .cl-text:before {
+	content: '\eab1'
+}
+
+.opus-ic-attachment-line-l .cl-text:before {
+	content: '\eab2'
+}
+
+.opus-ic-attachment-line-m .cl-text:before {
+	content: '\eab3'
+}
+
+.opus-ic-attachment-line-s .cl-text:before {
+	content: '\eab4'
+}
+
+.opus-ic-attachment-pictogram-l .cl-text:before {
+	content: '\eab5'
+}
+
+.opus-ic-attachment-pictogram-m .cl-text:before {
+	content: '\eab6'
+}
+
+.opus-ic-attachment-pictogram-s .cl-text:before {
+	content: '\eab7'
+}
+
+.opus-ic-file-line-l .cl-text:before {
+	content: '\eab8'
+}
+
+.opus-ic-file-line-m .cl-text:before {
+	content: '\eab9'
+}
+
+.opus-ic-file-line-s .cl-text:before {
+	content: '\eaba'
+}
+
+.opus-ic-file-pictogram-l .cl-text:before {
+	content: '\eabb'
+}
+
+.opus-ic-file-pictogram-m .cl-text:before {
+	content: '\eabc'
+}
+
+.opus-ic-file-pictogram-s .cl-text:before {
+	content: '\eabd'
+}
+
+.opus-ic-copy-line-l .cl-text:before {
+	content: '\eabe'
+}
+
+.opus-ic-copy-line-m .cl-text:before {
+	content: '\eabf'
+}
+
+.opus-ic-copy-line-s .cl-text:before {
+	content: '\eac0'
+}
+
+.opus-ic-copy-pictogram-l .cl-text:before {
+	content: '\eac1'
+}
+
+.opus-ic-copy-pictogram-m .cl-text:before {
+	content: '\eac2'
+}
+
+.opus-ic-copy-pictogram-s .cl-text:before {
+	content: '\eac3'
+}
+
+.opus-ic-folder-line-l .cl-text:before {
+	content: '\eac4'
+}
+
+.opus-ic-folder-line-m .cl-text:before {
+	content: '\eac5'
+}
+
+.opus-ic-folder-line-s .cl-text:before {
+	content: '\eac6'
+}
+
+.opus-ic-folder-pictogram-l .cl-text:before {
+	content: '\eac7'
+}
+
+.opus-ic-folder-pictogram-m .cl-text:before {
+	content: '\eac8'
+}
+
+.opus-ic-folder-pictogram-s .cl-text:before {
+	content: '\eac9'
+}
+
+.opus-ic-cloud-line-l .cl-text:before {
+	content: '\eaca'
+}
+
+.opus-ic-cloud-line-m .cl-text:before {
+	content: '\eacb'
+}
+
+.opus-ic-cloud-line-s .cl-text:before {
+	content: '\eacc'
+}
+
+.opus-ic-cloud-pictogram-l .cl-text:before {
+	content: '\eacd'
+}
+
+.opus-ic-cloud-pictogram-m .cl-text:before {
+	content: '\eace'
+}
+
+.opus-ic-cloud-pictogram-s .cl-text:before {
+	content: '\eacf'
+}
+
+.opus-ic-cloud-upload-line-l .cl-text:before {
+	content: '\ead0'
+}
+
+.opus-ic-cloud-upload-line-m .cl-text:before {
+	content: '\ead1'
+}
+
+.opus-ic-cloud-upload-line-s .cl-text:before {
+	content: '\ead2'
+}
+
+.opus-ic-cloud-upload-pictogram-l .cl-text:before {
+	content: '\ead3'
+}
+
+.opus-ic-cloud-upload-pictogram-m .cl-text:before {
+	content: '\ead4'
+}
+
+.opus-ic-cloud-upload-pictogram-s .cl-text:before {
+	content: '\ead5'
+}
+
+.opus-ic-cloud-download-line-l .cl-text:before {
+	content: '\ead6'
+}
+
+.opus-ic-cloud-download-line-m .cl-text:before {
+	content: '\ead7'
+}
+
+.opus-ic-cloud-download-line-s .cl-text:before {
+	content: '\ead8'
+}
+
+.opus-ic-cloud-download-pictogram-l .cl-text:before {
+	content: '\ead9'
+}
+
+.opus-ic-cloud-download-pictogram-m .cl-text:before {
+	content: '\eada'
+}
+
+.opus-ic-cloud-download-pictogram-s .cl-text:before {
+	content: '\eadb'
+}
+
+.opus-ic-excel-line-l .cl-text:before {
+	content: '\eadc'
+}
+
+.opus-ic-excel-line-m .cl-text:before {
+	content: '\eadd'
+}
+
+.opus-ic-excel-line-s .cl-text:before {
+	content: '\eade'
+}
+
+.opus-ic-excel-pictogram-l .cl-text:before {
+	content: '\eadf'
+}
+
+.opus-ic-excel-pictogram-m .cl-text:before {
+	content: '\eae0'
+}
+
+.opus-ic-excel-pictogram-s .cl-text:before {
+	content: '\eae1'
+}
+
+.opus-ic-word-line-l .cl-text:before {
+	content: '\eae2'
+}
+
+.opus-ic-word-line-m .cl-text:before {
+	content: '\eae3'
+}
+
+.opus-ic-word-line-s .cl-text:before {
+	content: '\eae4'
+}
+
+.opus-ic-word-pictogram-l .cl-text:before {
+	content: '\eae5'
+}
+
+.opus-ic-word-pictogram-m .cl-text:before {
+	content: '\eae6'
+}
+
+.opus-ic-word-pictogram-s .cl-text:before {
+	content: '\eae7'
+}
+
+.opus-ic-powerpoint-line-l .cl-text:before {
+	content: '\eae8'
+}
+
+.opus-ic-powerpoint-line-m .cl-text:before {
+	content: '\eae9'
+}
+
+.opus-ic-powerpoint-line-s .cl-text:before {
+	content: '\eaea'
+}
+
+.opus-ic-powerpoint-pictogram-l .cl-text:before {
+	content: '\eaeb'
+}
+
+.opus-ic-powerpoint-pictogram-m .cl-text:before {
+	content: '\eaec'
+}
+
+.opus-ic-powerpoint-pictogram-s .cl-text:before {
+	content: '\eaed'
+}
+
+.opus-ic-pdf-line-l .cl-text:before {
+	content: '\eaee'
+}
+
+.opus-ic-pdf-line-m .cl-text:before {
+	content: '\eaef'
+}
+
+.opus-ic-pdf-line-s .cl-text:before {
+	content: '\eaf0'
+}
+
+.opus-ic-pdf-pictogram-l .cl-text:before {
+	content: '\eaf1'
+}
+
+.opus-ic-pdf-pictogram-m .cl-text:before {
+	content: '\eaf2'
+}
+
+.opus-ic-pdf-pictogram-s .cl-text:before {
+	content: '\eaf3'
+}
+
+.opus-ic-hangul-line-l .cl-text:before {
+	content: '\eaf4'
+}
+
+.opus-ic-hangul-line-m .cl-text:before {
+	content: '\eaf5'
+}
+
+.opus-ic-hangul-line-s .cl-text:before {
+	content: '\eaf6'
+}
+
+.opus-ic-hangul-pictogram-l .cl-text:before {
+	content: '\eaf7'
+}
+
+.opus-ic-hangul-pictogram-m .cl-text:before {
+	content: '\eaf8'
+}
+
+.opus-ic-hangul-pictogram-s .cl-text:before {
+	content: '\eaf9'
+}
+
+.opus-ic-image-line-l .cl-text:before {
+	content: '\eafa'
+}
+
+.opus-ic-image-line-m .cl-text:before {
+	content: '\eafb'
+}
+
+.opus-ic-image-line-s .cl-text:before {
+	content: '\eafc'
+}
+
+.opus-ic-image-pictogram-l .cl-text:before {
+	content: '\eafd'
+}
+
+.opus-ic-image-pictogram-m .cl-text:before {
+	content: '\eafe'
+}
+
+.opus-ic-image-pictogram-s .cl-text:before {
+	content: '\eaff'
+}
+
+.opus-ic-text-file-line-l .cl-text:before {
+	content: '\eb00'
+}
+
+.opus-ic-text-file-line-m .cl-text:before {
+	content: '\eb01'
+}
+
+.opus-ic-text-file-line-s .cl-text:before {
+	content: '\eb02'
+}
+
+.opus-ic-text-file-pictogram-l .cl-text:before {
+	content: '\eb03'
+}
+
+.opus-ic-text-file-pictogram-m .cl-text:before {
+	content: '\eb04'
+}
+
+.opus-ic-text-file-pictogram-s .cl-text:before {
+	content: '\eb05'
+}
+
+.opus-ic-zip-file-line-l .cl-text:before {
+	content: '\eb06'
+}
+
+.opus-ic-zip-file-line-m .cl-text:before {
+	content: '\eb07'
+}
+
+.opus-ic-zip-file-line-s .cl-text:before {
+	content: '\eb08'
+}
+
+.opus-ic-zip-file-pictogram-l .cl-text:before {
+	content: '\eb09'
+}
+
+.opus-ic-zip-file-pictogram-m .cl-text:before {
+	content: '\eb0a'
+}
+
+.opus-ic-zip-file-pictogram-s .cl-text:before {
+	content: '\eb0b'
+}
+
+.opus-ic-html-file-line-l .cl-text:before {
+	content: '\eb0c'
+}
+
+.opus-ic-html-file-line-m .cl-text:before {
+	content: '\eb0d'
+}
+
+.opus-ic-html-file-line-s .cl-text:before {
+	content: '\eb0e'
+}
+
+.opus-ic-html-file-pictogram-l .cl-text:before {
+	content: '\eb0f'
+}
+
+.opus-ic-html-file-pictogram-m .cl-text:before {
+	content: '\eb10'
+}
+
+.opus-ic-html-file-pictogram-s .cl-text:before {
+	content: '\eb11'
+}
+
+.opus-ic-exe-file-line-l .cl-text:before {
+	content: '\eb12'
+}
+
+.opus-ic-exe-file-line-m .cl-text:before {
+	content: '\eb13'
+}
+
+.opus-ic-exe-file-line-s .cl-text:before {
+	content: '\eb14'
+}
+
+.opus-ic-exe-file-pictogram-l .cl-text:before {
+	content: '\eb15'
+}
+
+.opus-ic-exe-file-pictogram-m .cl-text:before {
+	content: '\eb16'
+}
+
+.opus-ic-exe-file-pictogram-s .cl-text:before {
+	content: '\eb17'
+}
+
+.opus-ic-upload-line-l .cl-text:before {
+	content: '\eb18'
+}
+
+.opus-ic-upload-line-m .cl-text:before {
+	content: '\eb19'
+}
+
+.opus-ic-upload-line-s .cl-text:before {
+	content: '\eb1a'
+}
+
+.opus-ic-upload-pictogram-l .cl-text:before {
+	content: '\eb1b'
+}
+
+.opus-ic-upload-pictogram-m .cl-text:before {
+	content: '\eb1c'
+}
+
+.opus-ic-upload-pictogram-s .cl-text:before {
+	content: '\eb1d'
+}
+
+.opus-ic-download-line-l .cl-text:before {
+	content: '\eb1e'
+}
+
+.opus-ic-download-line-m .cl-text:before {
+	content: '\eb1f'
+}
+
+.opus-ic-download-line-s .cl-text:before {
+	content: '\eb20'
+}
+
+.opus-ic-download-pictogram-l .cl-text:before {
+	content: '\eb21'
+}
+
+.opus-ic-download-pictogram-m .cl-text:before {
+	content: '\eb22'
+}
+
+.opus-ic-download-pictogram-s .cl-text:before {
+	content: '\eb23'
+}
+
+.opus-ic-slide-up-line-l .cl-text:before {
+	content: '\eb24'
+}
+
+.opus-ic-slide-up-line-m .cl-text:before {
+	content: '\eb25'
+}
+
+.opus-ic-slide-up-line-s .cl-text:before {
+	content: '\eb26'
+}
+
+.opus-ic-slide-up-pictogram-l .cl-text:before {
+	content: '\eb27'
+}
+
+.opus-ic-slide-up-pictogram-m .cl-text:before {
+	content: '\eb28'
+}
+
+.opus-ic-slide-up-pictogram-s .cl-text:before {
+	content: '\eb29'
+}
+
+.opus-ic-slide-down-line-l .cl-text:before {
+	content: '\eb2a'
+}
+
+.opus-ic-slide-down-line-m .cl-text:before {
+	content: '\eb2b'
+}
+
+.opus-ic-slide-down-line-s .cl-text:before {
+	content: '\eb2c'
+}
+
+.opus-ic-slide-down-pictogram-l .cl-text:before {
+	content: '\eb2d'
+}
+
+.opus-ic-slide-down-pictogram-m .cl-text:before {
+	content: '\eb2e'
+}
+
+.opus-ic-slide-down-pictogram-s .cl-text:before {
+	content: '\eb2f'
+}
+
+.opus-ic-slide-left-line-l .cl-text:before {
+	content: '\eb30'
+}
+
+.opus-ic-slide-left-line-m .cl-text:before {
+	content: '\eb31'
+}
+
+.opus-ic-slide-left-line-s .cl-text:before {
+	content: '\eb32'
+}
+
+.opus-ic-slide-left-pictogram-l .cl-text:before {
+	content: '\eb33'
+}
+
+.opus-ic-slide-left-pictogram-m .cl-text:before {
+	content: '\eb34'
+}
+
+.opus-ic-slide-left-pictogram-s .cl-text:before {
+	content: '\eb35'
+}
+
+.opus-ic-slide-right-line-l .cl-text:before {
+	content: '\eb36'
+}
+
+.opus-ic-slide-right-line-m .cl-text:before {
+	content: '\eb37'
+}
+
+.opus-ic-slide-right-line-s .cl-text:before {
+	content: '\eb38'
+}
+
+.opus-ic-slide-right-pictogram-l .cl-text:before {
+	content: '\eb39'
+}
+
+.opus-ic-slide-right-pictogram-m .cl-text:before {
+	content: '\eb3a'
+}
+
+.opus-ic-slide-right-pictogram-s .cl-text:before {
+	content: '\eb3b'
+}
+
+.opus-ic-move-line-l .cl-text:before {
+	content: '\eb3c'
+}
+
+.opus-ic-move-line-m .cl-text:before {
+	content: '\eb3d'
+}
+
+.opus-ic-move-line-s .cl-text:before {
+	content: '\eb3e'
+}
+
+.opus-ic-move-pictogram-l .cl-text:before {
+	content: '\eb3f'
+}
+
+.opus-ic-move-pictogram-m .cl-text:before {
+	content: '\eb40'
+}
+
+.opus-ic-move-pictogram-s .cl-text:before {
+	content: '\eb41'
+}
+
+.opus-ic-expansion-line-l .cl-text:before {
+	content: '\eb42'
+}
+
+.opus-ic-expansion-line-m .cl-text:before {
+	content: '\eb43'
+}
+
+.opus-ic-expansion-line-s .cl-text:before {
+	content: '\eb44'
+}
+
+.opus-ic-expansion-pictogram-l .cl-text:before {
+	content: '\eb45'
+}
+
+.opus-ic-expansion-pictogram-m .cl-text:before {
+	content: '\eb46'
+}
+
+.opus-ic-expansion-pictogram-s .cl-text:before {
+	content: '\eb47'
+}
+
+.opus-ic-reduction-line-l .cl-text:before {
+	content: '\eb48'
+}
+
+.opus-ic-reduction-line-m .cl-text:before {
+	content: '\eb49'
+}
+
+.opus-ic-reduction-line-s .cl-text:before {
+	content: '\eb4a'
+}
+
+.opus-ic-reduction-pictogram-l .cl-text:before {
+	content: '\eb4b'
+}
+
+.opus-ic-reduction-pictogram-m .cl-text:before {
+	content: '\eb4c'
+}
+
+.opus-ic-reduction-pictogram-s .cl-text:before {
+	content: '\eb4d'
+}
+
+.opus-ic-undo-line-l .cl-text:before {
+	content: '\eb4e'
+}
+
+.opus-ic-undo-line-m .cl-text:before {
+	content: '\eb4f'
+}
+
+.opus-ic-undo-line-s .cl-text:before {
+	content: '\eb50'
+}
+
+.opus-ic-undo-pictogram-l .cl-text:before {
+	content: '\eb51'
+}
+
+.opus-ic-undo-pictogram-m .cl-text:before {
+	content: '\eb52'
+}
+
+.opus-ic-undo-pictogram-s .cl-text:before {
+	content: '\eb53'
+}
+
+.opus-ic-redo-line-l .cl-text:before {
+	content: '\eb54'
+}
+
+.opus-ic-redo-line-m .cl-text:before {
+	content: '\eb55'
+}
+
+.opus-ic-redo-line-s .cl-text:before {
+	content: '\eb56'
+}
+
+.opus-ic-redo-pictogram-l .cl-text:before {
+	content: '\eb57'
+}
+
+.opus-ic-redo-pictogram-m .cl-text:before {
+	content: '\eb58'
+}
+
+.opus-ic-redo-pictogram-s .cl-text:before {
+	content: '\eb59'
+}
+
+.opus-ic-refresh-line-l .cl-text:before {
+	content: '\eb5a'
+}
+
+.opus-ic-refresh-line-m .cl-text:before {
+	content: '\eb5b'
+}
+
+.opus-ic-refresh-line-s .cl-text:before {
+	content: '\eb5c'
+}
+
+.opus-ic-refresh-pictogram-l .cl-text:before {
+	content: '\eb5d'
+}
+
+.opus-ic-refresh-pictogram-m .cl-text:before {
+	content: '\eb5e'
+}
+
+.opus-ic-refresh-pictogram-s .cl-text:before {
+	content: '\eb5f'
+}
+
+.opus-ic-rotate-left-line-l .cl-text:before {
+	content: '\eb60'
+}
+
+.opus-ic-rotate-left-line-m .cl-text:before {
+	content: '\eb61'
+}
+
+.opus-ic-rotate-left-line-s .cl-text:before {
+	content: '\eb62'
+}
+
+.opus-ic-rotate-left-pictogram-l .cl-text:before {
+	content: '\eb63'
+}
+
+.opus-ic-rotate-left-pictogram-m .cl-text:before {
+	content: '\eb64'
+}
+
+.opus-ic-rotate-left-pictogram-s .cl-text:before {
+	content: '\eb65'
+}
+
+.opus-ic-rotate-right-line-l .cl-text:before {
+	content: '\eb66'
+}
+
+.opus-ic-rotate-right-line-m .cl-text:before {
+	content: '\eb67'
+}
+
+.opus-ic-rotate-right-line-s .cl-text:before {
+	content: '\eb68'
+}
+
+.opus-ic-rotate-right-pictogram-l .cl-text:before {
+	content: '\eb69'
+}
+
+.opus-ic-rotate-right-pictogram-m .cl-text:before {
+	content: '\eb6a'
+}
+
+.opus-ic-rotate-right-pictogram-s .cl-text:before {
+	content: '\eb6b'
+}
+
+.opus-ic-sync-line-l .cl-text:before {
+	content: '\eb6c'
+}
+
+.opus-ic-sync-line-m .cl-text:before {
+	content: '\eb6d'
+}
+
+.opus-ic-sync-line-s .cl-text:before {
+	content: '\eb6e'
+}
+
+.opus-ic-sync-pictogram-l .cl-text:before {
+	content: '\eb6f'
+}
+
+.opus-ic-sync-pictogram-m .cl-text:before {
+	content: '\eb70'
+}
+
+.opus-ic-sync-pictogram-s .cl-text:before {
+	content: '\eb71'
+}
+
+.opus-ic-previous-line-l .cl-text:before {
+	content: '\eb72'
+}
+
+.opus-ic-previous-line-m .cl-text:before {
+	content: '\eb73'
+}
+
+.opus-ic-previous-line-s .cl-text:before {
+	content: '\eb74'
+}
+
+.opus-ic-previous-pictogram-l .cl-text:before {
+	content: '\eb75'
+}
+
+.opus-ic-previous-pictogram-m .cl-text:before {
+	content: '\eb76'
+}
+
+.opus-ic-previous-pictogram-s .cl-text:before {
+	content: '\eb77'
+}
+
+.opus-ic-next-line-l .cl-text:before {
+	content: '\eb78'
+}
+
+.opus-ic-next-line-m .cl-text:before {
+	content: '\eb79'
+}
+
+.opus-ic-next-line-s .cl-text:before {
+	content: '\eb7a'
+}
+
+.opus-ic-next-pictogram-l .cl-text:before {
+	content: '\eb7b'
+}
+
+.opus-ic-next-pictogram-m .cl-text:before {
+	content: '\eb7c'
+}
+
+.opus-ic-next-pictogram-s .cl-text:before {
+	content: '\eb7d'
+}
+
+.opus-ic-expand-menu-line-l .cl-text:before {
+	content: '\eb7e'
+}
+
+.opus-ic-expand-menu-line-m .cl-text:before {
+	content: '\eb7f'
+}
+
+.opus-ic-expand-menu-line-s .cl-text:before {
+	content: '\eb80'
+}
+
+.opus-ic-expand-menu-pictogram-l .cl-text:before {
+	content: '\eb81'
+}
+
+.opus-ic-expand-menu-pictogram-m .cl-text:before {
+	content: '\eb82'
+}
+
+.opus-ic-expand-menu-pictogram-s .cl-text:before {
+	content: '\eb83'
+}
+
+.opus-ic-collapse-menu-line-l .cl-text:before {
+	content: '\eb84'
+}
+
+.opus-ic-collapse-menu-line-m .cl-text:before {
+	content: '\eb85'
+}
+
+.opus-ic-collapse-menu-line-s .cl-text:before {
+	content: '\eb86'
+}
+
+.opus-ic-collapse-menu-pictogram-l .cl-text:before {
+	content: '\eb87'
+}
+
+.opus-ic-collapse-menu-pictogram-m .cl-text:before {
+	content: '\eb88'
+}
+
+.opus-ic-collapse-menu-pictogram-s .cl-text:before {
+	content: '\eb89'
+}
+
+.opus-ic-close-line-l .cl-text:before {
+	content: '\eb8a'
+}
+
+.opus-ic-close-line-m .cl-text:before {
+	content: '\eb8b'
+}
+
+.opus-ic-close-line-s .cl-text:before {
+	content: '\eb8c'
+}
+
+.opus-ic-close-pictogram-l .cl-text:before {
+	content: '\eb8d'
+}
+
+.opus-ic-close-pictogram-m .cl-text:before {
+	content: '\eb8e'
+}
+
+.opus-ic-close-pictogram-s .cl-text:before {
+	content: '\eb8f'
+}
+
+.opus-ic-delete-action-line-l .cl-text:before {
+	content: '\eb90'
+}
+
+.opus-ic-delete-action-line-m .cl-text:before {
+	content: '\eb91'
+}
+
+.opus-ic-delete-action-line-s .cl-text:before {
+	content: '\eb92'
+}
+
+.opus-ic-delete-action-pictogram-l .cl-text:before {
+	content: '\eb93'
+}
+
+.opus-ic-delete-action-pictogram-m .cl-text:before {
+	content: '\eb94'
+}
+
+.opus-ic-delete-action-pictogram-s .cl-text:before {
+	content: '\eb95'
+}
+
+.opus-ic-check-line-l .cl-text:before {
+	content: '\eb96'
+}
+
+.opus-ic-check-line-m .cl-text:before {
+	content: '\eb97'
+}
+
+.opus-ic-check-line-s .cl-text:before {
+	content: '\eb98'
+}
+
+.opus-ic-check-pictogram-l .cl-text:before {
+	content: '\eb99'
+}
+
+.opus-ic-check-pictogram-m .cl-text:before {
+	content: '\eb9a'
+}
+
+.opus-ic-check-pictogram-s .cl-text:before {
+	content: '\eb9b'
+}
+
+.opus-ic-medal-line-l .cl-text:before {
+	content: '\eb9c'
+}
+
+.opus-ic-medal-line-m .cl-text:before {
+	content: '\eb9d'
+}
+
+.opus-ic-medal-line-s .cl-text:before {
+	content: '\eb9e'
+}
+
+.opus-ic-medal-pictogram-l .cl-text:before {
+	content: '\eb9f'
+}
+
+.opus-ic-medal-pictogram-m .cl-text:before {
+	content: '\eba0'
+}
+
+.opus-ic-medal-pictogram-s .cl-text:before {
+	content: '\eba1'
+}
+
+.opus-ic-promotion-line-l .cl-text:before {
+	content: '\eba2'
+}
+
+.opus-ic-promotion-line-m .cl-text:before {
+	content: '\eba3'
+}
+
+.opus-ic-promotion-line-s .cl-text:before {
+	content: '\eba4'
+}
+
+.opus-ic-promotion-pictogram-l .cl-text:before {
+	content: '\eba5'
+}
+
+.opus-ic-promotion-pictogram-m .cl-text:before {
+	content: '\eba6'
+}
+
+.opus-ic-promotion-pictogram-s .cl-text:before {
+	content: '\eba7'
+}
+
+.opus-ic-notice-line-l .cl-text:before {
+	content: '\eba8'
+}
+
+.opus-ic-notice-line-m .cl-text:before {
+	content: '\eba9'
+}
+
+.opus-ic-notice-line-s .cl-text:before {
+	content: '\ebaa'
+}
+
+.opus-ic-notice-pictogram-l .cl-text:before {
+	content: '\ebab'
+}
+
+.opus-ic-notice-pictogram-m .cl-text:before {
+	content: '\ebac'
+}
+
+.opus-ic-notice-pictogram-s .cl-text:before {
+	content: '\ebad'
+}
+
+.opus-ic-notification-line-l .cl-text:before {
+	content: '\ebae'
+}
+
+.opus-ic-notification-line-m .cl-text:before {
+	content: '\ebaf'
+}
+
+.opus-ic-notification-line-s .cl-text:before {
+	content: '\ebb0'
+}
+
+.opus-ic-notification-pictogram-l .cl-text:before {
+	content: '\ebb1'
+}
+
+.opus-ic-notification-pictogram-m .cl-text:before {
+	content: '\ebb2'
+}
+
+.opus-ic-notification-pictogram-s .cl-text:before {
+	content: '\ebb3'
+}
+
+.opus-ic-alarm-on-line-l .cl-text:before {
+	content: '\ebb4'
+}
+
+.opus-ic-alarm-on-line-m .cl-text:before {
+	content: '\ebb5'
+}
+
+.opus-ic-alarm-on-line-s .cl-text:before {
+	content: '\ebb6'
+}
+
+.opus-ic-alarm-on-pictogram-l .cl-text:before {
+	content: '\ebb7'
+}
+
+.opus-ic-alarm-on-pictogram-m .cl-text:before {
+	content: '\ebb8'
+}
+
+.opus-ic-alarm-on-pictogram-s .cl-text:before {
+	content: '\ebb9'
+}
+
+.opus-ic-alarm-off-line-l .cl-text:before {
+	content: '\ebba'
+}
+
+.opus-ic-alarm-off-line-m .cl-text:before {
+	content: '\ebbb'
+}
+
+.opus-ic-alarm-off-line-s .cl-text:before {
+	content: '\ebbc'
+}
+
+.opus-ic-alarm-off-pictogram-l .cl-text:before {
+	content: '\ebbd'
+}
+
+.opus-ic-alarm-off-pictogram-m .cl-text:before {
+	content: '\ebbe'
+}
+
+.opus-ic-alarm-off-pictogram-s .cl-text:before {
+	content: '\ebbf'
+}
+
+.opus-ic-error-line-l .cl-text:before {
+	content: '\ebc0'
+}
+
+.opus-ic-error-line-m .cl-text:before {
+	content: '\ebc1'
+}
+
+.opus-ic-error-line-s .cl-text:before {
+	content: '\ebc2'
+}
+
+.opus-ic-error-pictogram-l .cl-text:before {
+	content: '\ebc3'
+}
+
+.opus-ic-error-pictogram-m .cl-text:before {
+	content: '\ebc4'
+}
+
+.opus-ic-error-pictogram-s .cl-text:before {
+	content: '\ebc5'
+}
+
+.opus-ic-warning-line-l .cl-text:before {
+	content: '\ebc6'
+}
+
+.opus-ic-warning-line-m .cl-text:before {
+	content: '\ebc7'
+}
+
+.opus-ic-warning-line-s .cl-text:before {
+	content: '\ebc8'
+}
+
+.opus-ic-warning-pictogram-l .cl-text:before {
+	content: '\ebc9'
+}
+
+.opus-ic-warning-pictogram-m .cl-text:before {
+	content: '\ebca'
+}
+
+.opus-ic-warning-pictogram-s .cl-text:before {
+	content: '\ebcb'
+}
+
+.opus-ic-information-line-l .cl-text:before {
+	content: '\ebcc'
+}
+
+.opus-ic-information-line-m .cl-text:before {
+	content: '\ebcd'
+}
+
+.opus-ic-information-line-s .cl-text:before {
+	content: '\ebce'
+}
+
+.opus-ic-information-pictogram-l .cl-text:before {
+	content: '\ebcf'
+}
+
+.opus-ic-information-pictogram-m .cl-text:before {
+	content: '\ebd0'
+}
+
+.opus-ic-information-pictogram-s .cl-text:before {
+	content: '\ebd1'
+}
+
+.opus-ic-help-line-l .cl-text:before {
+	content: '\ebd2'
+}
+
+.opus-ic-help-line-m .cl-text:before {
+	content: '\ebd3'
+}
+
+.opus-ic-help-line-s .cl-text:before {
+	content: '\ebd4'
+}
+
+.opus-ic-help-pictogram-l .cl-text:before {
+	content: '\ebd5'
+}
+
+.opus-ic-help-pictogram-m .cl-text:before {
+	content: '\ebd6'
+}
+
+.opus-ic-help-pictogram-s .cl-text:before {
+	content: '\ebd7'
+}
+
+.opus-ic-vip-line-l .cl-text:before {
+	content: '\ebd8'
+}
+
+.opus-ic-vip-line-m .cl-text:before {
+	content: '\ebd9'
+}
+
+.opus-ic-vip-line-s .cl-text:before {
+	content: '\ebda'
+}
+
+.opus-ic-vip-pictogram-l .cl-text:before {
+	content: '\ebdb'
+}
+
+.opus-ic-vip-pictogram-m .cl-text:before {
+	content: '\ebdc'
+}
+
+.opus-ic-vip-pictogram-s .cl-text:before {
+	content: '\ebdd'
+}
+
+.opus-ic-flag-line-l .cl-text:before {
+	content: '\ebde'
+}
+
+.opus-ic-flag-line-m .cl-text:before {
+	content: '\ebdf'
+}
+
+.opus-ic-flag-line-s .cl-text:before {
+	content: '\ebe0'
+}
+
+.opus-ic-flag-pictogram-l .cl-text:before {
+	content: '\ebe1'
+}
+
+.opus-ic-flag-pictogram-m .cl-text:before {
+	content: '\ebe2'
+}
+
+.opus-ic-flag-pictogram-s .cl-text:before {
+	content: '\ebe3'
+}
+
+.opus-ic-category-line-l .cl-text:before {
+	content: '\ebe4'
+}
+
+.opus-ic-category-line-m .cl-text:before {
+	content: '\ebe5'
+}
+
+.opus-ic-category-line-s .cl-text:before {
+	content: '\ebe6'
+}
+
+.opus-ic-category-pictogram-l .cl-text:before {
+	content: '\ebe7'
+}
+
+.opus-ic-category-pictogram-m .cl-text:before {
+	content: '\ebe8'
+}
+
+.opus-ic-category-pictogram-s .cl-text:before {
+	content: '\ebe9'
+}
+
+.opus-ic-premium-line-l .cl-text:before {
+	content: '\ebea'
+}
+
+.opus-ic-premium-line-m .cl-text:before {
+	content: '\ebeb'
+}
+
+.opus-ic-premium-line-s .cl-text:before {
+	content: '\ebec'
+}
+
+.opus-ic-premium-pictogram-l .cl-text:before {
+	content: '\ebed'
+}
+
+.opus-ic-premium-pictogram-m .cl-text:before {
+	content: '\ebee'
+}
+
+.opus-ic-premium-pictogram-s .cl-text:before {
+	content: '\ebef'
+}
+
+.opus-ic-voice-file-line-l .cl-text:before {
+	content: '\ebf0'
+}
+
+.opus-ic-voice-file-line-m .cl-text:before {
+	content: '\ebf1'
+}
+
+.opus-ic-voice-file-line-s .cl-text:before {
+	content: '\ebf2'
+}
+
+.opus-ic-voice-file-pictogram-l .cl-text:before {
+	content: '\ebf3'
+}
+
+.opus-ic-voice-file-pictogram-m .cl-text:before {
+	content: '\ebf4'
+}
+
+.opus-ic-voice-file-pictogram-s .cl-text:before {
+	content: '\ebf5'
+}
+
+.opus-ic-speaker-on-line-l .cl-text:before {
+	content: '\ebf6'
+}
+
+.opus-ic-speaker-on-line-m .cl-text:before {
+	content: '\ebf7'
+}
+
+.opus-ic-speaker-on-line-s .cl-text:before {
+	content: '\ebf8'
+}
+
+.opus-ic-speaker-on-pictogram-l .cl-text:before {
+	content: '\ebf9'
+}
+
+.opus-ic-speaker-on-pictogram-m .cl-text:before {
+	content: '\ebfa'
+}
+
+.opus-ic-speaker-on-pictogram-s .cl-text:before {
+	content: '\ebfb'
+}
+
+.opus-ic-speaker-off-line-l .cl-text:before {
+	content: '\ebfc'
+}
+
+.opus-ic-speaker-off-line-m .cl-text:before {
+	content: '\ebfd'
+}
+
+.opus-ic-speaker-off-line-s .cl-text:before {
+	content: '\ebfe'
+}
+
+.opus-ic-speaker-off-pictogram-l .cl-text:before {
+	content: '\ebff'
+}
+
+.opus-ic-speaker-off-pictogram-m .cl-text:before {
+	content: '\ec00'
+}
+
+.opus-ic-speaker-off-pictogram-s .cl-text:before {
+	content: '\ec01'
+}
+
+.opus-ic-video-view-line-l .cl-text:before {
+	content: '\ec02'
+}
+
+.opus-ic-video-view-line-m .cl-text:before {
+	content: '\ec03'
+}
+
+.opus-ic-video-view-line-s .cl-text:before {
+	content: '\ec04'
+}
+
+.opus-ic-video-view-pictogram-l .cl-text:before {
+	content: '\ec05'
+}
+
+.opus-ic-video-view-pictogram-m .cl-text:before {
+	content: '\ec06'
+}
+
+.opus-ic-video-view-pictogram-s .cl-text:before {
+	content: '\ec07'
+}
+
+.opus-ic-play-line-l .cl-text:before {
+	content: '\ec08'
+}
+
+.opus-ic-play-line-m .cl-text:before {
+	content: '\ec09'
+}
+
+.opus-ic-play-line-s .cl-text:before {
+	content: '\ec0a'
+}
+
+.opus-ic-play-pictogram-l .cl-text:before {
+	content: '\ec0b'
+}
+
+.opus-ic-play-pictogram-m .cl-text:before {
+	content: '\ec0c'
+}
+
+.opus-ic-play-pictogram-s .cl-text:before {
+	content: '\ec0d'
+}
+
+.opus-ic-stop-line-l .cl-text:before {
+	content: '\ec0e'
+}
+
+.opus-ic-stop-line-m .cl-text:before {
+	content: '\ec0f'
+}
+
+.opus-ic-stop-line-s .cl-text:before {
+	content: '\ec10'
+}
+
+.opus-ic-stop-pictogram-l .cl-text:before {
+	content: '\ec11'
+}
+
+.opus-ic-stop-pictogram-m .cl-text:before {
+	content: '\ec12'
+}
+
+.opus-ic-stop-pictogram-s .cl-text:before {
+	content: '\ec13'
+}
+
+.opus-ic-microphone-on-line-l .cl-text:before {
+	content: '\ec14'
+}
+
+.opus-ic-microphone-on-line-m .cl-text:before {
+	content: '\ec15'
+}
+
+.opus-ic-microphone-on-line-s .cl-text:before {
+	content: '\ec16'
+}
+
+.opus-ic-microphone-on-pictogram-l .cl-text:before {
+	content: '\ec17'
+}
+
+.opus-ic-microphone-on-pictogram-m .cl-text:before {
+	content: '\ec18'
+}
+
+.opus-ic-microphone-on-pictogram-s .cl-text:before {
+	content: '\ec19'
+}
+
+.opus-ic-microphone-off-line-l .cl-text:before {
+	content: '\ec1a'
+}
+
+.opus-ic-microphone-off-line-m .cl-text:before {
+	content: '\ec1b'
+}
+
+.opus-ic-microphone-off-line-s .cl-text:before {
+	content: '\ec1c'
+}
+
+.opus-ic-microphone-off-pictogram-l .cl-text:before {
+	content: '\ec1d'
+}
+
+.opus-ic-microphone-off-pictogram-m .cl-text:before {
+	content: '\ec1e'
+}
+
+.opus-ic-microphone-off-pictogram-s .cl-text:before {
+	content: '\ec1f'
+}
+
+.opus-ic-call-line-l .cl-text:before {
+	content: '\ec20'
+}
+
+.opus-ic-call-line-m .cl-text:before {
+	content: '\ec21'
+}
+
+.opus-ic-call-line-s .cl-text:before {
+	content: '\ec22'
+}
+
+.opus-ic-call-pictogram-l .cl-text:before {
+	content: '\ec23'
+}
+
+.opus-ic-call-pictogram-m .cl-text:before {
+	content: '\ec24'
+}
+
+.opus-ic-call-pictogram-s .cl-text:before {
+	content: '\ec25'
+}
+
+.opus-ic-mobile-phone-line-l .cl-text:before {
+	content: '\ec26'
+}
+
+.opus-ic-mobile-phone-line-m .cl-text:before {
+	content: '\ec27'
+}
+
+.opus-ic-mobile-phone-line-s .cl-text:before {
+	content: '\ec28'
+}
+
+.opus-ic-mobile-phone-pictogram-l .cl-text:before {
+	content: '\ec29'
+}
+
+.opus-ic-mobile-phone-pictogram-m .cl-text:before {
+	content: '\ec2a'
+}
+
+.opus-ic-mobile-phone-pictogram-s .cl-text:before {
+	content: '\ec2b'
+}
+
+.opus-ic-phone-line-l .cl-text:before {
+	content: '\ec2c'
+}
+
+.opus-ic-phone-line-m .cl-text:before {
+	content: '\ec2d'
+}
+
+.opus-ic-phone-line-s .cl-text:before {
+	content: '\ec2e'
+}
+
+.opus-ic-phone-pictogram-l .cl-text:before {
+	content: '\ec2f'
+}
+
+.opus-ic-phone-pictogram-m .cl-text:before {
+	content: '\ec30'
+}
+
+.opus-ic-phone-pictogram-s .cl-text:before {
+	content: '\ec31'
+}
+
+.opus-ic-video-on-line-l .cl-text:before {
+	content: '\ec32'
+}
+
+.opus-ic-video-on-line-m .cl-text:before {
+	content: '\ec33'
+}
+
+.opus-ic-video-on-line-s .cl-text:before {
+	content: '\ec34'
+}
+
+.opus-ic-video-on-pictogram-l .cl-text:before {
+	content: '\ec35'
+}
+
+.opus-ic-video-on-pictogram-m .cl-text:before {
+	content: '\ec36'
+}
+
+.opus-ic-video-on-pictogram-s .cl-text:before {
+	content: '\ec37'
+}
+
+.opus-ic-video-off-line-l .cl-text:before {
+	content: '\ec38'
+}
+
+.opus-ic-video-off-line-m .cl-text:before {
+	content: '\ec39'
+}
+
+.opus-ic-video-off-line-s .cl-text:before {
+	content: '\ec3a'
+}
+
+.opus-ic-video-off-pictogram-l .cl-text:before {
+	content: '\ec3b'
+}
+
+.opus-ic-video-off-pictogram-m .cl-text:before {
+	content: '\ec3c'
+}
+
+.opus-ic-video-off-pictogram-s .cl-text:before {
+	content: '\ec3d'
+}
+
+.opus-ic-camera-line-l .cl-text:before {
+	content: '\ec3e'
+}
+
+.opus-ic-camera-line-m .cl-text:before {
+	content: '\ec3f'
+}
+
+.opus-ic-camera-line-s .cl-text:before {
+	content: '\ec40'
+}
+
+.opus-ic-camera-pictogram-l .cl-text:before {
+	content: '\ec41'
+}
+
+.opus-ic-camera-pictogram-m .cl-text:before {
+	content: '\ec42'
+}
+
+.opus-ic-camera-pictogram-s .cl-text:before {
+	content: '\ec43'
+}
+
+.opus-ic-print-line-l .cl-text:before {
+	content: '\ec44'
+}
+
+.opus-ic-print-line-m .cl-text:before {
+	content: '\ec45'
+}
+
+.opus-ic-print-line-s .cl-text:before {
+	content: '\ec46'
+}
+
+.opus-ic-print-pictogram-l .cl-text:before {
+	content: '\ec47'
+}
+
+.opus-ic-print-pictogram-m .cl-text:before {
+	content: '\ec48'
+}
+
+.opus-ic-print-pictogram-s .cl-text:before {
+	content: '\ec49'
+}
+
+.opus-ic-bluetooth-line-l .cl-text:before {
+	content: '\ec4a'
+}
+
+.opus-ic-bluetooth-line-m .cl-text:before {
+	content: '\ec4b'
+}
+
+.opus-ic-bluetooth-line-s .cl-text:before {
+	content: '\ec4c'
+}
+
+.opus-ic-bluetooth-pictogram-l .cl-text:before {
+	content: '\ec4d'
+}
+
+.opus-ic-bluetooth-pictogram-m .cl-text:before {
+	content: '\ec4e'
+}
+
+.opus-ic-bluetooth-pictogram-s .cl-text:before {
+	content: '\ec4f'
+}
+
+.opus-ic-power-line-l .cl-text:before {
+	content: '\ec50'
+}
+
+.opus-ic-power-line-m .cl-text:before {
+	content: '\ec51'
+}
+
+.opus-ic-power-line-s .cl-text:before {
+	content: '\ec52'
+}
+
+.opus-ic-power-pictogram-l .cl-text:before {
+	content: '\ec53'
+}
+
+.opus-ic-power-pictogram-m .cl-text:before {
+	content: '\ec54'
+}
+
+.opus-ic-power-pictogram-s .cl-text:before {
+	content: '\ec55'
+}
+
+.opus-ic-patient-line-l .cl-text:before {
+	content: '\ec56'
+}
+
+.opus-ic-patient-line-m .cl-text:before {
+	content: '\ec57'
+}
+
+.opus-ic-patient-line-s .cl-text:before {
+	content: '\ec58'
+}
+
+.opus-ic-patient-pictogram-l .cl-text:before {
+	content: '\ec59'
+}
+
+.opus-ic-patient-pictogram-m .cl-text:before {
+	content: '\ec5a'
+}
+
+.opus-ic-patient-pictogram-s .cl-text:before {
+	content: '\ec5b'
+}
+
+.opus-ic-doctor-line-l .cl-text:before {
+	content: '\ec5c'
+}
+
+.opus-ic-doctor-line-m .cl-text:before {
+	content: '\ec5d'
+}
+
+.opus-ic-doctor-line-s .cl-text:before {
+	content: '\ec5e'
+}
+
+.opus-ic-doctor-pictogram-l .cl-text:before {
+	content: '\ec5f'
+}
+
+.opus-ic-doctor-pictogram-m .cl-text:before {
+	content: '\ec60'
+}
+
+.opus-ic-doctor-pictogram-s .cl-text:before {
+	content: '\ec61'
+}
+
+.opus-ic-contact-line-l .cl-text:before {
+	content: '\ec62'
+}
+
+.opus-ic-contact-line-m .cl-text:before {
+	content: '\ec63'
+}
+
+.opus-ic-contact-line-s .cl-text:before {
+	content: '\ec64'
+}
+
+.opus-ic-contact-pictogram-l .cl-text:before {
+	content: '\ec65'
+}
+
+.opus-ic-contact-pictogram-m .cl-text:before {
+	content: '\ec66'
+}
+
+.opus-ic-contact-pictogram-s .cl-text:before {
+	content: '\ec67'
+}
+
+.opus-ic-user-line-l .cl-text:before {
+	content: '\ec68'
+}
+
+.opus-ic-user-line-m .cl-text:before {
+	content: '\ec69'
+}
+
+.opus-ic-user-line-s .cl-text:before {
+	content: '\ec6a'
+}
+
+.opus-ic-user-pictogram-l .cl-text:before {
+	content: '\ec6b'
+}
+
+.opus-ic-user-pictogram-m .cl-text:before {
+	content: '\ec6c'
+}
+
+.opus-ic-user-pictogram-s .cl-text:before {
+	content: '\ec6d'
+}
+
+.opus-ic-group-line-l .cl-text:before {
+	content: '\ec6e'
+}
+
+.opus-ic-group-line-m .cl-text:before {
+	content: '\ec6f'
+}
+
+.opus-ic-group-line-s .cl-text:before {
+	content: '\ec70'
+}
+
+.opus-ic-group-pictogram-l .cl-text:before {
+	content: '\ec71'
+}
+
+.opus-ic-group-pictogram-m .cl-text:before {
+	content: '\ec72'
+}
+
+.opus-ic-group-pictogram-s .cl-text:before {
+	content: '\ec73'
+}
+
+.opus-ic-community-line-l .cl-text:before {
+	content: '\ec74'
+}
+
+.opus-ic-community-line-m .cl-text:before {
+	content: '\ec75'
+}
+
+.opus-ic-community-line-s .cl-text:before {
+	content: '\ec76'
+}
+
+.opus-ic-community-pictogram-l .cl-text:before {
+	content: '\ec77'
+}
+
+.opus-ic-community-pictogram-m .cl-text:before {
+	content: '\ec78'
+}
+
+.opus-ic-community-pictogram-s .cl-text:before {
+	content: '\ec79'
+}
+
+.opus-ic-add-member-line-l .cl-text:before {
+	content: '\ec7a'
+}
+
+.opus-ic-add-member-line-m .cl-text:before {
+	content: '\ec7b'
+}
+
+.opus-ic-add-member-line-s .cl-text:before {
+	content: '\ec7c'
+}
+
+.opus-ic-add-member-pictogram-l .cl-text:before {
+	content: '\ec7d'
+}
+
+.opus-ic-add-member-pictogram-m .cl-text:before {
+	content: '\ec7e'
+}
+
+.opus-ic-add-member-pictogram-s .cl-text:before {
+	content: '\ec7f'
+}
+
+.opus-ic-payment-info-line-l .cl-text:before {
+	content: '\ec80'
+}
+
+.opus-ic-payment-info-line-m .cl-text:before {
+	content: '\ec81'
+}
+
+.opus-ic-payment-info-line-s .cl-text:before {
+	content: '\ec82'
+}
+
+.opus-ic-payment-info-pictogram-l .cl-text:before {
+	content: '\ec83'
+}
+
+.opus-ic-payment-info-pictogram-m .cl-text:before {
+	content: '\ec84'
+}
+
+.opus-ic-payment-info-pictogram-s .cl-text:before {
+	content: '\ec85'
+}
+
+.opus-ic-cart-line-l .cl-text:before {
+	content: '\ec86'
+}
+
+.opus-ic-cart-line-m .cl-text:before {
+	content: '\ec87'
+}
+
+.opus-ic-cart-line-s .cl-text:before {
+	content: '\ec88'
+}
+
+.opus-ic-cart-pictogram-l .cl-text:before {
+	content: '\ec89'
+}
+
+.opus-ic-cart-pictogram-m .cl-text:before {
+	content: '\ec8a'
+}
+
+.opus-ic-cart-pictogram-s .cl-text:before {
+	content: '\ec8b'
+}
+
+.opus-ic-barcode-scanning-line-l .cl-text:before {
+	content: '\ec8c'
+}
+
+.opus-ic-barcode-scanning-line-m .cl-text:before {
+	content: '\ec8d'
+}
+
+.opus-ic-barcode-scanning-line-s .cl-text:before {
+	content: '\ec8e'
+}
+
+.opus-ic-barcode-scanning-pictogram-l .cl-text:before {
+	content: '\ec8f'
+}
+
+.opus-ic-barcode-scanning-pictogram-m .cl-text:before {
+	content: '\ec90'
+}
+
+.opus-ic-barcode-scanning-pictogram-s .cl-text:before {
+	content: '\ec91'
+}
+
+.opus-ic-receipt-line-l .cl-text:before {
+	content: '\ec92'
+}
+
+.opus-ic-receipt-line-m .cl-text:before {
+	content: '\ec93'
+}
+
+.opus-ic-receipt-line-s .cl-text:before {
+	content: '\ec94'
+}
+
+.opus-ic-receipt-pictogram-l .cl-text:before {
+	content: '\ec95'
+}
+
+.opus-ic-receipt-pictogram-m .cl-text:before {
+	content: '\ec96'
+}
+
+.opus-ic-receipt-pictogram-s .cl-text:before {
+	content: '\ec97'
+}
+
+.opus-ic-membership-grade-line-l .cl-text:before {
+	content: '\ec98'
+}
+
+.opus-ic-membership-grade-line-m .cl-text:before {
+	content: '\ec99'
+}
+
+.opus-ic-membership-grade-line-s .cl-text:before {
+	content: '\ec9a'
+}
+
+.opus-ic-membership-grade-pictogram-l .cl-text:before {
+	content: '\ec9b'
+}
+
+.opus-ic-membership-grade-pictogram-m .cl-text:before {
+	content: '\ec9c'
+}
+
+.opus-ic-membership-grade-pictogram-s .cl-text:before {
+	content: '\ec9d'
+}
+
+.opus-ic-add-new-card-line-l .cl-text:before {
+	content: '\ec9e'
+}
+
+.opus-ic-add-new-card-line-m .cl-text:before {
+	content: '\ec9f'
+}
+
+.opus-ic-add-new-card-line-s .cl-text:before {
+	content: '\eca0'
+}
+
+.opus-ic-add-new-card-pictogram-l .cl-text:before {
+	content: '\eca1'
+}
+
+.opus-ic-add-new-card-pictogram-m .cl-text:before {
+	content: '\eca2'
+}
+
+.opus-ic-add-new-card-pictogram-s .cl-text:before {
+	content: '\eca3'
+}
+
+.opus-ic-building-line-l .cl-text:before {
+	content: '\eca4'
+}
+
+.opus-ic-building-line-m .cl-text:before {
+	content: '\eca5'
+}
+
+.opus-ic-building-line-s .cl-text:before {
+	content: '\eca6'
+}
+
+.opus-ic-building-pictogram-l .cl-text:before {
+	content: '\eca7'
+}
+
+.opus-ic-building-pictogram-m .cl-text:before {
+	content: '\eca8'
+}
+
+.opus-ic-building-pictogram-s .cl-text:before {
+	content: '\eca9'
+}
+
+.opus-ic-vehicles-line-l .cl-text:before {
+	content: '\ecaa'
+}
+
+.opus-ic-vehicles-line-m .cl-text:before {
+	content: '\ecab'
+}
+
+.opus-ic-vehicles-line-s .cl-text:before {
+	content: '\ecac'
+}
+
+.opus-ic-vehicles-pictogram-l .cl-text:before {
+	content: '\ecad'
+}
+
+.opus-ic-vehicles-pictogram-m .cl-text:before {
+	content: '\ecae'
+}
+
+.opus-ic-vehicles-pictogram-s .cl-text:before {
+	content: '\ecaf'
+}
+
+.opus-ic-bus-line-l .cl-text:before {
+	content: '\ecb0'
+}
+
+.opus-ic-bus-line-m .cl-text:before {
+	content: '\ecb1'
+}
+
+.opus-ic-bus-line-s .cl-text:before {
+	content: '\ecb2'
+}
+
+.opus-ic-bus-pictogram-l .cl-text:before {
+	content: '\ecb3'
+}
+
+.opus-ic-bus-pictogram-m .cl-text:before {
+	content: '\ecb4'
+}
+
+.opus-ic-bus-pictogram-s .cl-text:before {
+	content: '\ecb5'
+}
+
+.opus-ic-school-line-l .cl-text:before {
+	content: '\ecb6'
+}
+
+.opus-ic-school-line-m .cl-text:before {
+	content: '\ecb7'
+}
+
+.opus-ic-school-line-s .cl-text:before {
+	content: '\ecb8'
+}
+
+.opus-ic-school-pictogram-l .cl-text:before {
+	content: '\ecb9'
+}
+
+.opus-ic-school-pictogram-m .cl-text:before {
+	content: '\ecba'
+}
+
+.opus-ic-school-pictogram-s .cl-text:before {
+	content: '\ecbb'
+}
+
+.opus-ic-subway-line-l .cl-text:before {
+	content: '\ecbc'
+}
+
+.opus-ic-subway-line-m .cl-text:before {
+	content: '\ecbd'
+}
+
+.opus-ic-subway-line-s .cl-text:before {
+	content: '\ecbe'
+}
+
+.opus-ic-subway-pictogram-l .cl-text:before {
+	content: '\ecbf'
+}
+
+.opus-ic-subway-pictogram-m .cl-text:before {
+	content: '\ecc0'
+}
+
+.opus-ic-subway-pictogram-s .cl-text:before {
+	content: '\ecc1'
+}
+
+.opus-ic-satellite-view-line-l .cl-text:before {
+	content: '\ecc2'
+}
+
+.opus-ic-satellite-view-line-m .cl-text:before {
+	content: '\ecc3'
+}
+
+.opus-ic-satellite-view-line-s .cl-text:before {
+	content: '\ecc4'
+}
+
+.opus-ic-satellite-view-pictogram-l .cl-text:before {
+	content: '\ecc5'
+}
+
+.opus-ic-satellite-view-pictogram-m .cl-text:before {
+	content: '\ecc6'
+}
+
+.opus-ic-satellite-view-pictogram-s .cl-text:before {
+	content: '\ecc7'
+}
+
+.opus-ic-map-view-line-l .cl-text:before {
+	content: '\ecc8'
+}
+
+.opus-ic-map-view-line-m .cl-text:before {
+	content: '\ecc9'
+}
+
+.opus-ic-map-view-line-s .cl-text:before {
+	content: '\ecca'
+}
+
+.opus-ic-map-view-pictogram-l .cl-text:before {
+	content: '\eccb'
+}
+
+.opus-ic-map-view-pictogram-m .cl-text:before {
+	content: '\eccc'
+}
+
+.opus-ic-map-view-pictogram-s .cl-text:before {
+	content: '\eccd'
+}
+
+.opus-ic-street-view-line-l .cl-text:before {
+	content: '\ecce'
+}
+
+.opus-ic-street-view-line-m .cl-text:before {
+	content: '\eccf'
+}
+
+.opus-ic-street-view-line-s .cl-text:before {
+	content: '\ecd0'
+}
+
+.opus-ic-street-view-pictogram-l .cl-text:before {
+	content: '\ecd1'
+}
+
+.opus-ic-street-view-pictogram-m .cl-text:before {
+	content: '\ecd2'
+}
+
+.opus-ic-street-view-pictogram-s .cl-text:before {
+	content: '\ecd3'
+}
+
+.opus-ic-day-line-l .cl-text:before {
+	content: '\ecd4'
+}
+
+.opus-ic-day-line-m .cl-text:before {
+	content: '\ecd5'
+}
+
+.opus-ic-day-line-s .cl-text:before {
+	content: '\ecd6'
+}
+
+.opus-ic-day-pictogram-l .cl-text:before {
+	content: '\ecd7'
+}
+
+.opus-ic-day-pictogram-m .cl-text:before {
+	content: '\ecd8'
+}
+
+.opus-ic-day-pictogram-s .cl-text:before {
+	content: '\ecd9'
+}
+
+.opus-ic-night-line-l .cl-text:before {
+	content: '\ecda'
+}
+
+.opus-ic-night-line-m .cl-text:before {
+	content: '\ecdb'
+}
+
+.opus-ic-night-line-s .cl-text:before {
+	content: '\ecdc'
+}
+
+.opus-ic-night-pictogram-l .cl-text:before {
+	content: '\ecdd'
+}
+
+.opus-ic-night-pictogram-m .cl-text:before {
+	content: '\ecde'
+}
+
+.opus-ic-night-pictogram-s .cl-text:before {
+	content: '\ecdf'
+}
+
+.opus-ic-exporting-company-line-l .cl-text:before {
+	content: '\ece0'
+}
+
+.opus-ic-exporting-company-line-m .cl-text:before {
+	content: '\ece1'
+}
+
+.opus-ic-exporting-company-line-s .cl-text:before {
+	content: '\ece2'
+}
+
+.opus-ic-exporting-company-pictogram-l .cl-text:before {
+	content: '\ece3'
+}
+
+.opus-ic-exporting-company-pictogram-m .cl-text:before {
+	content: '\ece4'
+}
+
+.opus-ic-exporting-company-pictogram-s .cl-text:before {
+	content: '\ece5'
+}
+
+.opus-ic-shipper-line-l .cl-text:before {
+	content: '\ece6'
+}
+
+.opus-ic-shipper-line-m .cl-text:before {
+	content: '\ece7'
+}
+
+.opus-ic-shipper-line-s .cl-text:before {
+	content: '\ece8'
+}
+
+.opus-ic-shipper-pictogram-l .cl-text:before {
+	content: '\ece9'
+}
+
+.opus-ic-shipper-pictogram-m .cl-text:before {
+	content: '\ecea'
+}
+
+.opus-ic-shipper-pictogram-s .cl-text:before {
+	content: '\eceb'
+}
+
+.opus-ic-gps-line-l .cl-text:before {
+	content: '\ecec'
+}
+
+.opus-ic-gps-line-m .cl-text:before {
+	content: '\eced'
+}
+
+.opus-ic-gps-line-s .cl-text:before {
+	content: '\ecee'
+}
+
+.opus-ic-gps-pictogram-l .cl-text:before {
+	content: '\ecef'
+}
+
+.opus-ic-gps-pictogram-m .cl-text:before {
+	content: '\ecf0'
+}
+
+.opus-ic-gps-pictogram-s .cl-text:before {
+	content: '\ecf1'
+}
+
+.opus-ic-satellite-line-l .cl-text:before {
+	content: '\ecf2'
+}
+
+.opus-ic-satellite-line-m .cl-text:before {
+	content: '\ecf3'
+}
+
+.opus-ic-satellite-line-s .cl-text:before {
+	content: '\ecf4'
+}
+
+.opus-ic-satellite-pictogram-l .cl-text:before {
+	content: '\ecf5'
+}
+
+.opus-ic-satellite-pictogram-m .cl-text:before {
+	content: '\ecf6'
+}
+
+.opus-ic-satellite-pictogram-s .cl-text:before {
+	content: '\ecf7'
+}
+
+.opus-ic-measure-line-l .cl-text:before {
+	content: '\ecf8'
+}
+
+.opus-ic-measure-line-m .cl-text:before {
+	content: '\ecf9'
+}
+
+.opus-ic-measure-line-s .cl-text:before {
+	content: '\ecfa'
+}
+
+.opus-ic-measure-pictogram-l .cl-text:before {
+	content: '\ecfb'
+}
+
+.opus-ic-measure-pictogram-m .cl-text:before {
+	content: '\ecfc'
+}
+
+.opus-ic-measure-pictogram-s .cl-text:before {
+	content: '\ecfd'
+}
+
+.opus-ic-air-line-l .cl-text:before {
+	content: '\ecfe'
+}
+
+.opus-ic-air-line-m .cl-text:before {
+	content: '\ecff'
+}
+
+.opus-ic-air-line-s .cl-text:before {
+	content: '\ed00'
+}
+
+.opus-ic-air-pictogram-l .cl-text:before {
+	content: '\ed01'
+}
+
+.opus-ic-air-pictogram-m .cl-text:before {
+	content: '\ed02'
+}
+
+.opus-ic-air-pictogram-s .cl-text:before {
+	content: '\ed03'
+}
+
+.opus-ic-vessel-line-l .cl-text:before {
+	content: '\ed04'
+}
+
+.opus-ic-vessel-line-m .cl-text:before {
+	content: '\ed05'
+}
+
+.opus-ic-vessel-line-s .cl-text:before {
+	content: '\ed06'
+}
+
+.opus-ic-vessel-pictogram-l .cl-text:before {
+	content: '\ed07'
+}
+
+.opus-ic-vessel-pictogram-m .cl-text:before {
+	content: '\ed08'
+}
+
+.opus-ic-vessel-pictogram-s .cl-text:before {
+	content: '\ed09'
+}
+
+.opus-ic-truck-line-l .cl-text:before {
+	content: '\ed0a'
+}
+
+.opus-ic-truck-line-m .cl-text:before {
+	content: '\ed0b'
+}
+
+.opus-ic-truck-line-s .cl-text:before {
+	content: '\ed0c'
+}
+
+.opus-ic-truck-pictogram-l .cl-text:before {
+	content: '\ed0d'
+}
+
+.opus-ic-truck-pictogram-m .cl-text:before {
+	content: '\ed0e'
+}
+
+.opus-ic-truck-pictogram-s .cl-text:before {
+	content: '\ed0f'
+}
+
+.opus-ic-rail-line-l .cl-text:before {
+	content: '\ed10'
+}
+
+.opus-ic-rail-line-m .cl-text:before {
+	content: '\ed11'
+}
+
+.opus-ic-rail-line-s .cl-text:before {
+	content: '\ed12'
+}
+
+.opus-ic-rail-pictogram-l .cl-text:before {
+	content: '\ed13'
+}
+
+.opus-ic-rail-pictogram-m .cl-text:before {
+	content: '\ed14'
+}
+
+.opus-ic-rail-pictogram-s .cl-text:before {
+	content: '\ed15'
+}
+
+.opus-ic-snow-line-l .cl-text:before {
+	content: '\ed16'
+}
+
+.opus-ic-snow-line-m .cl-text:before {
+	content: '\ed17'
+}
+
+.opus-ic-snow-line-s .cl-text:before {
+	content: '\ed18'
+}
+
+.opus-ic-snow-pictogram-l .cl-text:before {
+	content: '\ed19'
+}
+
+.opus-ic-snow-pictogram-m .cl-text:before {
+	content: '\ed1a'
+}
+
+.opus-ic-snow-pictogram-s .cl-text:before {
+	content: '\ed1b'
+}
+
+.opus-ic-rain-line-l .cl-text:before {
+	content: '\ed1c'
+}
+
+.opus-ic-rain-line-m .cl-text:before {
+	content: '\ed1d'
+}
+
+.opus-ic-rain-line-s .cl-text:before {
+	content: '\ed1e'
+}
+
+.opus-ic-rain-pictogram-l .cl-text:before {
+	content: '\ed1f'
+}
+
+.opus-ic-rain-pictogram-m .cl-text:before {
+	content: '\ed20'
+}
+
+.opus-ic-rain-pictogram-s .cl-text:before {
+	content: '\ed21'
+}
+
+.opus-ic-wind-line-l .cl-text:before {
+	content: '\ed22'
+}
+
+.opus-ic-wind-line-m .cl-text:before {
+	content: '\ed23'
+}
+
+.opus-ic-wind-line-s .cl-text:before {
+	content: '\ed24'
+}
+
+.opus-ic-wind-pictogram-l .cl-text:before {
+	content: '\ed25'
+}
+
+.opus-ic-wind-pictogram-m .cl-text:before {
+	content: '\ed26'
+}
+
+.opus-ic-wind-pictogram-s .cl-text:before {
+	content: '\ed27'
+}
+
+.opus-ic-tidal-wave-line-l .cl-text:before {
+	content: '\ed28'
+}
+
+.opus-ic-tidal-wave-line-m .cl-text:before {
+	content: '\ed29'
+}
+
+.opus-ic-tidal-wave-line-s .cl-text:before {
+	content: '\ed2a'
+}
+
+.opus-ic-tidal-wave-pictogram-l .cl-text:before {
+	content: '\ed2b'
+}
+
+.opus-ic-tidal-wave-pictogram-m .cl-text:before {
+	content: '\ed2c'
+}
+
+.opus-ic-tidal-wave-pictogram-s .cl-text:before {
+	content: '\ed2d'
+}
+
+.opus-ic-male-line-l .cl-text:before {
+	content: '\ed2e'
+}
+
+.opus-ic-male-line-m .cl-text:before {
+	content: '\ed2f'
+}
+
+.opus-ic-male-line-s .cl-text:before {
+	content: '\ed30'
+}
+
+.opus-ic-male-pictogram-l .cl-text:before {
+	content: '\ed31'
+}
+
+.opus-ic-male-pictogram-m .cl-text:before {
+	content: '\ed32'
+}
+
+.opus-ic-male-pictogram-s .cl-text:before {
+	content: '\ed33'
+}
+
+.opus-ic-female-line-l .cl-text:before {
+	content: '\ed34'
+}
+
+.opus-ic-female-line-m .cl-text:before {
+	content: '\ed35'
+}
+
+.opus-ic-female-line-s .cl-text:before {
+	content: '\ed36'
+}
+
+.opus-ic-female-pictogram-l .cl-text:before {
+	content: '\ed37'
+}
+
+.opus-ic-female-pictogram-m .cl-text:before {
+	content: '\ed38'
+}
+
+.opus-ic-female-pictogram-s .cl-text:before {
+	content: '\ed39'
+}
+
+.opus-ic-blood-info-line-l .cl-text:before {
+	content: '\ed3a'
+}
+
+.opus-ic-blood-info-line-m .cl-text:before {
+	content: '\ed3b'
+}
+
+.opus-ic-blood-info-line-s .cl-text:before {
+	content: '\ed3c'
+}
+
+.opus-ic-blood-info-pictogram-l .cl-text:before {
+	content: '\ed3d'
+}
+
+.opus-ic-blood-info-pictogram-m .cl-text:before {
+	content: '\ed3e'
+}
+
+.opus-ic-blood-info-pictogram-s .cl-text:before {
+	content: '\ed3f'
+}
+
+.opus-ic-genome-info-line-l .cl-text:before {
+	content: '\ed40'
+}
+
+.opus-ic-genome-info-line-m .cl-text:before {
+	content: '\ed41'
+}
+
+.opus-ic-genome-info-line-s .cl-text:before {
+	content: '\ed42'
+}
+
+.opus-ic-genome-info-pictogram-l .cl-text:before {
+	content: '\ed43'
+}
+
+.opus-ic-genome-info-pictogram-m .cl-text:before {
+	content: '\ed44'
+}
+
+.opus-ic-genome-info-pictogram-s .cl-text:before {
+	content: '\ed45'
+}

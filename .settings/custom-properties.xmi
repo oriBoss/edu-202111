@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:settings="kr.co.tomatosystem.exbuilder.model.ui.settings">
+  <settings:CustomProperties type="All"/>
+  <settings:CustomProperties type="udc.MrcCodeView.MrcCodeView">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="udc.MrcDateComboBox.MrcDateComboBox">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="udc.MrcDateRangePicker.MrcDateRangePicker">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="udc.MrcNumberPad.MrcNumberPad">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="udc.MrcSourceEditor.MrcSourceEditor">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="ComboBox">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="DataColumn"/>
+  <settings:CustomProperties type="DataMap"/>
+  <settings:CustomProperties type="DataSet"/>
+  <settings:CustomProperties type="DataView"/>
+  <settings:CustomProperties type="DataWindow"/>
+  <settings:CustomProperties type="DateInput">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="EmbeddedApp"/>
+  <settings:CustomProperties type="EmbeddedPage"/>
+  <settings:CustomProperties type="FileInput"/>
+  <settings:CustomProperties type="FileUpload"/>
+  <settings:CustomProperties type="Grid"/>
+  <settings:CustomProperties type="Group"/>
+  <settings:CustomProperties type="HTMLObject"/>
+  <settings:CustomProperties type="HTMLSnippet"/>
+  <settings:CustomProperties type="Image"/>
+  <settings:CustomProperties type="InputBox">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="LinkedComboBox"/>
+  <settings:CustomProperties type="LinkedListBox"/>
+  <settings:CustomProperties type="ListBox"/>
+  <settings:CustomProperties type="MaskEditor">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="MatrixSubmission"/>
+  <settings:CustomProperties type="MDIFolder"/>
+  <settings:CustomProperties type="Menu"/>
+  <settings:CustomProperties type="NavigationBar"/>
+  <settings:CustomProperties type="Notifier"/>
+  <settings:CustomProperties type="NumberEditor">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="Output"/>
+  <settings:CustomProperties type="PageIndexer"/>
+  <settings:CustomProperties type="PathMatrixNode"/>
+  <settings:CustomProperties type="Progress"/>
+  <settings:CustomProperties type="RadioButton"/>
+  <settings:CustomProperties type="SearchInput"/>
+  <settings:CustomProperties type="SectionItem"/>
+  <settings:CustomProperties type="Slider"/>
+  <settings:CustomProperties type="Submission"/>
+  <settings:CustomProperties type="TabFolder"/>
+  <settings:CustomProperties type="TabItem"/>
+  <settings:CustomProperties type="TextArea">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="Tree"/>
+  <settings:CustomProperties type="TreeCell"/>
+  <settings:CustomProperties type="UIControlShell"/>
+  <settings:CustomProperties type="Video"/>
+  <settings:CustomProperties type="Accordion"/>
+  <settings:CustomProperties type="Audio"/>
+  <settings:CustomProperties type="Button"/>
+  <settings:CustomProperties type="Calendar"/>
+  <settings:CustomProperties type="CheckBox"/>
+  <settings:CustomProperties type="CheckBoxGroup"/>
+</xmi:XMI>

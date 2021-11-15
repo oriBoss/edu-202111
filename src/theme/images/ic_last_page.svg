@@ -1,0 +1,13 @@
+<svg id="ic_last_page" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+    <defs>
+        <style>
+            .cls-3{fill:#333}
+        </style>
+    </defs>
+    <g id="그룹_112565" data-name="그룹 112565" transform="translate(-369.5 -1704)">
+        <path id="사각형_20" data-name="사각형 20" transform="translate(369.5 1704)" style="fill:none" d="M0 0h16v16H0z"/>
+        <path id="사각형_20-2" data-name="사각형 20" transform="translate(371.5 1706)" style="opacity:.2;fill:none" d="M0 0h12v12H0z"/>
+        <path id="패스_202865" data-name="패스 202865" class="cls-3" d="M374.75 596.646a.5.5 0 0 1-.354-.853l4.147-4.147-4.143-4.146a.5.5 0 0 1 .708-.707l4.5 4.5a.5.5 0 0 1 0 .707l-4.5 4.5a.5.5 0 0 1-.358.146z" transform="translate(-.5 1120.353)"/>
+        <path id="패스_202866" data-name="패스 202866" class="cls-3" d="M381.4 596.646a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 1 0v9a.5.5 0 0 1-.5.5z" transform="translate(-.5 1120.353)"/>
+    </g>
+</svg>

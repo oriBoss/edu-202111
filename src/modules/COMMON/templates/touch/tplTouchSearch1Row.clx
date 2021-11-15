@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-69e5af85" version="1.0.0.0">
+  <head std:sid="head-2161b204">
+    <title>tplTouchSearch1Row</title>
+    <screen std:sid="screen-fbedd45d" id="default" name="default" minwidth="1024px" width="1024px" height="768px" useCustomHeight="true" customHeight="80" customWidth="800"/>
+    <screen std:sid="screen-62d82a52" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-00fe5b0f" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-2687252f"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-7fbde756" style="top:0px; left:0px; width:800px; height:600px;" class="touch-style">
+    <cl:group std:sid="group-4de63430" id="tplTouchSearch1Row" class="search-box">
+      <std:metadata>
+        <std:property key="template-uuid" value="1d354847-b029-4810-a097-9b7e204f9ad9"/>
+        <std:property key="template-rev" value="3"/>
+      </std:metadata>
+      <cl:attribute name="templateId" value="tplTouchSearch1Row"/>
+      <cl:formdata std:sid="f-data-c8cc2db2" row="0" col="0"/>
+      <cl:group std:sid="group-54a6618a" id="grp1">
+        <std:metadata>
+          <std:property key="template-uuid" value="3213aa75-af99-409f-b63a-1d6df6600d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:attribute name="templateId" value="tplTouchSearchComponent"/>
+        <cl:formdata std:sid="f-data-8ee96e8d" row="0" col="0"/>
+        <cl:output std:sid="output-68dde1d6" id="opt1" class="label" value="Output">
+          <cl:formdata std:sid="f-data-4e2dec1b" row="0" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-d4c20679" id="ipb1" showclearbutton="true">
+          <cl:formdata std:sid="f-data-3f831b8c" valign="CENTER" height="40" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-c0426aea" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="190" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-622f3ff6" id="grp2">
+        <cl:formdata std:sid="f-data-512764cc" row="0" col="2"/>
+        <cl:button std:sid="button-7c965176" id="btnReset" class="search-area" value="Reset">
+          <cl:formdata std:sid="f-data-4adeb511" valign="CENTER" height="40" row="0" col="1"/>
+        </cl:button>
+        <cl:button std:sid="button-c9b2132b" id="btnSearch" class="search-area secondary" value="Search">
+          <cl:formdata std:sid="f-data-518fa0c7" valign="CENTER" height="40" row="0" col="2"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-e1b2fc78" hspace="16px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" autoSizing="true"/>
+          <cl:columns length="100" autoSizing="true"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-9100ab16" hspace="0px" vspace="12px" top-margin="20px" right-margin="20px" bottom-margin="20px" left-margin="20px">
+        <cl:rows length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="90"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-f13da74c" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

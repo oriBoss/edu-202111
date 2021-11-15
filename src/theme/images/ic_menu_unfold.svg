@@ -1,0 +1,17 @@
+<svg id="ic_menu_unfold" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+    <defs>
+        <style>
+            .cls-3{fill:#333}
+        </style>
+    </defs>
+    <g id="그룹_112566" data-name="그룹 112566" transform="translate(-400 -583.647)">
+        <path id="사각형_20" data-name="사각형 20" transform="translate(400 583.647)" style="fill:none" d="M0 0h16v16H0z"/>
+        <path id="사각형_20-2" data-name="사각형 20" transform="translate(402 585.647)" style="opacity:.2;fill:none" d="M0 0h12v12H0z"/>
+        <g id="그룹_112481" data-name="그룹 112481">
+            <path id="패스_202819" data-name="패스 202819" class="cls-3" d="M406.5 591.146H403a.5.5 0 0 0 0 1h3.5a.5.5 0 0 0 0-1z"/>
+            <path id="패스_202820" data-name="패스 202820" class="cls-3" d="M403 588.646h10a.5.5 0 0 0 0-1h-10a.5.5 0 0 0 0 1z"/>
+            <path id="패스_202821" data-name="패스 202821" class="cls-3" d="M405.5 594.646H403a.5.5 0 0 0 0 1h2.5a.5.5 0 0 0 0-1z"/>
+            <path id="패스_202822" data-name="패스 202822" class="cls-3" d="m413.854 593.293-2.5-2.5a.5.5 0 0 0-.708.707l1.647 1.646H408a.5.5 0 0 0 0 1h4.293l-1.647 1.647a.5.5 0 0 0 .708.707l2.5-2.5a.5.5 0 0 0 0-.707z"/>
+        </g>
+    </g>
+</svg>

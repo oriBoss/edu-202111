@@ -1,0 +1,247 @@
+@import "../settings.part.less";
+
+/* 일반형 화면 버튼 */
+.cl-button.inner {
+	border-radius: @inner-button-border-radius !important;
+}
+
+/* 기본 버튼 */
+.cl-button {
+	font-size: 16px; 
+	text-shadow: none;
+	
+	color: @default-color;
+	background-color: @default-background-color;
+	border-radius: @normal-button-border-radius;
+	border: @normal-style-button-border @default-border-color;
+	background-image: none;
+	
+	padding-left: @normal-style-button-padding;
+	padding-right: @normal-style-button-padding;
+	
+	
+	/* 버튼위에 마우스를 올렸을 때의 스타일 */
+	&:not(.cl-disabled):hover{
+		background-color: @default-hover-background-color;
+		color: @default-hover-color;
+	}
+	/* 버튼이 포커스를 가졌을 때의 스타일 
+	&:focus, &.cl-focus{
+		border: solid 1px @focus-border-color;
+	}
+	*/
+	
+	/* 버튼을 클릭했을 때의 스타일 */
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-color: @default-active-background-color;
+		background-image: none;
+	}
+}
+
+/* Disable 상태의 버튼 */
+.cl-button.cl-disabled{
+	color: @default-disable-color;
+	background-color: @default-disable-background-color;
+	border-color: @default-disable-border-color;
+}
+
+/* 메인 버튼 */
+.cl-button.primary-button {
+	font-size: 16px; 
+	text-shadow: none;
+	
+	color: @primary-color;
+	background-color: @primary-background-color;
+	border-radius: @normal-button-border-radius;
+	border: none;
+	background-image: none;
+	
+	padding-left: @normal-style-button-padding;
+	padding-right: @normal-style-button-padding;
+	
+	
+	/* 버튼위에 마우스를 올렸을 때의 스타일 */
+	&:not(.cl-disabled):hover{
+		background-color: @primary-hover-background-color;
+		color: @primary-hover-color;
+	}
+	/* 버튼이 포커스를 가졌을 때의 스타일 
+	&:focus, &.cl-focus{
+		border: solid 1px @focus-border-color;
+	}
+	*/
+	
+	/* 버튼을 클릭했을 때의 스타일 */
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-color: @primary-active-background-color;
+		background-image: none;
+	}
+}
+
+/* Disable 상태의 버튼 */
+.cl-button.primary-button.cl-disabled{
+	color: @primary-disable-color;
+	background-color: @primary-disable-background-color;
+}
+
+/* 서브 버튼 */
+.cl-button.secondary-button {
+	font-size: 16px; 
+	text-shadow: none;
+	
+	color: @secondary-color;
+	background-color: @secondary-background-color;
+	border-radius: @normal-button-border-radius;
+	border: @normal-style-button-border @secondary-border-color;
+	background-image: none;
+	
+	padding-left: @normal-style-button-padding;
+	padding-right: @normal-style-button-padding;
+	
+	
+	/* 버튼위에 마우스를 올렸을 때의 스타일 */
+	&:not(.cl-disabled):hover{
+		background-color: @secondary-hover-background-color;
+		color: @secondary-hover-color;
+	}
+	/* 버튼이 포커스를 가졌을 때의 스타일 
+	&:focus, &.cl-focus{
+		border: solid 1px @focus-border-color;
+	}
+	*/
+	
+	/* 버튼을 클릭했을 때의 스타일 */
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-color: @secondary-active-background-color;
+		background-image: none;
+	}
+}
+
+/* Disable 상태의 버튼 */
+.cl-button.secondary-button.cl-disabled{
+	color: @secondary-disable-color;
+	background-color: @secondary-disable-background-color;
+	border-color: @secondary-disable-border-color;
+}
+
+/* 터치형 화면 버튼 */
+.touch-style {
+	/* 기본 버튼 */
+	.cl-button {
+		font-size: 20px; 
+		text-shadow: none;
+		
+		color: @default-color;
+		background-color: @default-background-color;
+		border-radius: @normal-button-border-radius;
+		border: @touch-style-button-border @default-border-color;
+		background-image: none;
+		
+		padding-left: @touch-style-button-padding;
+		padding-right: @touch-style-button-padding;
+		
+		
+		/* 버튼위에 마우스를 올렸을 때의 스타일 */
+		&:not(.cl-disabled):hover{
+			background-color: @default-hover-background-color;
+			color: @default-hover-color;
+		}
+		/* 버튼이 포커스를 가졌을 때의 스타일 
+		&:focus, &.cl-focus{
+			border: solid 1px @focus-border-color;
+		}
+		*/
+		
+		/* 버튼을 클릭했을 때의 스타일 */
+		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+			background-color: @default-active-background-color;
+			background-image: none;
+		}
+	}
+	
+	/* Disable 상태의 버튼 */
+	.cl-button.cl-disabled{
+		color: @default-disable-color;
+		background-color: @default-disable-background-color;
+		border-color: @default-disable-border-color;
+	}
+	
+	/* 메인 버튼 */
+	.cl-button.primary-button {
+		font-size: 20px; 
+		text-shadow: none;
+		
+		color: @primary-color;
+		background-color: @primary-background-color;
+		border-radius: @normal-button-border-radius;
+		border: none;
+		background-image: none;
+		
+		padding-left: @touch-style-button-padding;
+		padding-right: @touch-style-button-padding;
+		
+		
+		/* 버튼위에 마우스를 올렸을 때의 스타일 */
+		&:not(.cl-disabled):hover{
+			background-color: @primary-hover-background-color;
+			color: @primary-hover-color;
+		}
+		/* 버튼이 포커스를 가졌을 때의 스타일 
+		&:focus, &.cl-focus{
+			border: solid 1px @focus-border-color;
+		}
+		*/
+		
+		/* 버튼을 클릭했을 때의 스타일 */
+		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+			background-color: @primary-active-background-color;
+			background-image: none;
+		}
+	}
+	
+	/* Disable 상태의 버튼 */
+	.cl-button.primary-button.cl-disabled{
+		color: @primary-disable-color;
+		background-color: @primary-disable-background-color;
+	}
+	
+	/* 서브 버튼 */
+	.cl-button.secondary-button {
+		font-size: 20px; 
+		text-shadow: none;
+		
+		color: @secondary-color;
+		background-color: @secondary-background-color;
+		border-radius: @normal-button-border-radius;
+		border: @touch-style-button-border @secondary-border-color;
+		background-image: none;
+		
+		padding-left: @touch-style-button-padding;
+		padding-right: @touch-style-button-padding;
+		
+		
+		/* 버튼위에 마우스를 올렸을 때의 스타일 */
+		&:not(.cl-disabled):hover{
+			background-color: @secondary-hover-background-color;
+			color: @secondary-hover-color;
+		}
+		/* 버튼이 포커스를 가졌을 때의 스타일 
+		&:focus, &.cl-focus{
+			border: solid 1px @focus-border-color;
+		}
+		*/
+		
+		/* 버튼을 클릭했을 때의 스타일 */
+		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+			background-color: @secondary-active-background-color;
+			background-image: none;
+		}
+	}
+	
+	/* Disable 상태의 버튼 */
+	.cl-button.secondary-button.cl-disabled{
+		color: @secondary-disable-color;
+		background-color: @secondary-disable-background-color;
+		border-color: @secondary-disable-border-color;
+	}
+}

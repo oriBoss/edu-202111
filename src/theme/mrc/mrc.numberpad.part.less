@@ -1,0 +1,83 @@
+@import "../settings.part.less";
+
+/* 넘버 키패드 컴포넌트 스타일 */
+.cl-mrcnumberpad {	
+	
+	/* 넘버 에디터 영역(입력영역) */
+	&.cl-input-area{		
+		//font-size: 14pt;
+		//padding-left: 12px;
+		
+		/* 텍스트 */
+		.cl-text{			
+			//color: #333333;			
+		}		
+	}
+	
+	/* key 패드 body 영역*/
+	&.cl-keypad-area {
+		background-color: white;
+		background-image: none;
+		border : solid 1px black;
+		
+		/* key 패드 버튼 전체 */
+		.cl-button {
+			padding : 0px;
+			
+			/* 넘버 버튼*/
+			&.number{
+				
+				&.zero{
+					//background-color: red;
+				}
+				&.own{
+					//background-color: #FFF;
+				}
+				&.two{
+					//background-color: #FFF;
+				}
+				&.three{
+					//background-color: #FFF;
+				}
+				&.four{
+					//background-color: #FFF;
+				}
+				&.five{
+					//background-color: #FFF;
+				}
+				&.six{
+					//background-color: #FFF;
+				}
+				&.seven{
+					//background-color: #FFF;
+				}
+				&.eight{
+					//background-color: #FFF;
+				}
+				&.nine{
+					//background-color: #FFF;
+				}
+			}
+			
+			/* 옵션 버튼 전체*/
+			&.option{
+				
+				&.point{
+					//background-color: #FFF;
+				}
+				&.delete{
+					//background-color: #FFF;
+				}
+				&.clear{
+					//background-color: #FFF;
+				}
+				&.enter{
+					//background-color: #FFF;
+				}
+				&.oppo{
+					//background-color: #FFF;
+				}				
+			}
+		}
+	}
+}

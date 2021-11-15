@@ -1,0 +1,526 @@
+@import "../settings.part.less";
+
+.mes-logo-style {
+	margin-top: 14px;
+}
+
+.gnb-style {
+	 background-image: linear-gradient(to right, #005baa, #005baa 39%, #072a89);
+}
+
+
+/* mes logo style */
+.mrc-logo-style {
+	width: 188px;
+	height: 28px;
+	margin-top: 14px;
+	margin-bottom: 8px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+.mrc-lnb-splitter {
+	background-color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 0px;
+	left: 250px;
+	width: 8px;
+	height: 100%;
+	CURSOR: w-resize;
+	.mrc-lnb-splitter-btn {
+		top: 40%;
+		position: absolute;
+		background-color: rgba(255, 255,255, 0);
+		border-width: 0px;
+		width: 8px;
+		word-break: break-word;
+		color: #707070;
+		font-weight: bold;
+		line-height: 5px;
+		CURSOR: w-resize;
+	}
+}
+
+/* accordion menu 1 depth */
+/* 아코디언 */
+.mrc-1depth-menu {
+	border: 1px solid @default-border-color;
+	background-color: #fff;
+	border: 0px solid #ffffff;
+	color: @default-text-color;
+	font: @default-font;
+	
+	/** 아코디언의 각 헤더 */
+	>.cl-accordion-wrap>.cl-accordion-header {
+		background-color: #FFFFFF;
+		color: @default-text-color;
+		padding: 18px 16px 18px 8px;
+		height: 60px;
+		width: 100%;
+		border-width: 0px;
+
+		background-repeat: no-repeat;
+		background-size: 24px;
+		background-position: 8px;
+		
+		// border: solid 1px #B7B8BA;
+
+		/** 아코디언 펼침 버튼 */
+		.cl-accordion-expander {
+			background-image: url("../../modules/COMMON/assets/images/ic-1depth-arr-1.png");
+		}
+		
+		&:hover {
+			border-color: #005baa;
+		}
+
+		/* 아코디언 헤더에 마우스가 호버되었을 떄의 스타일 */
+		&:hover:not(.cl-disabled){			
+			// background-color: #D7D7D9;		
+		}
+
+		&.cl-disabled {
+			cursor: auto;
+			background-color: @disabled-selection-background;
+			border-color: @disabled-selection-background;
+			color: @disabled-selection-foreground;
+		}
+		/* 아코디언 헤더를 클릭했을 때의 스타일 */
+		&.cl-activated {
+			color: #005baa;
+			background-color: #ffffff;
+			
+			/* 클릭된 헤더의 펼침 버튼 아이콘 */
+			.cl-accordion-expander{
+				background-image: url("../../modules/COMMON/assets/images/LNB_btn_open.png");
+			}
+		}
+		
+		.cl-text {
+			padding-left: 32px;
+			font-weight: bold;
+			font-size: 16px;
+		}
+	}
+	
+	.cl-accordion-wrap>.cl-accordion-section {
+		border-width: 0px;
+	}
+	
+	>.cl-accordion-wrap>.cl-accordion-section:not(.cl-accordion-placeholder) {
+		/* 아코디언 컨텐츠 */
+		.cl-accordion-content {
+			border-width: 0px;
+		}
+	}
+
+	.cl-accordion-section+.cl-accordion-header{
+		/* 아코디언 섹션간의 간격 */
+		// margin-top: 4px;
+		&.cl-first{
+			// margin-top: 0px;
+		}
+	}	
+}
+
+.mrc-2depth-menu {
+//	border: 1px solid @default-border-color;
+	background-color: #f5f5f5;
+	border: 0px solid #ffffff;
+	color: @default-text-color;
+	font: @default-font;
+	
+	padding-left: 40px;
+	padding-right: 16px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+//	position: relative;
+	
+	/** 아코디언의 각 헤더 */
+	>.cl-accordion-wrap>.cl-accordion-header {
+		background-color: #f5f5f5;
+		color: @default-text-color;
+		border-width: 0px;
+		font-weight: "bold";
+		text-align: left;
+		border-bottom-width: 1px;
+		border-bottom-color: #e0e0e0;
+		padding-bottom: 9px;
+		margin-top: 6px;
+		margin-bottom: 6px;
+		height: 40px;
+		
+		/** 아코디언 펼침 버튼 */
+		.cl-accordion-expander {
+			background-image: url("../../modules/COMMON/assets/images/ic-2depth-arr-1.png");
+		}
+		
+		&:hover {
+//			border-color: #005baa;
+		}
+
+		/* 아코디언 헤더에 마우스가 호버되었을 떄의 스타일 */
+		&:hover:not(.cl-disabled){			
+			// background-color: #D7D7D9;		
+		}
+
+		&.cl-disabled {
+//			cursor: auto;
+//			background-color: @disabled-selection-background;
+//			border-color: @disabled-selection-background;
+//			color: @disabled-selection-foreground;
+		}
+		/* 아코디언 헤더를 클릭했을 때의 스타일 */
+		&.cl-activated {
+//			background-color: @selection-background;
+//			border-color: @selection-background;
+//			color: @selection-foreground;
+			
+			/* 클릭된 헤더의 펼침 버튼 아이콘 */
+			.cl-accordion-expander{
+				background-image: url("../../modules/COMMON/assets/images/LNB_btn_open_2.png");
+			}
+		}
+		
+		.cl-text {
+//			padding-left: 40px;
+//			font-weight: bold;
+//			font-size: 16px;
+		}
+	}
+
+	>.cl-accordion-wrap>.cl-accordion-section:not(.cl-accordion-placeholder) {
+		padding-top: 8px;
+		
+		/* 아코디언 컨텐츠 */
+		.cl-accordion-content {
+		}
+	}
+
+	>.cl-accordion-wrap>.cl-accordion-section+.cl-accordion-header{
+		/* 아코디언 섹션간의 간격 */
+		// margin-top: 4px;
+		&.cl-first{
+			// margin-top: 0px;
+		}
+	}
+}
+
+.cl-button.mrc-3depth-link {
+	border-width: 0px;
+	height: 32px;
+//	min-width: 194px;
+//	line-height: 20px;
+	font-size: 14px;
+	font-color: #333333;
+	font-weight: "bold";
+	text-align: left;
+	background-color: #f5f5f5;
+	padding-left: 24px;
+	
+//	margin-top: 6px;
+//	margin-bottom: 7px;
+
+	.cl-text {
+		white-space: normal;
+	}
+}
+
+.cl-button.mrc-3depth-link-selected {
+	border-width: 0px;
+//	width: 100%;
+	line-height: 20px;
+	font-size: 14px;
+	font-color: #005baa;
+	font-weight: "bold";
+	text-align: left;
+	background-color: #f5f5f5;
+	padding-left: 24px;
+	
+	.cl-text {
+		white-space: normal;
+	}
+}
+ 
+/* Disabled 상태의 아코디언 */
+.cl-accordion.cl-disabled {
+	/* 선택된 헤더 */
+	.cl-accordion-header {
+		&.cl-activated{
+			background-color: @disabled-selection-background;
+			border-color: @disabled-selection-background;
+			color: @disabled-selection-foreground;
+		}
+		&:hover{
+			// background-color: #F2F4F5;
+		}
+	}
+
+	.cl-accordion-section:not(.cl-accordion-placeholder) {
+		/* 선택된 바디 */
+		.cl-accordion-content {
+			border-color: @disabled-selection-background;
+		}
+	}
+}
+
+ /* 탭 폴더 - disabled */
+//.cl-tabfolder.cl-disabled {
+//}
+
+/* 탭 폴더 */
+.mrc-lnb-tab {
+	color: @default-text-color;
+	font: @default-font;
+	
+	/* 헤더 */
+	.cl-tabfolder-header {
+	
+		
+		/* 이전으로 스크롤 버튼 */
+		.cl-tabfolder-prev {
+			border: solid 1px @default-border-color;
+			// background-image: url("icons/prev.png");
+
+			/* 이전으로 스크롤 버튼 - disabled */
+			&.cl-disabled {
+				// background-image: url("icons/prev-selected.png");
+			}
+		}
+
+		/* 다음으로 스크롤 버튼 */
+		.cl-tabfolder-next {
+			border: solid 1px @default-border-color;
+			// background-image: url("icons/next.png");
+
+			/* 다음으로 스크롤 버튼 - disabled */
+			&.cl-disabled {
+				// background-image: url("icons/next-selected.png");
+			}
+		}
+	
+		/* 탭 헤더 아이템 */
+		.cl-tabfolder-item {
+//			background-color: white;
+//			border: solid 1px @default-border-color;
+			background-color: #e0e0e0;
+			border-width: 0px;
+			height: 40px;
+			color: #cccccc;
+			padding-left: 35px;
+			
+			/* 탭 아이템 체크 박스 */
+			.cl-checkbox {
+			
+			}
+	
+			/* 탭 헤더 아이템 닫기 버튼 */
+			.cl-tabfolder-button {
+				// background-image: url(icons/close.png);
+				background-image: url("../../modules/COMMON/assets/images/tab_X.png");
+			}
+
+			/* 탭 헤더 아이템 - 선택됨 */
+			&.cl-selected{
+				background-color: #ffffff;
+				color: #333333;
+				border-color: #1369c5;
+				border-top-width: 3px;
+				border-right-width: 0px;
+				border-left-width: 0px;
+				border-bottom-width: 0px;
+				height: 40px;
+				
+				/* 탭 헤더 아이템 닫기 버튼 - 선택 됨 */
+				.cl-tabfolder-button {
+					background-image: url("../../modules/COMMON/assets/images/tab_X.png");
+				}
+			}
+	
+			/* 탭 헤더 아이템 - 호버 */
+			&:not(.cl-selected):hover{
+				background-color: @hover-background;
+			}
+
+			/* 비활성 탭 아이템 */
+			&.cl-disabled {
+			
+			}
+		}
+		
+	}
+	
+	/* 탭폴더 바디 */
+	.cl-tabfolder-body {
+		color: @default-text-color;
+		border: solid 0px @default-border-color;
+	}
+}
+
+/* 탭 폴더 */
+.cl-tabfolder.mrc-main-tab {
+
+	/* 헤더 */
+	.cl-tabfolder-header {
+		background-color: #eaeaea;
+		height: 40px;
+		
+		/* 탭 헤더 아이템 */
+		.cl-tabfolder-item.cl-selected {
+			background-color: #ffffff;
+			width: 210px;
+			height: 36px;
+			color: #333333;
+			border-width: 0px;
+			border-radius: 10px 10px 0px 0px;
+			margin-top: 4px;
+			
+			/* 탭 헤더 아이템 닫기 버튼 */
+			.cl-tabfolder-button {
+				// background-image: url(icons/close.png);
+				background-image: url("../../modules/COMMON/assets/images/tab_X.png");
+			}
+		}
+		.cl-tabfolder-item {
+			background-color: #eaeaea;
+			width: 210px;
+			height: 36px;
+			color: #333333;
+			border-width: 0px;
+			border-radius: 10px 10px 0px 0px;
+			margin-top: 4px;
+			border-right-style: "solid";
+			border-right-color: #bbbbbb;
+			border-right-width: 1px;
+			
+			div {
+				width: 175px;
+			}
+			
+			/* 탭 헤더 아이템 닫기 버튼 */
+			.cl-tabfolder-button {
+				// background-image: url(icons/close.png);
+				background-image: url("../../modules/COMMON/assets/images/tab_X.png");
+			}
+		}
+	}
+}
+
+.mrc-gnb-cmb {
+	background-color: rgba(255,255,255, 0);
+	border-width: 0px;
+	width: 260px;
+	height: 32px;
+	margin-top: 10px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #e5e5e5;
+	border-radius: 0px;
+}
+
+.cl-layout-content {
+	.mes-extand-tab.cl-button {
+		margin-top: 16px;
+		margin-bottom: 16px;
+		margin-left: 4px;
+		margin-right: 10px;
+	}
+	.mes-lnb-searchinput.cl-searchinput {
+		margin-top: 16px;
+		margin-bottom: 16px;
+		
+		.cl-placeholder {
+			color: #a0a0a0!important
+		}
+	}	
+}
+
+.LNB-favorites-deactive-btn {
+	border-width: 0px;
+}
+
+.LNB-favorites-active-btn {
+	border-width: 0px;
+}
+
+.LNB-search-result-link {
+	border-width: 0px;
+	font-size: 14px;
+	text-align: left;
+	color: #333333;
+	padding: 0px;
+}
+
+.LNB-search-result-path {
+	color: #999999;
+	font-size: 12px;
+}
+
+.LNB-search-result-grp {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-right: 22px;
+}
+
+.mrc-2depth-content-grp {
+	.cl-layout {
+		.cl-layout-content {
+			.cl-layout-wrap {
+				height: 32px!important
+			}
+		}
+	}
+	
+}
+
+/* LNB Slide Animation */
+.mes-lnb-slidein {
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -moz-animation-name: slidein;
+  -webkit-animation-name: slidein;
+  animation-name: slidein;
+  -moz-animation-iteration-count: 3;
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-moz-keyframes slidein {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+   margin-left:0%;
+   width:100%;
+ }
+}
+
+@keyframes slidein {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+   margin-left:0%;
+   width:100%;
+  }
+}

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:settings="kr.co.tomatosystem.exbuilder.model.ui.settings">
+  <settings:CustomActionSet type="Accordion">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="Audio">
+    <doubleClickAction>
+      <actionData key="event-type" value="before-value-change"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="before-value-change"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="Button">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="click"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="Calendar">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction behavior="OPEN_ASSIST_VIEW">
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="CheckBox">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="CheckBoxGroup">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction behavior="OPEN_ASSIST_VIEW">
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="ComboBox">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction behavior="OPEN_ASSIST_VIEW">
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="DateInput">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="EmbeddedApp">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="click"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="EmbeddedPage">
+    <doubleClickAction>
+      <actionData key="event-type" value="load"/>
+    </doubleClickAction>
+    <returnKeyAction>
+      <actionData key="event-type" value="load"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="load"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="FileInput">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="FileUpload">
+    <doubleClickAction>
+      <actionData key="event-type" value="openfile-dblclick"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="openfile-dblclick"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="Grid">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="Group">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="click"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="HTMLObject">
+    <doubleClickAction>
+      <actionData key="event-type" value="load"/>
+    </doubleClickAction>
+    <returnKeyAction>
+      <actionData key="event-type" value="load"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="load"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="HTMLSnippet">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="Image">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction behavior="OPEN_ASSIST_VIEW">
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="InputBox">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="LinkedComboBox">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction behavior="OPEN_ASSIST_VIEW">
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="LinkedListBox">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction behavior="OPEN_ASSIST_VIEW">
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="ListBox">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction behavior="OPEN_ASSIST_VIEW">
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="MaskEditor">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="MDIFolder">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="Menu">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction behavior="OPEN_ASSIST_VIEW">
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="NavigationBar">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction behavior="OPEN_ASSIST_VIEW">
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="Notifier">
+    <doubleClickAction>
+      <actionData key="event-type" value="item-click"/>
+    </doubleClickAction>
+    <returnKeyAction>
+      <actionData key="event-type" value="item-click"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="item-click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="NumberEditor">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="Output">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="PageIndexer">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="Progress">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="RadioButton">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction behavior="OPEN_ASSIST_VIEW">
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="SearchInput">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="Slider">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="TabFolder">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="TextArea">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="Tree">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="selection-change"/>
+    </returnKeyAction>
+    <spaceKeyAction behavior="OPEN_ASSIST_VIEW">
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="TreeCell">
+    <doubleClickAction>
+      <actionData key="event-type" value="click"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="click"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="UIControlShell">
+    <doubleClickAction>
+      <actionData key="event-type" value="init"/>
+    </doubleClickAction>
+    <returnKeyAction>
+      <actionData key="event-type" value="init"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="init"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="UserDefinedControl">
+    <doubleClickAction behavior="NONE">
+      <actionData key="event-type" value="dispose"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="NONE">
+      <actionData key="event-type" value="dispose"/>
+    </returnKeyAction>
+    <spaceKeyAction behavior="NONE">
+      <actionData key="event-type" value="dispose"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+  <settings:CustomActionSet type="Video">
+    <doubleClickAction>
+      <actionData key="event-type" value="before-value-change"/>
+    </doubleClickAction>
+    <returnKeyAction behavior="CREATE_OR_REVEAL_HANDLER">
+      <actionData key="event-type" value="value-change"/>
+    </returnKeyAction>
+    <spaceKeyAction>
+      <actionData key="event-type" value="before-value-change"/>
+    </spaceKeyAction>
+  </settings:CustomActionSet>
+</xmi:XMI>

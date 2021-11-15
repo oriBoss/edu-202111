@@ -1,0 +1,1812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:settings="kr.co.tomatosystem.exbuilder.model.ui.settings">
+  <settings:CannedTemplate uuid="d5761a5a-2bf3-402f-b040-aae56f4ed2d2" name="[일반] 조회 영역 컨트롤 템플릿 (Search Control)" preferredWidth="300" preferredHeight="32" revision="3">
+    <control xsi:type="cl:Group">
+      <metaData>
+        <properties key="template-uuid" value="d5761a5a-2bf3-402f-b040-aae56f4ed2d2"/>
+        <properties key="template-rev" value="2"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Output" value="Output">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      </controls>
+      <controls xsi:type="cl:InputBox">
+        <layoutData xsi:type="cl:FormData" verticalAlign="FILL" rowIndex="0" colIndex="1"/>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+        <rows length="1" unit="FRACTION"/>
+        <columns length="120" unit="PIXEL"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="3e037c2d-fec7-4915-8d3c-85690bdb79a5" name="[일반] 조회 영역 1행 템플릿 (Search 1Row)" preferredWidth="1280" preferredHeight="72" revision="9">
+    <control xsi:type="cl:Group" class="search-box">
+      <metaData>
+        <properties key="template-uuid" value="3e037c2d-fec7-4915-8d3c-85690bdb79a5"/>
+        <properties key="template-rev" value="8"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplNormalSearch1Row"/>
+      <layoutData xsi:type="cl:FormData" height="72" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <userAttributes key="templateId" value="tplNormalSearchButton"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+        <controls xsi:type="cl:Button" value="Reset">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:Button" class="secondary" value="Search">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="2"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="8px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="60px" verticalSpacing="12px" topMargin="20px" rightMargin="20px" bottomMargin="20px" leftMargin="20px">
+        <rows length="32" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="5de0fe52-2923-4f6b-b4ef-1142b8303426" name="[일반] 조회 영역 2행 템플릿 (Search 2Row)" preferredWidth="1280" preferredHeight="116" revision="11">
+    <control xsi:type="cl:Group" class="search-box">
+      <metaData>
+        <properties key="template-uuid" value="5de0fe52-2923-4f6b-b4ef-1142b8303426"/>
+        <properties key="template-rev" value="10"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplNormalSearch2Row"/>
+      <layoutData xsi:type="cl:FormData" height="116" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="1"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <userAttributes key="templateId" value="tplNormalSearchButton"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="2"/>
+        <controls xsi:type="cl:Button" value="Reset">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:Button" class="secondary" value="Search">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="2"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="8px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="60px" verticalSpacing="12px" topMargin="20px" rightMargin="20px" bottomMargin="20px" leftMargin="20px">
+        <rows length="32" autoSizing="true"/>
+        <rows length="32" autoSizing="true"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="06f5e8c9-1c4f-4669-a334-31df25848128" name="[일반] 조회 영역 조회 버튼 템플릿 (Search Button)" preferredWidth="300" preferredHeight="32" revision="3">
+    <control xsi:type="cl:Group">
+      <metaData>
+        <properties key="template-uuid" value="06f5e8c9-1c4f-4669-a334-31df25848128"/>
+        <properties key="template-rev" value="2"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplNormalSearchButton"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Button" value="Reset">
+        <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+      </controls>
+      <controls xsi:type="cl:Button" class="secondary" value="Search">
+        <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="2"/>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="8px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+        <rows length="1" unit="FRACTION" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="824fa8ca-f3e3-42a6-9d7c-bd92f2dbdf98" name="[일반] 조회 영역 3행 템플릿 (Search 3Row)" preferredWidth="1280" preferredHeight="160" revision="6">
+    <control xsi:type="cl:Group" class="search-box">
+      <metaData>
+        <properties key="template-uuid" value="824fa8ca-f3e3-42a6-9d7c-bd92f2dbdf98"/>
+        <properties key="template-rev" value="5"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplNormalSearch3Row"/>
+      <layoutData xsi:type="cl:FormData" height="116" rowIndex="0" colIndex="0" rowSpan="1" colSpan="1"/>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="1"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="2"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="2" colIndex="0"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="2" colIndex="1"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <userAttributes key="templateId" value="tplNormalSearchButton"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="2" colIndex="2"/>
+        <controls xsi:type="cl:Button" value="Reset">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:Button" class="secondary" value="Search">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="2"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="8px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="60px" verticalSpacing="12px" topMargin="20px" rightMargin="20px" bottomMargin="20px" leftMargin="20px">
+        <rows length="32" autoSizing="true"/>
+        <rows length="32" autoSizing="true"/>
+        <rows length="32" autoSizing="true"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="2eb88f9f-c645-42c0-bc37-6f504486300c" name="[일반] 목록 총 개수 표시 + 페이지크기 콤보박스 템플릿" preferredWidth="200" preferredHeight="32" revision="4">
+    <control xsi:type="cl:Group">
+      <metaData>
+        <properties key="template-uuid" value="2eb88f9f-c645-42c0-bc37-6f504486300c"/>
+        <properties key="template-rev" value="3"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplNormalTotalCount"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Output" style="font-size:12px;" value="Total">
+        <layoutData xsi:type="cl:FormData" verticalAlign="FILL" height="18" rowIndex="0" colIndex="0" rowSpan="1" colSpan="1"/>
+      </controls>
+      <controls xsi:type="cl:Output" style="font-weight:bold; font-size:12px;">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+      </controls>
+      <controls xsi:type="cl:Output" style="font-size:9pt; text-align:center;" value="|">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+      </controls>
+      <controls xsi:type="cl:ComboBox" style="font-size:9pt;" value="20" preventInput="true">
+        <layoutData xsi:type="cl:FormData" verticalAlign="FILL" height="24" rowIndex="0" colIndex="3"/>
+        <items value="20">
+          <binders xsi:type="cl:ExpressionBind" property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+        </items>
+        <items label="50개씩 보기" value="50">
+          <binders xsi:type="cl:ExpressionBind" property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+        </items>
+        <items label="100개씩 보기" value="100">
+          <binders xsi:type="cl:ExpressionBind" property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+        </items>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="4px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+        <rows length="1" unit="FRACTION" shadeType="NONE" shadeColor="transparent"/>
+        <columns length="25" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <columns length="10" unit="PIXEL" autoSizing="true" minLength="0"/>
+        <columns length="16" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <columns length="100" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="f12dd661-efc0-47cf-b60d-7767e11f0d0c" name="[일반] 그리드 템플릿 (Grid)" preferredWidth="1280" preferredHeight="768" revision="11">
+    <control xsi:type="cl:Group">
+      <metaData>
+        <properties key="template-uuid" value="f12dd661-efc0-47cf-b60d-7767e11f0d0c"/>
+        <properties key="template-rev" value="10"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplNormalGrid"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Output" class="sub-title" value="목록">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <layoutData xsi:type="cl:FormData" height="24" rowIndex="1" colIndex="0"/>
+        <controls xsi:type="cl:Group">
+          <metaData>
+            <properties key="template-uuid" value="2eb88f9f-c645-42c0-bc37-6f504486300c"/>
+            <properties key="template-rev" value="4"/>
+          </metaData>
+          <userAttributes key="templateId" value="tplNormalTotalCount"/>
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+          <controls xsi:type="cl:Output" value="Total">
+            <layoutData xsi:type="cl:FormData" verticalAlign="FILL" height="18" rowIndex="0" colIndex="0" rowSpan="1" colSpan="1"/>
+          </controls>
+          <controls xsi:type="cl:Output" style="font-weight:bold;">
+            <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+          </controls>
+          <controls xsi:type="cl:Output" class="mrc-vertical-bar">
+            <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+          </controls>
+          <controls xsi:type="cl:ComboBox" class="page-size" value="20" preventInput="true">
+            <layoutData xsi:type="cl:FormData" verticalAlign="FILL" height="24" rowIndex="0" colIndex="3"/>
+            <items value="20">
+              <binders xsi:type="cl:ExpressionBind" property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+            </items>
+            <items label="50개씩 보기" value="50">
+              <binders xsi:type="cl:ExpressionBind" property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+            </items>
+            <items label="100개씩 보기" value="100">
+              <binders xsi:type="cl:ExpressionBind" property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+            </items>
+          </controls>
+          <layout xsi:type="cl:FormLayout" horizontalSpacing="4px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+            <rows length="1" unit="FRACTION" shadeType="NONE" shadeColor="transparent"/>
+            <columns length="25" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+            <columns length="10" unit="PIXEL" autoSizing="true" minLength="0"/>
+            <columns length="16" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+            <columns length="100" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          </layout>
+        </controls>
+        <controls xsi:type="cl:Button" class="inner" value="Delete">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+        </controls>
+        <controls xsi:type="cl:Button" class="inner" value="Excel">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="5"/>
+        </controls>
+        <controls xsi:type="cl:Button" class="inner-primary" value="New">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="3"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="4px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION" shadeType="NONE" shadeColor="transparent"/>
+          <columns length="150" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="8" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <layoutData xsi:type="cl:FormData" rowIndex="2" colIndex="0" rowSpan="1" colSpan="1"/>
+        <controls xsi:type="cl:Grid" autoFit="3, 4, 5, 6, 7, 8, 9, 10, 11" noDataMessage="No data to display." clickMode="edit">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+          <gridColumns width="40px"/>
+          <gridColumns width="60px"/>
+          <gridColumns width="60px"/>
+          <gridColumns/>
+          <gridColumns/>
+          <gridColumns/>
+          <gridColumns/>
+          <gridColumns/>
+          <gridColumns/>
+          <gridColumns/>
+          <gridColumns/>
+          <gridColumns/>
+          <gridHeader>
+            <gridRows height="30px"/>
+            <gridCells rowIndex="0" colIndex="0" sortable="false" filterable="false" columnType="checkbox"/>
+            <gridCells rowIndex="0" colIndex="1" sortable="false" filterable="false" text="No."/>
+            <gridCells rowIndex="0" colIndex="2" sortable="false" filterable="false" text="Detail"/>
+            <gridCells rowIndex="0" colIndex="3" sortable="false" filterable="false" text="컬럼2"/>
+            <gridCells rowIndex="0" colIndex="4" sortable="false" filterable="false" text="컬럼3"/>
+            <gridCells rowIndex="0" colIndex="5" sortable="false" filterable="false" text="컬럼4"/>
+            <gridCells rowIndex="0" colIndex="6" sortable="false" filterable="false" text="컬럼5"/>
+            <gridCells rowIndex="0" colIndex="7" sortable="false" filterable="false" text="컬럼6"/>
+            <gridCells rowIndex="0" colIndex="8" sortable="false" filterable="false" text="컬럼7"/>
+            <gridCells rowIndex="0" colIndex="9" sortable="false" filterable="false" text="컬럼8"/>
+            <gridCells rowIndex="0" colIndex="10" sortable="false" filterable="false" text="컬럼9"/>
+            <gridCells rowIndex="0" colIndex="11" sortable="false" filterable="false" text="컬럼10"/>
+          </gridHeader>
+          <gridDetail>
+            <gridRows height="30px"/>
+            <gridCells rowIndex="0" colIndex="0" columnType="checkbox"/>
+            <gridCells rowIndex="0" colIndex="1" columnType="normal">
+              <control xsi:type="cl:Output"/>
+            </gridCells>
+            <gridCells rowIndex="0" colIndex="2">
+              <control xsi:type="cl:Button" class="ic-detail"/>
+            </gridCells>
+            <gridCells rowIndex="0" colIndex="3"/>
+            <gridCells rowIndex="0" colIndex="4"/>
+            <gridCells rowIndex="0" colIndex="5"/>
+            <gridCells rowIndex="0" colIndex="6"/>
+            <gridCells rowIndex="0" colIndex="7"/>
+            <gridCells rowIndex="0" colIndex="8"/>
+            <gridCells rowIndex="0" colIndex="9"/>
+            <gridCells rowIndex="0" colIndex="10"/>
+            <gridCells rowIndex="0" colIndex="11"/>
+          </gridDetail>
+        </controls>
+        <controls xsi:type="cl:Group">
+          <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+          <controls xsi:type="cl:PageIndexer" style="padding-top:0px; padding-left:0px; padding-bottom:0px; padding-right:0px;" pageIndexWidth="25px">
+            <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+          </controls>
+          <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+            <rows length="1" unit="FRACTION"/>
+            <columns length="1" unit="FRACTION"/>
+            <columns length="300" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+            <columns length="1" unit="FRACTION"/>
+          </layout>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="16px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <rows length="30" unit="PIXEL" autoSizing="true" hidden="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" scrollable="false" horizontalSpacing="0px" verticalSpacing="8px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+        <rows length="30" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <rows length="24" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <rows length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="2b6060bd-8de0-40f8-b287-e891d69c811d" name="[일반] 뷰, 키인 템플릿 (View, Key-In)" preferredWidth="1024" preferredHeight="100" revision="6">
+    <control xsi:type="cl:Group">
+      <metaData>
+        <properties key="template-uuid" value="2b6060bd-8de0-40f8-b287-e891d69c811d"/>
+        <properties key="template-rev" value="5"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplNormalViewKeyIn"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0" rowSpan="1" colSpan="1"/>
+      <controls xsi:type="cl:Output" class="sub-title" value="View, Key-In Title">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      </controls>
+      <controls xsi:type="cl:Group" class="mrc-layout-view-key-in">
+        <metaData>
+          <properties key="template-uuid" value="2b6060bd-8de0-40f8-b287-e891d69c811d"/>
+          <properties key="template-rev" value="3"/>
+        </metaData>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+        <controls xsi:type="cl:Output" class="label" value="Key-in">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="24" rowIndex="0" colIndex="4"/>
+        </controls>
+        <controls xsi:type="cl:Output" class="label" value="Readonly">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="7"/>
+        </controls>
+        <controls xsi:type="cl:Output" value="라벨">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="24" rowIndex="0" colIndex="10"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px" horizontalSeparatorWidth="1" horizontalSeparatorType="BY_CLASS" verticalSeparatorWidth="0" verticalSeparatorType="NONE">
+          <rows length="36" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="20" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="120" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="20" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="12"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="12"/>
+          <columns length="20" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="120" shadeType="BY_CLASS"/>
+          <columns length="20" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="12"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="12"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="8px">
+        <rows length="27" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <rows length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="c6cfe3c8-561a-43b5-842b-96a837308a68" name="[일반] 그리드 맵핑 템플릿 (Grid Mapping)" preferredWidth="800" preferredHeight="600" revision="9">
+    <control xsi:type="cl:Group">
+      <metaData>
+        <properties key="template-uuid" value="c6cfe3c8-561a-43b5-842b-96a837308a68"/>
+        <properties key="template-rev" value="8"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplNormalGridMapping"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Group">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        <controls xsi:type="cl:Grid" showDeletedRow="false" autoFit="1, 2" noDataMessage="No data to display.">
+          <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+          <gridColumns width="40px"/>
+          <gridColumns/>
+          <gridColumns/>
+          <gridHeader>
+            <gridRows height="30px"/>
+            <gridCells rowIndex="0" colIndex="0" columnType="checkbox"/>
+            <gridCells rowIndex="0" colIndex="1" text="컬럼 1"/>
+            <gridCells rowIndex="0" colIndex="2" text="컬럼 2"/>
+          </gridHeader>
+          <gridDetail>
+            <gridRows height="30px"/>
+            <gridCells rowIndex="0" colIndex="0" columnType="checkbox"/>
+            <gridCells rowIndex="0" colIndex="1"/>
+            <gridCells rowIndex="0" colIndex="2"/>
+          </gridDetail>
+        </controls>
+        <controls xsi:type="cl:Group">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+          <controls xsi:type="cl:InputBox" class="mrc no-border-radius inner" showClearButton="true" placeholder="컬럼 1">
+            <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+          </controls>
+          <controls xsi:type="cl:InputBox" class="mrc no-border-radius inner" showClearButton="true" placeholder="컬럼 2">
+            <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+          </controls>
+          <controls xsi:type="cl:Button" class="ic-clear">
+            <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+          </controls>
+          <controls xsi:type="cl:Button" class="ic-search">
+            <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="3"/>
+          </controls>
+          <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+            <rows length="1" unit="FRACTION"/>
+            <columns length="1" unit="FRACTION" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+            <columns length="1" unit="FRACTION"/>
+            <columns length="24" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+            <columns length="24" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          </layout>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="8px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="24" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <rows length="1" unit="FRACTION"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+        <controls xsi:type="cl:Grid" showDeletedRow="false" autoFit="1, 2" noDataMessage="No data to display.">
+          <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+          <gridColumns width="40px"/>
+          <gridColumns/>
+          <gridColumns/>
+          <gridHeader>
+            <gridRows height="30px"/>
+            <gridCells rowIndex="0" colIndex="0" columnType="checkbox"/>
+            <gridCells rowIndex="0" colIndex="1" text="컬럼 1"/>
+            <gridCells rowIndex="0" colIndex="2" text="컬럼 2"/>
+          </gridHeader>
+          <gridDetail>
+            <gridRows height="30px"/>
+            <gridCells rowIndex="0" colIndex="0" columnType="checkbox"/>
+            <gridCells rowIndex="0" colIndex="1"/>
+            <gridCells rowIndex="0" colIndex="2"/>
+          </gridDetail>
+        </controls>
+        <controls xsi:type="cl:Group">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+          <controls xsi:type="cl:Button" class="ic-slide-top">
+            <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+          </controls>
+          <controls xsi:type="cl:Button" class="ic-slide-up">
+            <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+          </controls>
+          <controls xsi:type="cl:Button" class="ic-slide-down">
+            <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+          </controls>
+          <controls xsi:type="cl:Button" class="ic-slide-bottom">
+            <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="3"/>
+          </controls>
+          <layout xsi:type="cl:FormLayout" horizontalSpacing="4px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+            <rows length="1" unit="FRACTION"/>
+            <columns length="24" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+            <columns length="24" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+            <columns length="24" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+            <columns length="24" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+            <columns length="1" unit="FRACTION" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          </layout>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="8px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="24" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <rows length="1" unit="FRACTION"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+        <controls xsi:type="cl:Button" class="ic-mapping-right">
+          <layoutData xsi:type="cl:FormData" horizontalAlign="CENTER" width="32" rowIndex="1" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:Button" class="ic-mapping-left">
+          <layoutData xsi:type="cl:FormData" horizontalAlign="CENTER" verticalAlign="FILL" width="32" rowIndex="2" colIndex="0"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="8px" verticalSpacing="8px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <rows length="32" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <rows length="32" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <rows length="1" unit="FRACTION"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+        <rows length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="80" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="452cc163-cb94-40d2-b037-5ee000a048ef" name="[일반] 팝업 뷰, 키인 템플릿 (View, Key-In)" preferredWidth="1024" preferredHeight="100" revision="7">
+    <control xsi:type="cl:Group">
+      <metaData>
+        <properties key="template-uuid" value="452cc163-cb94-40d2-b037-5ee000a048ef"/>
+        <properties key="template-rev" value="6"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplNormalPopupViewKeyIn"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0" rowSpan="2" colSpan="1"/>
+      <controls xsi:type="cl:Output" class="sub-title" value="View, Key-In Title">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      </controls>
+      <controls xsi:type="cl:Group" class="mrc-layout-view-key-in">
+        <metaData>
+          <properties key="template-uuid" value="452cc163-cb94-40d2-b037-5ee000a048ef"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+        <controls xsi:type="cl:Output" value="Key-in">
+          <layoutData xsi:type="cl:FormData" topSpacing="0" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="24" rowIndex="0" colIndex="4"/>
+        </controls>
+        <controls xsi:type="cl:Output" value="Readonly">
+          <layoutData xsi:type="cl:FormData" topSpacing="0" rowIndex="0" colIndex="7"/>
+        </controls>
+        <controls xsi:type="cl:Output" value="라벨">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="24" rowIndex="0" colIndex="10"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px" horizontalSeparatorWidth="1" horizontalSeparatorType="BY_CLASS" verticalSeparatorWidth="0" verticalSeparatorType="NONE">
+          <rows length="36" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="120" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="12"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="12"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="120" shadeType="BY_CLASS"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="12"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="12"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="8px">
+        <rows length="27" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <rows length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="df55d789-4400-4fdf-9b0b-2edee80ff15b" name="[일반] 팝업 조회 영역 1행 템플릿 (Search 1Row)" preferredWidth="1280" preferredHeight="72" revision="4">
+    <control xsi:type="cl:Group" class="search-box">
+      <metaData>
+        <properties key="template-uuid" value="df55d789-4400-4fdf-9b0b-2edee80ff15b"/>
+        <properties key="template-rev" value="3"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplNormalPopupSearch1Row"/>
+      <layoutData xsi:type="cl:FormData" height="72" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <userAttributes key="templateId" value="tplNormalSearchButton"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+        <controls xsi:type="cl:Button" value="Reset">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:Button" class="secondary" value="Search">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="2"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="8px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="20px" verticalSpacing="12px" topMargin="20px" rightMargin="20px" bottomMargin="20px" leftMargin="20px">
+        <rows length="32" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="d50f5f6f-f7cc-4f15-add3-91976427d991" name="[일반] 팝업 조회 영역 2행 템플릿 (Search 2Row)" preferredWidth="1280" preferredHeight="116" revision="3">
+    <control xsi:type="cl:Group" class="search-box">
+      <metaData>
+        <properties key="template-uuid" value="d50f5f6f-f7cc-4f15-add3-91976427d991"/>
+        <properties key="template-rev" value="2"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplNormalPopupSearch2Row"/>
+      <layoutData xsi:type="cl:FormData" height="116" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="1"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <userAttributes key="templateId" value="tplNormalSearchButton"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="2"/>
+        <controls xsi:type="cl:Button" value="Reset">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:Button" class="secondary" value="Search">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="2"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="8px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="20px" verticalSpacing="12px" topMargin="20px" rightMargin="20px" bottomMargin="20px" leftMargin="20px">
+        <rows length="32" autoSizing="true"/>
+        <rows length="32" autoSizing="true"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="36781ff0-c227-4818-b42a-e8192979f655" name="[일반] 팝업 조회 영역 3행 템플릿 (Search 3Row)" preferredWidth="1280" preferredHeight="160" revision="3">
+    <control xsi:type="cl:Group" class="search-box">
+      <metaData>
+        <properties key="template-uuid" value="36781ff0-c227-4818-b42a-e8192979f655"/>
+        <properties key="template-rev" value="2"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplNormalPopupSearch3Row"/>
+      <layoutData xsi:type="cl:FormData" height="116" rowIndex="0" colIndex="0" rowSpan="1" colSpan="1"/>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="1"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="2"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="2" colIndex="0"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplNormalSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="2" colIndex="1"/>
+        <controls xsi:type="cl:Output" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="120" unit="PIXEL"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <userAttributes key="templateId" value="tplNormalSearchButton"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="2" colIndex="2"/>
+        <controls xsi:type="cl:Button" value="Reset">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:Button" class="secondary" value="Search">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="2"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="8px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="80" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="20px" verticalSpacing="12px" topMargin="20px" rightMargin="20px" bottomMargin="20px" leftMargin="20px">
+        <rows length="32" autoSizing="true"/>
+        <rows length="32" autoSizing="true"/>
+        <rows length="32" autoSizing="true"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="2cecf809-0080-4830-9947-f2661b7ff272" name="[터치] 트랜잭션 버튼 영역 템플릿 (Tran Button)" preferredWidth="1024" preferredHeight="64">
+    <control xsi:type="cl:Group">
+      <metaData>
+        <properties key="template-uuid" value="f62f5d30-aa58-4442-a133-2725e529cd17"/>
+        <properties key="template-rev" value="1"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplTouchTranButton"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Button" value="Option">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      </controls>
+      <controls xsi:type="cl:Button" value="Close">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+      </controls>
+      <controls xsi:type="cl:Button" class="primary" value="Tran">
+        <userAttributes key="templateId" value="tplOuiTranButton"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="3"/>
+      </controls>
+      <layout xsi:type="cl:FormLayout" scrollable="false" horizontalSpacing="20px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+        <rows length="64" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <columns length="140" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <columns length="1" unit="FRACTION" shadeType="NONE" shadeColor="transparent"/>
+        <columns length="140" unit="PIXEL" autoSizing="true" minLength="0"/>
+        <columns length="140" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="3213aa75-af99-409f-b63a-1d6df6600d46" name="[터치] 조회 영역 컨트롤 템플릿 (Search Control)" preferredWidth="300" preferredHeight="32">
+    <control xsi:type="cl:Group">
+      <metaData>
+        <properties key="template-uuid" value="d5761a5a-2bf3-402f-b040-aae56f4ed2d2"/>
+        <properties key="template-rev" value="3"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplTouchSearchComponent"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Output" value="Output">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      </controls>
+      <controls xsi:type="cl:InputBox">
+        <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="1"/>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+        <rows length="1" unit="FRACTION"/>
+        <columns length="190" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="1d354847-b029-4810-a097-9b7e204f9ad9" name="[터치] 조회 영역 1행 템플릿 (Search 1Row)" preferredWidth="1024" preferredHeight="80" revision="3">
+    <control xsi:type="cl:Group" class="search-box">
+      <metaData>
+        <properties key="template-uuid" value="1d354847-b029-4810-a097-9b7e204f9ad9"/>
+        <properties key="template-rev" value="2"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplTouchSearch1Row"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="3213aa75-af99-409f-b63a-1d6df6600d46"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplTouchSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        <controls xsi:type="cl:Output" class="label" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="190" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+        <controls xsi:type="cl:Button" class="search-area" value="Reset">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:Button" class="search-area secondary" value="Search">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="2"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="16px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="100" autoSizing="true"/>
+          <columns length="100" autoSizing="true"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="12px" topMargin="20px" rightMargin="20px" bottomMargin="20px" leftMargin="20px">
+        <rows length="40" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="90"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="38873c0e-19d6-451a-ae5f-e21ac6fb02bd" name="[터치] 조회 영역 2행 템플릿 (Search 2Row)" preferredWidth="1024" preferredHeight="140" revision="3">
+    <control xsi:type="cl:Group" class="search-box">
+      <metaData>
+        <properties key="template-uuid" value="38873c0e-19d6-451a-ae5f-e21ac6fb02bd"/>
+        <properties key="template-rev" value="2"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplTouchSearch2Row"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="3213aa75-af99-409f-b63a-1d6df6600d46"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplTouchSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        <controls xsi:type="cl:Output" class="label" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="190" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="3213aa75-af99-409f-b63a-1d6df6600d46"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplTouchSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+        <controls xsi:type="cl:Output" class="label" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="190" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="3213aa75-af99-409f-b63a-1d6df6600d46"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplTouchSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+        <controls xsi:type="cl:Output" class="label" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="190" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="2"/>
+        <controls xsi:type="cl:Button" class="search-area" value="Reset">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:Button" class="search-area secondary" value="Search">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="2"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="16px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="100" autoSizing="true"/>
+          <columns length="100" autoSizing="true"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="12px" topMargin="20px" rightMargin="20px" bottomMargin="20px" leftMargin="20px">
+        <rows length="40" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <rows length="40" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="90"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="30dccebf-fd29-4ceb-b7d0-9da4cf537ad6" name="[터치] 그리드 템플릿 (Grid)" preferredWidth="1024" preferredHeight="768" revision="4">
+    <control xsi:type="cl:Group">
+      <metaData>
+        <properties key="template-uuid" value="30dccebf-fd29-4ceb-b7d0-9da4cf537ad6"/>
+        <properties key="template-rev" value="3"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplTouchGrid"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="30dccebf-fd29-4ceb-b7d0-9da4cf537ad6"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0" rowSpan="1" colSpan="1"/>
+        <controls xsi:type="cl:Output" class="sub-title" value="List">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:Output" class="grid-total-text" value="Total">
+          <layoutData xsi:type="cl:FormData" verticalAlign="BOTTOM" height="26" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:Output" class="grid-total-count" value="120">
+          <layoutData xsi:type="cl:FormData" verticalAlign="BOTTOM" height="26" rowIndex="0" colIndex="2"/>
+        </controls>
+        <controls xsi:type="cl:Button" class="inner" value="excel">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="4"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" scrollable="false" horizontalSpacing="10px" verticalSpacing="10px">
+          <rows length="1" unit="FRACTION" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="60" autoSizing="true" shadeType="NONE" shadeColor="transparent"/>
+          <columns length="25" autoSizing="true"/>
+          <columns length="50" autoSizing="true"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="64" autoSizing="true"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Grid" readOnly="true" autoFit="2, 3, 4, 5, 6" noDataMessage="No data to display." resizableColumns="2, 3, 4, 5, 6" columnMovable="true">
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+        <gridColumns width="60px"/>
+        <gridColumns width="80px"/>
+        <gridColumns/>
+        <gridColumns/>
+        <gridColumns/>
+        <gridColumns/>
+        <gridColumns/>
+        <gridHeader>
+          <gridRows height="42px"/>
+          <gridCells rowIndex="0" colIndex="0" sortable="false" filterable="false" columnType="checkbox"/>
+          <gridCells rowIndex="0" colIndex="1" sortable="false" filterable="false" text="No."/>
+          <gridCells rowIndex="0" colIndex="2" text="Column1"/>
+          <gridCells rowIndex="0" colIndex="3" text="Column2"/>
+          <gridCells rowIndex="0" colIndex="4" text="Column3"/>
+          <gridCells rowIndex="0" colIndex="5" text="Column4"/>
+          <gridCells rowIndex="0" colIndex="6" text="Column5"/>
+        </gridHeader>
+        <gridDetail>
+          <gridRows height="48px"/>
+          <gridCells rowIndex="0" colIndex="0" columnType="checkbox"/>
+          <gridCells rowIndex="0" colIndex="1" columnType="rowindex"/>
+          <gridCells rowIndex="0" colIndex="2"/>
+          <gridCells rowIndex="0" colIndex="3"/>
+          <gridCells rowIndex="0" colIndex="4"/>
+          <gridCells rowIndex="0" colIndex="5"/>
+          <gridCells rowIndex="0" colIndex="6"/>
+        </gridDetail>
+      </controls>
+      <layout xsi:type="cl:FormLayout" scrollable="false" horizontalSpacing="0px" verticalSpacing="8px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+        <rows length="32" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <rows length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION" shadeType="NONE" shadeColor="transparent"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="3fc354dd-fad7-491b-aa50-627eceab1584" name="[터치] 뷰, 키인 1행 템플릿 (View, Key-In 1Row)" preferredWidth="1024" preferredHeight="90">
+    <control xsi:type="cl:Group">
+      <metaData>
+        <properties key="template-uuid" value="2b6060bd-8de0-40f8-b287-e891d69c811d"/>
+        <properties key="template-rev" value="5"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplTouchViewKeyIn1Row"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0" rowSpan="1" colSpan="1"/>
+      <controls xsi:type="cl:Output" class="sub-title" value="View, Key-In Title">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      </controls>
+      <controls xsi:type="cl:Group" class="mrc-layout-view-key-in">
+        <metaData>
+          <properties key="template-uuid" value="2b6060bd-8de0-40f8-b287-e891d69c811d"/>
+          <properties key="template-rev" value="3"/>
+        </metaData>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+        <controls xsi:type="cl:Output" class="label" value="Key-in">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="4"/>
+        </controls>
+        <controls xsi:type="cl:Output" class="label" value="Readonly">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="7"/>
+        </controls>
+        <controls xsi:type="cl:Output" value="라벨">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="10"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px" horizontalSeparatorWidth="1" horizontalSeparatorType="BY_CLASS" verticalSeparatorWidth="0" verticalSeparatorType="NONE">
+          <rows length="44" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS" shadeColor="transparent"/>
+          <columns length="180" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="12"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="12"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="180" shadeType="BY_CLASS"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="12"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="12"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="8px">
+        <rows length="35" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <rows length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="811a77ed-b8dc-4029-b1d9-0617d26fc5d2" name="[터치] 조회 영역 3행 템플릿 (Search 3Row)" preferredWidth="1024" preferredHeight="180" revision="2">
+    <control xsi:type="cl:Group" class="search-box">
+      <metaData>
+        <properties key="template-uuid" value="811a77ed-b8dc-4029-b1d9-0617d26fc5d2"/>
+        <properties key="template-rev" value="1"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplTouchSearch3Row"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="3213aa75-af99-409f-b63a-1d6df6600d46"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplTouchSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        <controls xsi:type="cl:Output" class="label" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="190" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="3213aa75-af99-409f-b63a-1d6df6600d46"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplTouchSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="2"/>
+        <controls xsi:type="cl:Output" class="label" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="190" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="3213aa75-af99-409f-b63a-1d6df6600d46"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplTouchSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+        <controls xsi:type="cl:Output" class="label" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="190" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="3213aa75-af99-409f-b63a-1d6df6600d46"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplTouchSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="2"/>
+        <controls xsi:type="cl:Output" class="label" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="190" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <metaData>
+          <properties key="template-uuid" value="3213aa75-af99-409f-b63a-1d6df6600d46"/>
+          <properties key="template-rev" value="1"/>
+        </metaData>
+        <userAttributes key="templateId" value="tplTouchSearchComponent"/>
+        <layoutData xsi:type="cl:FormData" rowIndex="2" colIndex="0"/>
+        <controls xsi:type="cl:Output" class="label" value="Output">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="1"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="10px" verticalSpacing="10px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="190" unit="PIXEL" autoSizing="false" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="1" unit="FRACTION"/>
+        </layout>
+      </controls>
+      <controls xsi:type="cl:Group">
+        <layoutData xsi:type="cl:FormData" rowIndex="2" colIndex="2"/>
+        <controls xsi:type="cl:Button" class="search-area" value="Reset">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:Button" class="search-area secondary" value="Search">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="40" rowIndex="0" colIndex="2"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="16px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
+          <rows length="1" unit="FRACTION"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="100" autoSizing="true"/>
+          <columns length="100" autoSizing="true"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="12px" topMargin="20px" rightMargin="20px" bottomMargin="20px" leftMargin="20px">
+        <rows length="40" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <rows length="40" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <rows length="40" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <columns length="1" unit="FRACTION"/>
+        <columns length="90"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="0fc6a0f2-7356-469a-944f-e23a9c231284" name="[터치] 뷰, 키인 2행 템플릿 (View, Key-In 2Row)" preferredWidth="1024" preferredHeight="135">
+    <control xsi:type="cl:Group">
+      <metaData>
+        <properties key="template-uuid" value="3fc354dd-fad7-491b-aa50-627eceab1584"/>
+        <properties key="template-rev" value="1"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplTouchViewKeyIn2Row"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0" rowSpan="1" colSpan="1"/>
+      <controls xsi:type="cl:Output" class="sub-title" value="View, Key-In Title">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      </controls>
+      <controls xsi:type="cl:Group" class="mrc-layout-view-key-in">
+        <metaData>
+          <properties key="template-uuid" value="2b6060bd-8de0-40f8-b287-e891d69c811d"/>
+          <properties key="template-rev" value="3"/>
+        </metaData>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+        <controls xsi:type="cl:Output" class="label" value="Key-in">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="4"/>
+        </controls>
+        <controls xsi:type="cl:Output" class="label" value="Readonly">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="7"/>
+        </controls>
+        <controls xsi:type="cl:Output" value="라벨">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="10"/>
+        </controls>
+        <controls xsi:type="cl:Output" class="label" value="Key-in">
+          <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="1" colIndex="4"/>
+        </controls>
+        <controls xsi:type="cl:Output" class="label" value="Readonly">
+          <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="7"/>
+        </controls>
+        <controls xsi:type="cl:Output" value="라벨">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="1" colIndex="10"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px" horizontalSeparatorWidth="1" horizontalSeparatorType="BY_CLASS" verticalSeparatorWidth="0" verticalSeparatorType="NONE">
+          <rows length="44" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <rows length="44" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS" shadeColor="transparent"/>
+          <columns length="180" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="12"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="12"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="180" shadeType="BY_CLASS"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="12"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="12"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="8px">
+        <rows length="35" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <rows length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+  <settings:CannedTemplate uuid="02a4e1a2-4942-4227-9786-58da8646286c" name="[터치] 뷰, 키인 3행 템플릿 (View, Key-In 3Row)" preferredWidth="1024" preferredHeight="179">
+    <control xsi:type="cl:Group">
+      <metaData>
+        <properties key="template-uuid" value="3fc354dd-fad7-491b-aa50-627eceab1584"/>
+        <properties key="template-rev" value="1"/>
+      </metaData>
+      <userAttributes key="templateId" value="tplTouchViewKeyIn3Row"/>
+      <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0" rowSpan="1" colSpan="1"/>
+      <controls xsi:type="cl:Output" class="sub-title" value="View, Key-In Title">
+        <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
+      </controls>
+      <controls xsi:type="cl:Group" class="mrc-layout-view-key-in">
+        <metaData>
+          <properties key="template-uuid" value="2b6060bd-8de0-40f8-b287-e891d69c811d"/>
+          <properties key="template-rev" value="3"/>
+        </metaData>
+        <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="0"/>
+        <controls xsi:type="cl:Output" class="label" value="Key-in">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="4"/>
+        </controls>
+        <controls xsi:type="cl:Output" class="label" value="Readonly">
+          <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="7"/>
+        </controls>
+        <controls xsi:type="cl:Output" value="라벨">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="0" colIndex="10"/>
+        </controls>
+        <controls xsi:type="cl:Output" class="label" value="Key-in">
+          <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="1" colIndex="4"/>
+        </controls>
+        <controls xsi:type="cl:Output" class="label" value="Readonly">
+          <layoutData xsi:type="cl:FormData" rowIndex="1" colIndex="7"/>
+        </controls>
+        <controls xsi:type="cl:Output" value="라벨">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="1" colIndex="10"/>
+        </controls>
+        <controls xsi:type="cl:Output" class="label" value="Key-in">
+          <layoutData xsi:type="cl:FormData" rowIndex="2" colIndex="1"/>
+        </controls>
+        <controls xsi:type="cl:Output" class="label" value="Readonly">
+          <layoutData xsi:type="cl:FormData" rowIndex="2" colIndex="7"/>
+        </controls>
+        <controls xsi:type="cl:InputBox" showClearButton="true">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="2" colIndex="4"/>
+        </controls>
+        <controls xsi:type="cl:Output" value="라벨">
+          <layoutData xsi:type="cl:FormData" verticalAlign="CENTER" height="32" rowIndex="2" colIndex="10"/>
+        </controls>
+        <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px" horizontalSeparatorWidth="1" horizontalSeparatorType="BY_CLASS" verticalSeparatorWidth="0" verticalSeparatorType="NONE">
+          <rows length="44" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <rows length="44" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <rows length="44" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS" shadeColor="transparent"/>
+          <columns length="180" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="12"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="12"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="180" shadeType="BY_CLASS"/>
+          <columns length="10" unit="PIXEL" shadeType="BY_CLASS"/>
+          <columns length="12"/>
+          <columns length="1" unit="FRACTION"/>
+          <columns length="12"/>
+        </layout>
+      </controls>
+      <layout xsi:type="cl:FormLayout" horizontalSpacing="0px" verticalSpacing="8px">
+        <rows length="35" unit="PIXEL" autoSizing="true" shadeType="NONE" shadeColor="#000000" minLength="0"/>
+        <rows length="1" unit="FRACTION"/>
+        <columns length="1" unit="FRACTION"/>
+      </layout>
+    </control>
+  </settings:CannedTemplate>
+</xmi:XMI>

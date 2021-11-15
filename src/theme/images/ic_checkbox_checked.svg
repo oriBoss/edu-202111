@@ -1,0 +1,19 @@
+<svg id="ic_checkbox_checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="패스_7" data-name="패스 7" d="M3.626-2.2 1.088-4.742 0-3.654 3.082-.572l.544.544 6.346-6.346-1.088-1.088z" transform="translate(0 7.462)" style="clip-rule:evenodd;fill:none"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="패스_6" data-name="패스 6" class="cls-2" d="M-940 816H679V-405H-940z" transform="translate(940 405)"/>
+        </clipPath>
+        <style>
+            .cls-2{fill:none}
+        </style>
+    </defs>
+    <path id="사각형_22043" data-name="사각형 22043" class="cls-2" d="M0 0h16v16H0z"/>
+    <g id="그룹_17" data-name="그룹 17" transform="translate(3 4)" style="clip-path:url(#clip-path)">
+        <g id="그룹_16" data-name="그룹 16" transform="translate(-940 -397.538)" style="clip-path:url(#clip-path-2)">
+            <path id="패스_5" data-name="패스 5" d="M-7.071-3.654 6.346-17.071l10.7 10.7L3.626 7.043z" transform="translate(940 405)" style="fill:#fafafa"/>
+        </g>
+    </g>
+</svg>

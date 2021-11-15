@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4d6a2b13" version="1.0.0.0">
+  <head std:sid="head-81fea68a">
+    <title>tplTouchViewKeyIn1Row</title>
+    <screen std:sid="screen-5e55f385" id="default" name="default" minwidth="1024px" width="1024px" height="768px" useCustomHeight="true" customHeight="135" customWidth="800"/>
+    <screen std:sid="screen-80f0f770" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-e35f4d02" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-ccb3df10"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-5e24a691" style="top:0px; left:0px; width:800px; height:600px;" class="touch-style">
+    <cl:group std:sid="group-3b14a6fb" id="tplTouchViewKeyIn2Row">
+      <std:metadata>
+        <std:property key="template-uuid" value="0fc6a0f2-7356-469a-944f-e23a9c231284"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:attribute name="templateId" value="tplTouchViewKeyIn2Row"/>
+      <cl:formdata std:sid="f-data-f23be79d" row="0" col="0" rowspan="1" colspan="1"/>
+      <cl:output std:sid="output-f882ee93" id="optTitle" class="sub-title" value="View, Key-In Title">
+        <cl:formdata std:sid="f-data-7302c1c0" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-bacd94a7" id="grpViewKeyIn" class="mrc-layout-view-key-in">
+        <std:metadata>
+          <std:property key="template-uuid" value="2b6060bd-8de0-40f8-b287-e891d69c811d"/>
+          <std:property key="template-rev" value="3"/>
+        </std:metadata>
+        <cl:formdata std:sid="f-data-b3551722" row="1" col="0"/>
+        <cl:output std:sid="output-c4858ebe" id="opt6" class="label" value="Key-in">
+          <cl:formdata std:sid="f-data-eb808d63" row="0" col="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-491151fe" id="ipb2" showclearbutton="true">
+          <cl:formdata std:sid="f-data-1437c23c" valign="CENTER" height="32" row="0" col="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-aa14009d" id="opt7" class="label" value="Readonly">
+          <cl:formdata std:sid="f-data-13ca3af4" row="0" col="7"/>
+        </cl:output>
+        <cl:output std:sid="output-ae824743" id="opt10" value="라벨">
+          <cl:formdata std:sid="f-data-4e8368b9" valign="CENTER" height="32" row="0" col="10"/>
+        </cl:output>
+        <cl:output std:sid="output-4e3198b5" id="opt1" class="label" value="Key-in">
+          <cl:formdata std:sid="f-data-1d9568c8" row="1" col="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-be30e339" id="ipb1" showclearbutton="true">
+          <cl:formdata std:sid="f-data-3195e7d0" valign="CENTER" height="32" row="1" col="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-f12a2da6" id="opt2" class="label" value="Readonly">
+          <cl:formdata std:sid="f-data-625c77bc" row="1" col="7"/>
+        </cl:output>
+        <cl:output std:sid="output-e71ed5c7" id="opt3" value="라벨">
+          <cl:formdata std:sid="f-data-75c8073c" valign="CENTER" height="32" row="1" col="10"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-e3b80343" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="0" vseparatortype="NONE">
+          <cl:rows length="44" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="44" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="10" unit="PIXEL" shadetype="BY_CLASS" shadecolor="transparent"/>
+          <cl:columns length="180" unit="PIXEL" shadetype="BY_CLASS"/>
+          <cl:columns length="10" unit="PIXEL" shadetype="BY_CLASS"/>
+          <cl:columns length="12"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="12"/>
+          <cl:columns length="10" unit="PIXEL" shadetype="BY_CLASS"/>
+          <cl:columns length="180" shadetype="BY_CLASS"/>
+          <cl:columns length="10" unit="PIXEL" shadetype="BY_CLASS"/>
+          <cl:columns length="12"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="12"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-62a92607" hspace="0px" vspace="8px">
+        <cl:rows length="35" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-fe4a43ef" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

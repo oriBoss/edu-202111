@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-b129e0f1" version="1.0.3231">
+  <head std:sid="head-0557d912">
+    <screen std:sid="screen-6517a422" id="new-screen" name="new-screen" minwidth="1920px" width="1920px" height="1080px" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-45794684" id="default" name="default" minwidth="1024px" maxwidth="1919px" width="1024px" height="768px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-4ebc4949" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-88947802" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-bb93b2ed"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-7a39bda3">
+    <cl:listener std:sid="listener-778add15" name="init" handler="onBodyInit"/>
+    <cl:listener std:sid="listener-80906ad0" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-38542fad" name="property-change" handler="onBodyPropertyChange"/>
+    <cl:listener std:sid="listener-97880d3f" name="mousemove" handler="onBodyMousemove"/>
+    <cl:listener std:sid="listener-0c07ab49" name="mouseup" handler="onBodyMouseup"/>
+    <cl:group std:sid="group-0dc2fc7f" id="grp1" class="gnb-style">
+      <cl:formdata std:sid="f-data-5b53f23e" row="0" col="0"/>
+      <cl:button std:sid="button-8bec4101" id="profile-btn" style="background-color:rgba(255, 255,255, 0); border-top-width:0px; border-right-width:0px; border-bottom-width:0px; border-left-width:0px;" icon="modules/COMMON/assets/images/ic-gnb-user.png">
+        <cl:formdata std:sid="f-data-b48af82d" row="0" col="4"/>
+        <cl:iconstyle style="padding-top:7px; background-size:cover; width:36px; padding-bottom:7px; height:36px;"/>
+      </cl:button>
+      <cl:combobox std:sid="c-box-97b93320" id="cmb1" style="color:#ffffff; font-weight:bold;" class="mrc-gnb-cmb" value="[MRCKR] Miracom Korea 1Factory,[MRCKR] Miracom Korea 1Factory" buttonimage="modules/COMMON/assets/images/ic-gnb-dropdown.png">
+        <cl:formdata std:sid="f-data-4cf17cda" row="0" col="3"/>
+      </cl:combobox>
+      <cl:group std:sid="group-865be747" id="grp12">
+        <cl:formdata std:sid="f-data-eda8365e" row="0" col="1"/>
+        <cl:button std:sid="button-55e1f6ac" id="btn3" style="background-color:rgba(255, 255,255, 0); border-top-width:0px; border-right-width:0px; padding-left:20px; border-bottom-width:0px; border-left-width:0px; padding-right:0px;" icon="modules/COMMON/assets/images/bi-nexplant.svg">
+          <cl:formdata std:sid="f-data-ea89e7bf" row="0" col="0"/>
+          <cl:iconstyle style="background-size:contain; width:140px; height:50px;"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-caa7017c" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="160" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:button std:sid="button-da1e6aa2" id="gnbMenuBtn" style="background-color:#072a89; background-repeat:no-repeat; background-size:32; border-top-width:0px; border-right-width:0px; padding-left:0px; border-bottom-width:0px; background-position:center; border-left-width:0px; padding-right:0px;" icon="modules/COMMON/assets/images/ic-gnb-menu.png">
+        <cl:listener std:sid="listener-efa78e2f" name="click" handler="onBtn2Click"/>
+        <cl:formdata std:sid="f-data-a1fc77c3" row="0" col="0"/>
+        <cl:iconstyle style="padding-top:7px; padding-left:7px; width:36px; padding-bottom:7px; height:36px; padding-right:7px;"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-a0553e62" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="50" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="200" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="260" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="76" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-6ec44d58" id="grp2" class="main-layout">
+      <cl:formdata std:sid="f-data-4af36a84" row="1" col="0"/>
+      <cl:group std:sid="group-5737e90e" id="lng-grp">
+        <cl:formdata std:sid="f-data-bbccce56" row="0" col="0"/>
+        <cl:tabfolder std:sid="t-folder-8c4d6c62" id="fld1" style="background-color:#eaeaea;" class="mrc-lnb-tab">
+          <cl:listener std:sid="listener-00535089" name="item-drag" handler="onFld1ItemDrag"/>
+          <cl:formdata std:sid="f-data-e5da4870" row="1" col="0" rowspan="1" colspan="1"/>
+          <cl:tabitem std:sid="t-item-59957c81" selected="true" text="All">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-60febdff" id="grp3">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:accordion std:sid="accordion-694a8903" id="acd1" class="mrc-1depth-menu" multiple="true">
+                <std:metadata>
+                  <std:property key="active-index" value="2"/>
+                </std:metadata>
+                <cl:listener std:sid="listener-6b93f442" name="context-value-change" handler="onAcd1ContextValueChange"/>
+                <cl:listener std:sid="listener-15908a6b" name="transitionend" handler="onAcd1Transitionend"/>
+                <cl:listener std:sid="listener-9f8247a5" name="measure-size" handler="onAcd1MeasureSize"/>
+                <cl:listener std:sid="listener-011130b0" name="selection-change" handler="onAcd1SelectionChange"/>
+                <cl:listener std:sid="listener-fbed8219" name="mouseup" handler="onAcd1Mouseup"/>
+                <cl:formdata std:sid="f-data-b0717b57" row="0" col="0"/>
+                <cl:sectionitem std:sid="s-item-7492bc19" title="MDM">
+                  <std:metadata>
+                    <std:property key="is-active-item" value="true"/>
+                  </std:metadata>
+                  <cl:group std:sid="group-4f4ee90e" id="grp7">
+                    <std:metadata>
+                      <std:property key="locked" value="true"/>
+                    </std:metadata>
+                    <cl:accordion std:sid="accordion-b5e3426a" id="acd2" class="miracom-2depth-menu">
+                      <cl:listener std:sid="listener-cc923524" name="selection-change" handler="onAcd2SelectionChange"/>
+                      <cl:formdata std:sid="f-data-8bd6ad00" row="0" col="0"/>
+                      <cl:sectionitem std:sid="s-item-9306c774" title="item 2">
+                        <cl:group std:sid="group-82e106ee" id="grp11">
+                          <std:metadata>
+                            <std:property key="locked" value="true"/>
+                          </std:metadata>
+                          <cl:xylayout std:sid="xylayout-d093d908"/>
+                        </cl:group>
+                      </cl:sectionitem>
+                      <cl:sectionitem std:sid="s-item-9bda37d4" title="item 1">
+                        <cl:group std:sid="group-4f07ded0" id="grp10">
+                          <std:metadata>
+                            <std:property key="locked" value="true"/>
+                          </std:metadata>
+                          <cl:xylayout std:sid="xylayout-5b61b02b"/>
+                        </cl:group>
+                      </cl:sectionitem>
+                    </cl:accordion>
+                    <cl:formlayout std:sid="f-layout-a3a9215d" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                      <cl:rows length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                </cl:sectionitem>
+                <cl:sectionitem std:sid="s-item-e07015d5" title="WIP">
+                  <cl:group std:sid="group-3451f67d" id="grp8">
+                    <std:metadata>
+                      <std:property key="locked" value="true"/>
+                    </std:metadata>
+                    <cl:xylayout std:sid="xylayout-6b91e9cb"/>
+                  </cl:group>
+                </cl:sectionitem>
+                <cl:sectionitem std:sid="s-item-ef53fb6b" title="aaa">
+                  <cl:group std:sid="group-83003da5" id="grp9">
+                    <std:metadata>
+                      <std:property key="locked" value="true"/>
+                    </std:metadata>
+                    <cl:xylayout std:sid="xylayout-02592a9b"/>
+                  </cl:group>
+                </cl:sectionitem>
+              </cl:accordion>
+              <cl:formlayout std:sid="f-layout-d1ba2fbb" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="935" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-2968dc22" text="마이 메뉴">
+            <cl:group std:sid="group-31f3cedd" id="grp4">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-b476729f"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-594d9b6b" text="조회 결과">
+            <cl:group std:sid="group-7b5eaf9c" id="searchResultGrp" class="LNB-search-result-grp">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:verticallayout std:sid="v-layout-7b980fe5" spacing="54"/>
+            </cl:group>
+          </cl:tabitem>
+        </cl:tabfolder>
+        <cl:group std:sid="group-757d0f50" id="grp5" style="background-color:#eaeaea;">
+          <cl:formdata std:sid="f-data-966f8125" row="0" col="0"/>
+          <cl:searchinput std:sid="s-input-0e69aaa1" id="sinp1" style="border-radius:5px;" class="mes-lnb-searchinput" placeholder="Search">
+            <cl:listener std:sid="listener-05cfb3bc" name="value-change" handler="onSinp1ValueChange"/>
+            <cl:listener std:sid="listener-94d269a1" name="change" handler="onSinp1Change"/>
+            <cl:listener std:sid="listener-3bcb1ca7" name="keydown" handler="onSinp1Keydown"/>
+            <cl:listener std:sid="listener-9d799f4e" name="keyup" handler="onSinp1Keyup"/>
+            <cl:listener std:sid="listener-bcd7e6f5" name="clear" handler="onSinp1Clear"/>
+            <cl:formdata std:sid="f-data-a12a75fd" row="0" col="1"/>
+          </cl:searchinput>
+          <cl:button std:sid="button-1e7477cd" id="btn1" style="padding-left:0px; padding-right:0px;" class="mes-extand-tab" icon="modules/COMMON/assets/images/search-btn.png">
+            <cl:listener std:sid="listener-387d7d98" name="click" handler="onBtn1Click"/>
+            <cl:formdata std:sid="f-data-a8482cab" row="0" col="2"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-a9fce0aa" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="10" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="46" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-7d9c4673" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="64" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="250" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:mdifolder std:sid="mdifolder-6f06032c" id="main-tab-com" style="border-top-width:0px; border-right-width:0px; border-bottom-width:0px; border-left-width:0px;" class="mrc-main-tab">
+        <cl:formdata std:sid="f-data-8ed2b3d2" row="0" col="1"/>
+        <cl:body-style style="border-top-width:0px; border-right-width:0px; border-bottom-width:0px; border-left-width:0px;"/>
+      </cl:mdifolder>
+      <cl:formlayout std:sid="f-layout-82cc9427" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="250" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-0dcbb76e" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+      <cl:rows length="50" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

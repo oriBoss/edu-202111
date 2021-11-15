@@ -1,0 +1,22 @@
+<svg id="ic_calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+    <defs>
+        <style>
+            .cls-3{fill:#333}
+        </style>
+    </defs>
+    <g id="그룹_112615" data-name="그룹 112615" transform="translate(-540 -583.647)">
+        <g id="그룹_112613" data-name="그룹 112613">
+            <path id="사각형_20" data-name="사각형 20" transform="translate(540 583.647)" style="fill:none" d="M0 0h16v16H0z"/>
+            <path id="사각형_20-2" data-name="사각형 20" transform="translate(541 584.647)" style="opacity:.2;fill:none" d="M0 0h14v14H0z"/>
+        </g>
+        <g id="그룹_112614" data-name="그룹 112614">
+            <path id="패스_202910" data-name="패스 202910" class="cls-3" d="M554 586.646h-2.25v-.75a.5.5 0 0 0-1 0v.75h-5.5v-.75a.5.5 0 0 0-1 0v.75H542a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5v-10a.5.5 0 0 0-.5-.5zm-.5 10h-11v-9h1.75v.75a.5.5 0 0 0 1 0v-.75h5.5v.75a.5.5 0 0 0 1 0v-.75h1.75z"/>
+            <path id="사각형_21992" data-name="사각형 21992" class="cls-3" transform="translate(547.25 589.897)" d="M0 0h1.5v1.5H0z"/>
+            <path id="사각형_21993" data-name="사각형 21993" class="cls-3" transform="translate(547.25 593.397)" d="M0 0h1.5v1.5H0z"/>
+            <path id="사각형_21994" data-name="사각형 21994" class="cls-3" transform="translate(550.5 589.897)" d="M0 0h1.5v1.5H0z"/>
+            <path id="사각형_21995" data-name="사각형 21995" class="cls-3" transform="translate(550.5 593.397)" d="M0 0h1.5v1.5H0z"/>
+            <path id="사각형_21996" data-name="사각형 21996" class="cls-3" transform="translate(544 589.897)" d="M0 0h1.5v1.5H0z"/>
+            <path id="사각형_21997" data-name="사각형 21997" class="cls-3" transform="translate(544 593.397)" d="M0 0h1.5v1.5H0z"/>
+        </g>
+    </g>
+</svg>

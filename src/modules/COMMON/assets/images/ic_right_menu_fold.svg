@@ -1,0 +1,14 @@
+<svg id="ic_menu_fold" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+    <defs>
+        <style>
+            .cls-2{fill:#e5e5e5}
+        </style>
+    </defs>
+    <path id="사각형_23" data-name="사각형 23" style="fill:transparent;opacity:.47" d="M0 0h36v36H0z"/>
+    <g id="그룹_112250" data-name="그룹 112250" transform="translate(4.667 7.77)">
+        <path id="패스_97" data-name="패스 97" class="cls-2" d="M176.257 105.534h-9.436l3.283-3.328a1.126 1.126 0 0 0-.8-1.919 1.119 1.119 0 0 0-.794.333l-5.175 5.247a1.136 1.136 0 0 0-.326.8 1.124 1.124 0 0 0 .337.8c1.37 1.337 2.734 2.626 3.938 3.764l1.249 1.181a1.152 1.152 0 0 0 1.593-.043 1.128 1.128 0 0 0-.043-1.591l-3.157-2.992h9.333a1.125 1.125 0 0 0 0-2.25z" transform="translate(-149.658 -91.705)"/>
+        <path id="패스_98" data-name="패스 98" class="cls-2" d="M158.2 98.723h23.884a1.125 1.125 0 0 0 0-2.25H158.2a1.125 1.125 0 0 0 0 2.25z" transform="translate(-157.074 -96.473)"/>
+        <path id="패스_99" data-name="패스 99" class="cls-2" d="M166.285 104.313H158.2a1.125 1.125 0 0 0 0 2.25h8.086a1.125 1.125 0 0 0 0-2.25z" transform="translate(-157.074 -86.673)"/>
+        <path id="패스_100" data-name="패스 100" class="cls-2" d="M167.914 100.393H158.2a1.125 1.125 0 0 0 0 2.25h9.715a1.125 1.125 0 0 0 0-2.25z" transform="translate(-157.074 -91.573)"/>
+    </g>
+</svg>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-8e4974f7" version="1.0.3167">
+  <head std:sid="head-e9233dea">
+    <screen std:sid="screen-2410a109" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-37fd4bfa" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-a161fecc" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-e21ef55d"/>
+    <cl:appspec preferred-width="1280" title="[터치] 상하복합형 레이아웃"/>
+  </head>
+  <body std:sid="body-7e40feb5" class="touch-style">
+    <cl:group std:sid="group-e1a0161e" id="grpTitle">
+      <cl:formdata std:sid="f-data-c1ebe95f" row="0" col="0" rowspan="1" colspan="1"/>
+      <cl:output std:sid="output-f9cfc80c" id="optTitle" class="title" value="Title">
+        <cl:formdata std:sid="f-data-ec391b5f" row="0" col="0"/>
+      </cl:output>
+      <cl:button std:sid="button-6ef1de8c" id="btnClose" class="search-area" value="Close">
+        <cl:listener std:sid="listener-dffbf309" name="click" handler="onBtnCloseClick"/>
+        <cl:formdata std:sid="f-data-1e2acbcd" valign="CENTER" height="40" row="0" col="1"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-e418b04b" hspace="0px" vspace="12px">
+        <cl:rows length="47" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-2915e910" id="grpMain">
+      <cl:formdata std:sid="f-data-0cb40235" row="1" col="0"/>
+      <cl:group std:sid="group-90589b5a" id="grpTranButtons">
+        <std:metadata>
+          <std:property key="template-uuid" value="2cecf809-0080-4830-9947-f2661b7ff272"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:attribute name="templateId" value="tplTouchTranButton"/>
+        <cl:formdata std:sid="f-data-7f32adee" row="3" col="0"/>
+        <cl:button std:sid="button-29c37e2f" id="btnOption" value="Option">
+          <cl:formdata std:sid="f-data-d11ffacd" row="0" col="0"/>
+        </cl:button>
+        <cl:button std:sid="button-82863e2d" id="btnTran" class="primary" value="Tran">
+          <cl:attribute name="templateId" value="tplOuiTranButton"/>
+          <cl:formdata std:sid="f-data-74392c0b" row="0" col="2"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-89184f54" scrollable="false" hspace="20px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="64" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="140" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="140" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-18cab168" id="grpContents">
+        <cl:formdata std:sid="f-data-56308887" row="2" col="0"/>
+        <cl:group std:sid="group-43b09ce1" id="grpRightContents">
+          <cl:formdata std:sid="f-data-584a46e0" row="0" col="1"/>
+          <cl:formlayout std:sid="f-layout-2238d45d" scrollable="false" hspace="0px" vspace="30px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-fb196a0e" scrollable="false" hspace="30px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-a75ba433" scrollable="false" hspace="0px" vspace="30px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="80" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="64" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-60244528" hspace="0px" vspace="12px" top-margin="12px" right-margin="30px" bottom-margin="30px" left-margin="30px">
+      <cl:rows length="47" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

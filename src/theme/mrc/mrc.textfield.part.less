@@ -1,0 +1,134 @@
+@import "../settings.part.less";
+
+/* 인풋 박스 루트 */
+.cl-inputbox {
+	font: @default-font;
+	color: @default-textfield-color;
+	border: 1px solid @default-textfield-border-color;
+	border-radius: @default-textfield-border-radius;
+	background-color: @default-textfield-background-color;
+	background-image: none;
+	
+	/* 인풋 박스 텍스트 */
+	.cl-text {
+		padding-left: @default-textfield-padding-left;
+		padding-right: @default-textfield-padding-right;
+	}
+	
+	/* 인풋 박스 - 포커스 상태 */
+	&.cl-focus {
+		border-color: @default-textfield-foucs-border-color;
+	}
+	
+	/* 인풋 박스 - 클리어 버튼 */
+	.cl-inputbox-clear {
+		//background-image: url(icons/clear-button.png);
+	}
+	
+	/* 인풋 박스 - disabled 상태 */
+	&.cl-disabled {
+		border-color: @default-textfield-disable-border-color;
+		background-image: none;
+		background-color: @default-textfield-disable-background-color;
+		color: @default-textfield-disable-color;
+		
+		.cl-inputbox-clear {
+			// background-image: url(icons/clear-button-disabled.png);
+			// cursor: default;
+		}
+	}
+	
+	&.cl-readonly {
+		border-color: @default-textfield-disable-border-color;
+		background-image: none;
+		background-color: @default-textfield-disable-background-color;
+		color: @default-textfield-color;
+		
+		.cl-inputbox-clear {
+			// background-image: url(icons/clear-button-disabled.png);
+			// cursor: default;
+		}
+	}
+	
+	&:not(.cl-disabled) {
+		/* 클리어 버튼 hover상태 */
+		.cl-inputbox-clear:hover {
+		}
+		
+		/* 클리어 버튼 active상태 */
+		.cl-inputbox-clear:active {
+		}
+	}
+	
+	&.inner {
+		font-size: 12px;
+	}
+}
+
+/* 터치형 */
+.touch-style {
+	.cl-inputbox {
+		font: @touch-font;
+		font-weight: medium;
+		color: @touch-text-color;
+		border: 2px solid @touch-default-border-color;
+		border-radius: @touch-textfield-border-radius;
+		background-color: @default-textfield-background-color;
+		background-image: none;
+		
+		/* 인풋 박스 텍스트 */
+		&.cl-text {
+			padding-left: @touch-textfield-padding-left;
+			padding-right: @touch-textfield-padding-right;
+		}
+		
+		/* 인풋 박스 - 포커스 상태 */
+		&.cl-focus {
+			border-color: @touch-textfield-foucs-border-color;
+		}
+		
+		/* 인풋 박스 - 클리어 버튼 */
+		.cl-inputbox-clear {
+			//background-image: url(icons/clear-button.png);
+		}
+		
+		/* 인풋 박스 - disabled 상태 */
+		&.cl-disabled {
+			border-color: @touch-textfield-disable-border-color;
+			background-image: none;
+			background-color: @default-textfield-disable-background-color;
+			color: @touch-textfield-disable-color;
+			
+			.cl-inputbox-clear {
+				// background-image: url(icons/clear-button-disabled.png);
+				// cursor: default;
+			}
+		}
+		
+		&.cl-readonly {
+			border-color: @touch-textfield-disable-border-color;
+			background-image: none;
+			background-color: @default-textfield-disable-background-color;
+			color: @touch-text-color;
+			
+			.cl-inputbox-clear {
+				// background-image: url(icons/clear-button-disabled.png);
+				// cursor: default;
+			}
+		}
+		
+		&:not(.cl-disabled) {
+			/* 클리어 버튼 hover상태 */
+			.cl-inputbox-clear:hover {
+			}
+			
+			/* 클리어 버튼 active상태 */
+			.cl-inputbox-clear:active {
+			}
+		}
+		
+		.touch-inner {
+			font-size: 14px;
+		}
+	}
+}

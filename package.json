@@ -1,0 +1,18 @@
+{
+  "name": "berlin-uiframework",
+  "version": "1.0.0",
+  "description": "EXBuilder6를 이용한 ui framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.miracom.co.kr/BerlinWall/berlin-uiframework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tui-jsdoc-template": "^1.2.2"
+  }
+}

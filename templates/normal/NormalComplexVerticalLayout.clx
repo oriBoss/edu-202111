@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-c6d73f2e" version="1.0.3167">
+  <head std:sid="head-03b9c1ea">
+    <screen std:sid="screen-4e4eb505" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-ce2af25a" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-232b9cfa" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-45977202"/>
+    <cl:appspec preferred-width="1280" title="[일반] 상하 복합형 레이아웃"/>
+  </head>
+  <body std:sid="body-a003f255">
+    <cl:group std:sid="group-6dcc02f8" id="grpBottom">
+      <cl:formdata std:sid="f-data-4fce2237" row="2" col="0"/>
+      <cl:formlayout std:sid="f-layout-7afc8882" scrollable="false" hspace="30px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-59de4158" hspace="0px" vspace="0px" top-margin="30px" right-margin="30px" bottom-margin="30px" left-margin="30px">
+      <cl:rows length="72" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="3" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,15 @@
+<svg id="ic_slide_bottom" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+    <defs>
+        <style>
+            .cls-3{fill:#333}
+        </style>
+    </defs>
+    <g id="그룹_112570" data-name="그룹 112570" transform="translate(-310 -613.647)">
+        <path id="사각형_20" data-name="사각형 20" transform="translate(310 613.647)" style="fill:none" d="M0 0h16v16H0z"/>
+        <path id="사각형_20-2" data-name="사각형 20" transform="translate(312 615.647)" style="opacity:.2;fill:none" d="M0 0h12v12H0z"/>
+        <g id="그룹_112487" data-name="그룹 112487">
+            <path id="패스_202827" data-name="패스 202827" class="cls-3" d="M317.646 625.25a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0-.708-.707l-3.146 3.146v-7.543a.5.5 0 0 0-1 0v7.543l-3.146-3.146a.5.5 0 0 0-.708.707z"/>
+            <path id="패스_202828" data-name="패스 202828" class="cls-3" d="M322.5 626.646h-9a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z"/>
+        </g>
+    </g>
+</svg>

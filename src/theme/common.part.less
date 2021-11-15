@@ -1,0 +1,127 @@
+/* SVG 폰트 사용시 기존 아이콘 영역을 제외시키 위한 클래스 */
+.default-icon-hidden {
+	.cl-tree-itemicon,
+	.cl-menu-icon {
+		// 원래 아이콘 숨김
+		display: none !important;
+	}
+}
+
+/* SVG 폰트 사용시 아이콘 뒤에 cl-text 클래스가 있을 때 간격을 처리하기 위한 클래스 */
+.icon-with-text {
+	.cl-text:before {
+		// 아이콘 뒤 간격
+		padding-right: 5px;
+	}
+	
+	&.no-icon-padding .cl-text:before {
+		padding-right: 0px;
+	}
+}
+
+/* 조회 영역 레이아웃 스타일 */
+.search-box {
+	border-top: 1px solid #a0a0a0;
+	background-color: #f0f0f0;
+}
+
+/* 부 제목 스타일 */
+.cl-output {
+	&.sub-title {
+		font-size: 18px;
+		font-weight: bold;
+		color: #333333;
+	}
+}
+
+/* 그리드 디테일 버튼 스타일 */
+.cl-button {
+	/* 그리드 상세 컬럼 아이콘 처리 */
+	&.detail-cell {
+		background-color: transparent;
+		background-image: url("../modules/COMMON/assets/images/ico-detail.png");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+/* View, Key-In 스타일 */
+.mrc-layout-view-key-in {
+	border-top: 2px solid #999999;
+	border-bottom: 1px solid #999999;
+	
+	.cl-formlayout-horizontal-separator {
+		background-color: #999999;
+	}
+	
+	.cl-formlayout-column-shade {
+		background-color: #f0f0f0;
+	}
+}
+
+/* 일반형 팝업창 X-Large Large Size Title */
+.mrc-popup-title-large {
+	.cl-text {
+		font-size: 24px;
+		font-weight: bold;
+	}
+}
+
+/* 일반형 팝업창 Medium, Small Size Title */
+.mrc-popup-title-small {
+	.cl-text {
+		font-size: 20px;
+		font-weight: bold;
+	}
+}
+
+/* 팝업 버튼 영억 */
+.mrc-popup-button-area {
+	border-top: solid 1px #cccccc;
+}
+
+/* 패딩을 주지 않으려는 경우 */
+.mrc.no-padding {
+	padding: 0px !important;
+}
+
+.mrc.no-border-radius {
+	border-radius: 0px !important;
+}
+
+.mrc-vertical-bar {
+	width: 1px;
+	height: 9px;
+	margin: auto;
+	border-right: solid 1px #a5a5a5;
+}
+
+.only-display {
+	border: 0px !important;
+	background-color: transparent !important;
+}
+
+.dot-info {
+	background-color: #0091EB;
+	border-radius: 100%;
+}
+
+.dot-warn {
+	background-color: #FFA031;
+	border-radius: 100%;
+}
+
+.dot-error {
+	background-color: #FF5858;
+	border-radius: 100%;
+}
+
+.cl-container.flow-checkbox {
+	.cl-layout {
+		.cl-layout-content {
+			.cl-layout-wrap {
+				margin: 0px 24px 0px 0px !important;
+			}
+		}
+	}
+}

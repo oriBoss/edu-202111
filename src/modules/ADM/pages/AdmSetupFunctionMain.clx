@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-de3bf889" version="1.0.3167">
+  <head std:sid="head-b4c9ee51">
+    <screen std:sid="screen-17420ea3" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-7c68da2e" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-8ce62857" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-7c6fbe8b">
+      <cl:dataset std:sid="d-set-618331d0" id="dsFunctionList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-dc83fe13" name="createTime" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-b4d980df" name="createUserId"/>
+          <cl:datacolumn std:sid="d-column-3c2599df" name="funcCode"/>
+          <cl:datacolumn std:sid="d-column-5ffb625c" name="funcDesc"/>
+          <cl:datacolumn std:sid="d-column-972489b1" name="funcLib"/>
+          <cl:datacolumn std:sid="d-column-e4e35cab" name="funcLink"/>
+          <cl:datacolumn std:sid="d-column-62617535" name="funcLocaleDesc"/>
+          <cl:datacolumn std:sid="d-column-a24ef94d" name="funcParams"/>
+          <cl:datacolumn std:sid="d-column-92698f5a" name="funcType"/>
+          <cl:datacolumn std:sid="d-column-d20487ad" name="funcTypeDesc"/>
+          <cl:datacolumn std:sid="d-column-ed1f45c0" name="id"/>
+          <cl:datacolumn std:sid="d-column-b4883fc6" name="moduleCode"/>
+          <cl:datacolumn std:sid="d-column-56908225" name="moduleDesc"/>
+          <cl:datacolumn std:sid="d-column-9b9ddb82" name="suite1Flag"/>
+          <cl:datacolumn std:sid="d-column-8e11ae91" name="suite2Flag"/>
+          <cl:datacolumn std:sid="d-column-ecaa1bf1" name="suite3Flag"/>
+          <cl:datacolumn std:sid="d-column-35084e55" name="suite4Flag"/>
+          <cl:datacolumn std:sid="d-column-3582d7d7" name="suite5Flag"/>
+          <cl:datacolumn std:sid="d-column-db69a11f" name="suite6Flag"/>
+          <cl:datacolumn std:sid="d-column-f1523320" name="suite7Flag"/>
+          <cl:datacolumn std:sid="d-column-f7563aa7" name="suite8Flag"/>
+          <cl:datacolumn std:sid="d-column-134f0b2f" name="suite9Flag"/>
+          <cl:datacolumn std:sid="d-column-8c0410c3" name="suite10Flag"/>
+          <cl:datacolumn std:sid="d-column-6f588a34" name="tags"/>
+          <cl:datacolumn std:sid="d-column-32570aea" name="updateTime"/>
+          <cl:datacolumn std:sid="d-column-58a2c3e3" name="updateUserId"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-adddd65a" id="dsCheckedFunctionList" altercolumnlayout="server"/>
+      <cl:datamap std:sid="d-map-2d6bb766" id="dmSearchParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-8d1f0730" name="searchWord"/>
+          <cl:datacolumn std:sid="d-column-2b9033ed" name="funcType"/>
+          <cl:datacolumn std:sid="d-column-e26b00c1" name="moduleCode"/>
+          <cl:datacolumn std:sid="d-column-b890b3aa" name="suite1Flag" datatype="string" expression="#cbgSuite.value[0]" defaultvalue="false"/>
+          <cl:datacolumn std:sid="d-column-ad3dbe7e" name="suite2Flag" defaultvalue="false"/>
+          <cl:datacolumn std:sid="d-column-e1429c38" name="pageSize" datatype="number" defaultvalue="20"/>
+          <cl:datacolumn std:sid="d-column-a82b3aea" name="pageNumber" datatype="number" defaultvalue="0"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-7b7b97ae" id="smsGetFunctions" method="get" mediatype="application/x-www-form-urlencoded;simple">
+        <cl:listener std:sid="listener-d7b81480" name="submit-success" handler="onSmsGetFunctionsSubmitSuccess"/>
+        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions&quot;"/>
+        <cl:requestdata dataid="dmSearchParam"/>
+        <cl:responsedata dataid="dsFunctionList" alias="list"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-fedf9549" id="smsDeleteFunctions" method="patch" mediatype="application/json">
+        <cl:listener std:sid="listener-c2309d9b" name="submit-success" handler="onSmsDeleteFunctionsSubmitSuccess"/>
+        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions:bulk-delete&quot;"/>
+        <cl:requestdata dataid="dsCheckedFunctionList" payload="all"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec preferred-width="1280" dev-comment="templates/NormalBasicLayout.clx 템플릿 사용하여 작성 함."/>
+  </head>
+  <body std:sid="body-a8a64c98">
+    <cl:listener std:sid="listener-e72ddf13" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-359af486" id="grpSearch" class="search-box">
+      <std:metadata>
+        <std:property key="template-uuid" value="5de0fe52-2923-4f6b-b4ef-1142b8303426"/>
+        <std:property key="template-rev" value="7"/>
+      </std:metadata>
+      <cl:attribute name="templateId" value="tplNormalSearch2Row"/>
+      <cl:formdata std:sid="f-data-fd5f33de" row="0" col="0"/>
+      <cl:group std:sid="group-8e43af89">
+        <std:metadata>
+          <std:property key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:attribute name="templateId" value="tplNormalSearchComponent"/>
+        <cl:formdata std:sid="f-data-4059f44b" row="0" col="0"/>
+        <cl:output std:sid="output-211aafd1" value="Search Word">
+          <cl:formdata std:sid="f-data-f042d896" row="0" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-a3c68cbb" id="ipbSearchWord" showclearbutton="true">
+          <cl:listener std:sid="listener-e052580e" name="keyup" handler="onIpbSearchWordKeyup"/>
+          <cl:datamapbind property="value" datacontrolid="dmSearchParam" columnname="searchWord"/>
+          <cl:formdata std:sid="f-data-48d19255" valign="CENTER" height="32" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-81f2d66c" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="120" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-71bd10c3">
+        <std:metadata>
+          <std:property key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:attribute name="templateId" value="tplNormalSearchComponent"/>
+        <cl:formdata std:sid="f-data-b9169910" row="0" col="1"/>
+        <cl:output std:sid="output-3be072e3" value="Func Type">
+          <cl:formdata std:sid="f-data-e0dc8491" row="0" col="0"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-06dc2573" type="udc.MrcCodeView.MrcCodeView">
+          <cl:datamapbind property="value" datacontrolid="dmSearchParam" columnname="funcType"/>
+          <cl:formdata std:sid="f-data-e3a507da" valign="CENTER" height="32" row="0" col="1"/>
+          <cl:property name="url" value="ServiceUrls.ADM_SERVICE_URL + 'codeData'" type="string"/>
+          <cl:property name="params" value="{ &quot;tableName&quot;: &quot;FUNC_TYPE&quot; }" type="string"/>
+          <cl:property name="multiSelect" value="true" type="boolean"/>
+          <cl:property name="title" value="Func Type List" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-769458a2" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="120" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-4d94a77e">
+        <std:metadata>
+          <std:property key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:attribute name="templateId" value="tplNormalSearchComponent"/>
+        <cl:formdata std:sid="f-data-c16ddd1a" row="0" col="2"/>
+        <cl:output std:sid="output-0cb2b83c" value="Module">
+          <cl:formdata std:sid="f-data-10f47c6a" row="0" col="0"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-575a6bdf" type="udc.MrcCodeView.MrcCodeView">
+          <cl:datamapbind property="value" datacontrolid="dmSearchParam" columnname="moduleCode"/>
+          <cl:formdata std:sid="f-data-68e8909e" valign="CENTER" height="32" row="0" col="1"/>
+          <cl:property name="url" value="ServiceUrls.ADM_SERVICE_URL + &quot;codeData&quot;" type="string"/>
+          <cl:property name="params" value="{ &quot;tableName&quot;: &quot;MODULE_CODE&quot; }" type="string"/>
+          <cl:property name="title" value="Module List" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-3464d405" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="120" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-38fabad8">
+        <std:metadata>
+          <std:property key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:attribute name="templateId" value="tplNormalSearchComponent"/>
+        <cl:formdata std:sid="f-data-60e63c79" row="1" col="0"/>
+        <cl:output std:sid="output-7d08982b" value="Suite">
+          <cl:formdata std:sid="f-data-7697b1de" row="0" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-db8b4d6a" class="flow-checkbox">
+          <cl:formdata std:sid="f-data-50c23d84" valign="FILL" height="32" leftSpacing="0" rightSpacing="0" row="0" col="1"/>
+          <cl:checkbox std:sid="c-box-1fdb3dda" id="cbx1" falsevalue="false" text="Suite1 Flag">
+            <cl:datamapbind property="value" datacontrolid="dmSearchParam" columnname="suite1Flag"/>
+            <cl:flowlayoutdata std:sid="f-data-4e9980a0" width="69px" height="32px" autosize="width"/>
+          </cl:checkbox>
+          <cl:checkbox std:sid="c-box-c216202b" id="cbx2" falsevalue="false" text="Suite2 Flag">
+            <cl:datamapbind property="value" datacontrolid="dmSearchParam" columnname="suite2Flag"/>
+            <cl:flowlayoutdata std:sid="f-data-1dba01a9" width="69px" height="32px" autosize="width"/>
+          </cl:checkbox>
+          <cl:flowlayout std:sid="f-layout-ac08e848" hspacing="0" vspacing="0"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-c6aacf5b" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="120" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-8e99f095">
+        <cl:attribute name="templateId" value="tplNormalSearchButton"/>
+        <cl:formdata std:sid="f-data-c6c308c7" row="1" col="2"/>
+        <cl:button std:sid="button-252f1fda" id="btnReset" value="Reset">
+          <cl:listener std:sid="listener-956d3d16" name="click" handler="onBtnResetClick"/>
+          <cl:formdata std:sid="f-data-7d363a35" valign="CENTER" height="32" row="0" col="1"/>
+        </cl:button>
+        <cl:button std:sid="button-101c6914" id="btnSearch" class="secondary" value="Search">
+          <cl:listener std:sid="listener-519a4fe3" name="click" handler="onBtnSearchClick"/>
+          <cl:formdata std:sid="f-data-40595502" valign="CENTER" height="32" row="0" col="2"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-0b334ff0" hspace="8px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="80" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="80" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-c1a3db13" hspace="60px" vspace="12px" top-margin="20px" right-margin="20px" bottom-margin="20px" left-margin="20px">
+        <cl:rows length="32" autoSizing="true"/>
+        <cl:rows length="32" autoSizing="true"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-8991c335" id="grpContents">
+      <std:metadata>
+        <std:property key="template-uuid" value="f12dd661-efc0-47cf-b60d-7767e11f0d0c"/>
+        <std:property key="template-rev" value="3"/>
+      </std:metadata>
+      <cl:attribute name="templateId" value="tplNormalGrid"/>
+      <cl:formdata std:sid="f-data-00a37cc0" row="1" col="0"/>
+      <cl:output std:sid="output-8ae01b05" class="sub-title" value="Menu Funcitons List">
+        <cl:formdata std:sid="f-data-c24cf704" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-7219167e">
+        <cl:formdata std:sid="f-data-c3d106dc" height="24" row="1" col="0"/>
+        <cl:group std:sid="group-65c4e52b">
+          <std:metadata>
+            <std:property key="template-uuid" value="2eb88f9f-c645-42c0-bc37-6f504486300c"/>
+            <std:property key="template-rev" value="4"/>
+          </std:metadata>
+          <cl:attribute name="templateId" value="tplNormalTotalCount"/>
+          <cl:formdata std:sid="f-data-65d1f7be" row="0" col="0"/>
+          <cl:output std:sid="output-65bab025" value="Total">
+            <cl:formdata std:sid="f-data-3aa7c952" valign="FILL" height="18" row="0" col="0" rowspan="1" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-f7e8efd8" id="optTotalSize" style="font-weight:bold;">
+            <cl:formdata std:sid="f-data-b3e8e8d9" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-6fc676c3" class="mrc-vertical-bar">
+            <cl:formdata std:sid="f-data-843814de" row="0" col="2"/>
+          </cl:output>
+          <cl:combobox std:sid="c-box-5be746b5" id="cmbPageSize" class="page-size" preventinput="true">
+            <cl:listener std:sid="listener-eff98ef8" name="selection-change" handler="onCmbPageSizeSelectionChange"/>
+            <cl:datamapbind property="value" datacontrolid="dmSearchParam" columnname="pageSize"/>
+            <cl:formdata std:sid="f-data-7777c61f" valign="FILL" height="24" row="0" col="3"/>
+            <cl:item std:sid="t-item-d1085548" value="20">
+              <cl:expbind property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+            </cl:item>
+            <cl:item std:sid="t-item-db3576e2" label="50개씩 보기" value="50">
+              <cl:expbind property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+            </cl:item>
+            <cl:item std:sid="t-item-6e1c25b4" label="100개씩 보기" value="100">
+              <cl:expbind property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+            </cl:item>
+          </cl:combobox>
+          <cl:formlayout std:sid="f-layout-d50eea06" hspace="4px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="10" unit="PIXEL" autoSizing="true" minlength="0"/>
+            <cl:columns length="16" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:button std:sid="button-6ae3e12f" id="btnDelete" class="inner" value="Delete">
+          <cl:listener std:sid="listener-0c3b6c6e" name="click" handler="onBtnDeleteClick"/>
+          <cl:formdata std:sid="f-data-57ff358c" row="0" col="2"/>
+        </cl:button>
+        <cl:button std:sid="button-b2fa2c68" class="inner" value="Excel">
+          <cl:formdata std:sid="f-data-12bd607a" row="0" col="5"/>
+        </cl:button>
+        <cl:button std:sid="button-ed6973db" id="btnNew" class="inner-primary" value="New">
+          <cl:listener std:sid="listener-3c687787" name="click" handler="onBtnNewClick"/>
+          <cl:formdata std:sid="f-data-14138c48" row="0" col="3"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-cb7c0fbe" hspace="4px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="150" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="8" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="80" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="80" unit="PIXEL" autoSizing="true" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="80" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-944dde12">
+        <cl:formdata std:sid="f-data-4aa3d1f4" row="2" col="0" rowspan="1" colspan="1"/>
+        <cl:grid std:sid="grid-3db17a54" id="grdMain" datasetid="dsFunctionList" autofit="3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14" nodatamessage="No data to display." clickmode="edit">
+          <cl:formdata std:sid="f-data-be29a171" row="0" col="0"/>
+          <cl:gridcolumn std:sid="g-column-5ae0f974" width="40px"/>
+          <cl:gridcolumn std:sid="g-column-2f940cff" width="60px"/>
+          <cl:gridcolumn std:sid="g-column-1422213c" width="60px"/>
+          <cl:gridcolumn std:sid="g-column-aba341a5" visible="false"/>
+          <cl:gridcolumn std:sid="g-column-cdf5f2bd" width="60px"/>
+          <cl:gridcolumn std:sid="g-column-eb261d5d" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-c121c4fb" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-9b19076f" width="60px"/>
+          <cl:gridcolumn std:sid="g-column-fb928648" width="60px"/>
+          <cl:gridcolumn std:sid="g-column-f9ed58fe" width="60px"/>
+          <cl:gridcolumn std:sid="g-column-87ff0efd" width="60px"/>
+          <cl:gridcolumn std:sid="g-column-8ee72dca"/>
+          <cl:gridcolumn std:sid="g-column-c8ffc109" width="190px"/>
+          <cl:gridcolumn std:sid="g-column-21f2134b" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-b9c9f510" width="175px"/>
+          <cl:gridheader std:sid="gh-band-15fd077f">
+            <cl:gridrow std:sid="g-row-d1c2157b" height="30px"/>
+            <cl:gridcell std:sid="gh-cell-aad6bab0" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+            <cl:gridcell std:sid="gh-cell-896b63fc" rowindex="0" colindex="1" sortable="false" filterable="false" text="No."/>
+            <cl:gridcell std:sid="gh-cell-fd308307" rowindex="0" colindex="2" sortable="false" filterable="false" text="Detail"/>
+            <cl:gridcell std:sid="gh-cell-779f09e0" rowindex="0" colindex="3" sortable="false" filterable="false" text="id"/>
+            <cl:gridcell std:sid="gh-cell-a002e481" rowindex="0" colindex="4" sortable="false" filterable="false" text="Func Code"/>
+            <cl:gridcell std:sid="gh-cell-1bdac547" rowindex="0" colindex="5" sortable="false" filterable="false" text="Func Desc"/>
+            <cl:gridcell std:sid="gh-cell-d8dd306f" rowindex="0" colindex="6" sortable="false" filterable="false" text="Multi Lang Desc"/>
+            <cl:gridcell std:sid="gh-cell-30a3a878" rowindex="0" colindex="7" sortable="false" filterable="false" text="Func Type"/>
+            <cl:gridcell std:sid="gh-cell-f03571ab" rowindex="0" colindex="8" sortable="false" filterable="false" text="Module Code"/>
+            <cl:gridcell std:sid="gh-cell-153f9553" rowindex="0" colindex="9" sortable="false" filterable="false" text="Suite1 Flag"/>
+            <cl:gridcell std:sid="gh-cell-d2ab0e94" rowindex="0" colindex="10" sortable="false" filterable="false" text="Suite2 Flag"/>
+            <cl:gridcell std:sid="gh-cell-8d228d5f" rowindex="0" colindex="11" sortable="false" filterable="false" text="Func Lib"/>
+            <cl:gridcell std:sid="gh-cell-616bfdc4" rowindex="0" colindex="12" text="Func Link"/>
+            <cl:gridcell std:sid="gh-cell-8d11a941" rowindex="0" colindex="13" text="Func Params"/>
+            <cl:gridcell std:sid="gh-cell-c43534d0" rowindex="0" colindex="14" text="Tags"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-dd34ba2e">
+            <cl:gridrow std:sid="g-row-7167c5eb" height="30px"/>
+            <cl:gridcell std:sid="gd-cell-bc47939e" rowindex="0" colindex="0" columntype="checkbox"/>
+            <cl:gridcell std:sid="gd-cell-89df6247" rowindex="0" colindex="1" columntype="normal">
+              <cl:output std:sid="output-4d0fc256" style="text-align:center;">
+                <cl:expbind property="value" category="PROPERTY" expression="#cmbPageSize ? (getIndex() + 1) + (Number(#cmbPageSize.value) * #pixIndexer.currentPageIndex) : (getIndex() + 1)"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-312c5f6f" rowindex="0" colindex="2">
+              <cl:button std:sid="button-f7abbbe1" id="btnDetail" class="ic-detail" value="">
+                <cl:listener std:sid="listener-3e7fe650" name="click" handler="onBtnDetailClick"/>
+              </cl:button>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-aaeeebd6" rowindex="0" colindex="3" columnname="id"/>
+            <cl:gridcell std:sid="gd-cell-9f2323ed" rowindex="0" colindex="4" style="text-align:center;" columnname="funcCode"/>
+            <cl:gridcell std:sid="gd-cell-7cd01cb8" rowindex="0" colindex="5" style="text-align:left;" columnname="funcDesc"/>
+            <cl:gridcell std:sid="gd-cell-4e3162e4" rowindex="0" colindex="6" style="text-align:left;" columnname="funcLocaleDesc"/>
+            <cl:gridcell std:sid="gd-cell-c3ceb367" rowindex="0" colindex="7" style="text-align:center;" columnname="funcTypeDesc"/>
+            <cl:gridcell std:sid="gd-cell-58ee9f32" rowindex="0" colindex="8" style="text-align:center;" columnname="moduleDesc"/>
+            <cl:gridcell std:sid="gd-cell-0bc54f91" rowindex="0" colindex="9" columnname="suite1Flag">
+              <cl:checkbox std:sid="c-box-65ec542a" id="cbx3" style="text-align:center;" readonly="true"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-1f4f5a6e" rowindex="0" colindex="10" columnname="suite2Flag">
+              <cl:checkbox std:sid="c-box-898cd84b" id="cbx4" style="text-align:center;" readonly="true"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-1de00331" rowindex="0" colindex="11" columnname="funcLib"/>
+            <cl:gridcell std:sid="gd-cell-7128f8d4" rowindex="0" colindex="12" style="text-align:left;" columnname="funcLink"/>
+            <cl:gridcell std:sid="gd-cell-8e66cd66" rowindex="0" colindex="13" style="text-align:left;" columnname="funcParams"/>
+            <cl:gridcell std:sid="gd-cell-cbfeccb0" rowindex="0" colindex="14" style="text-align:left;" columnname="tags"/>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:group std:sid="group-f09e9dab">
+          <cl:formdata std:sid="f-data-a8891866" row="1" col="0"/>
+          <cl:udc std:sid="ud-control-ed9949ca" id="pixIndexer" type="udc.MrcPageIndexer.MrcPageIndexer">
+            <cl:listener std:sid="listener-4c1dcf86" name="page-change" handler="onPixIndexerPageChange"/>
+            <cl:datamapbind property="pageRowCount" category="PROPERTY" datacontrolid="dmSearchParam" columnname="pageSize"/>
+            <cl:datamapbind property="currentPageIndex" category="PROPERTY" datacontrolid="dmSearchParam" columnname="pageNumber"/>
+            <cl:formdata std:sid="f-data-c10ce6d3" row="0" col="1"/>
+          </cl:udc>
+          <cl:formlayout std:sid="f-layout-c2a14e05" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="300" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-8acde53b" hspace="0px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-5c1c85df" scrollable="false" hspace="0px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="1280"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-49d1c905" hspace="30px" vspace="30px" top-margin="30px" right-margin="30px" bottom-margin="30px" left-margin="30px">
+      <cl:rows length="114" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler>
+      <std:guide position="336"/>
+    </std:vruler>
+  </std:studiosetting>
+</html>

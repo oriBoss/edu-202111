@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-6b56fd5f" version="1.0.3167">
+  <head std:sid="head-16414ea6">
+    <screen std:sid="screen-aff29a92" id="default" name="default" minwidth="1024px" width="1024px" height="768px" useCustomWidth="true" useCustomHeight="true" customHeight="640" customWidth="540"/>
+    <screen std:sid="screen-f424f17e" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-c187211a" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-f7903e64"/>
+    <cl:appspec dev-comment="Width : 540&#xD;&#xA;Height : 640" title="[일반] 팝업창 가로 540 크기"/>
+  </head>
+  <body std:sid="body-fbf5f09c">
+    <cl:group std:sid="group-5835fa16" id="grpTitle">
+      <cl:formdata std:sid="f-data-3f402eec" row="0" col="0" rowspan="1" colspan="1"/>
+      <cl:output std:sid="output-0371f7b0" class="mrc-popup-title-small" value="Title">
+        <cl:formdata std:sid="f-data-8b1367f3" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-43e4517f" id="optClose" class="opus-ic-close-line-m" value="">
+        <cl:listener std:sid="listener-49d432ff" name="click" handler="onOptCloseClick"/>
+        <cl:formdata std:sid="f-data-4d54fb16" row="0" col="1"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-8a0bfc01" hspace="0px" vspace="0px">
+        <cl:rows length="32" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="20" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-77df230a" id="grpContents">
+      <cl:formdata std:sid="f-data-c6dcc433" row="1" col="0"/>
+      <cl:formlayout std:sid="f-layout-6d2a1c8d" hspace="0px" vspace="0px" top-margin="20px" right-margin="0px" bottom-margin="30px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-b31245eb" id="grpButtons" class="mrc-popup-button-area">
+      <cl:formdata std:sid="f-data-b4102036" row="2" col="0"/>
+      <cl:button std:sid="button-43fdf6d9" class="secondary" value="Reset">
+        <cl:formdata std:sid="f-data-bb0e9d81" row="0" col="1"/>
+      </cl:button>
+      <cl:button std:sid="button-bd02118f" class="primary" value="Save">
+        <cl:formdata std:sid="f-data-cf31b7b9" row="0" col="2"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-b5a38671" hspace="8px" vspace="8px" top-margin="30px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="80" autoSizing="true"/>
+        <cl:columns length="80" autoSizing="true"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-63b08142" hspace="0px" vspace="0px" top-margin="30px" right-margin="30px" bottom-margin="30px" left-margin="30px">
+      <cl:rows length="32" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="63" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

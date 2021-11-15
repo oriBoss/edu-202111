@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-956b8cd3" version="1.0.3167">
+  <head std:sid="head-29ded061">
+    <screen std:sid="screen-013cf8e8" id="default" name="default" minwidth="1024px" width="1024px" height="768px" useCustomWidth="true" useCustomHeight="true" customHeight="32" customWidth="200"/>
+    <screen std:sid="screen-526fcbbb" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-d401dc3a" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-c20d23fc"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-5582ac2b">
+    <cl:group std:sid="group-9b4c09e7" id="tplNormalTotalCount">
+      <std:metadata>
+        <std:property key="template-uuid" value="2eb88f9f-c645-42c0-bc37-6f504486300c"/>
+        <std:property key="template-rev" value="4"/>
+      </std:metadata>
+      <cl:attribute name="templateId" value="tplNormalTotalCount"/>
+      <cl:formdata std:sid="f-data-87b8d2a1" row="0" col="0"/>
+      <cl:output std:sid="output-dc5a2cb0" id="opt6" style="font-size:12px;" value="Total">
+        <cl:formdata std:sid="f-data-b3fb66f2" valign="FILL" height="18" row="0" col="0" rowspan="1" colspan="1"/>
+      </cl:output>
+      <cl:output std:sid="output-395a3fe1" id="optTotalSize" style="font-weight:bold; font-size:12px;">
+        <cl:formdata std:sid="f-data-88790934" row="0" col="1"/>
+      </cl:output>
+      <cl:output std:sid="output-ff61eeff" id="optBar" style="font-size:9pt; text-align:center;" value="|">
+        <cl:formdata std:sid="f-data-0f9af4a1" row="0" col="2"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-809fa723" id="cmbPageSize" style="font-size:9pt;" value="20" preventinput="true">
+        <cl:formdata std:sid="f-data-f35ad6f3" valign="FILL" height="24" row="0" col="3"/>
+        <cl:item std:sid="t-item-a6c04760" value="20">
+          <cl:expbind property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+        </cl:item>
+        <cl:item std:sid="t-item-4a18ca61" label="50개씩 보기" value="50">
+          <cl:expbind property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+        </cl:item>
+        <cl:item std:sid="t-item-79b3fd32" label="100개씩 보기" value="100">
+          <cl:expbind property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+        </cl:item>
+      </cl:combobox>
+      <cl:formlayout std:sid="f-layout-5455a21a" hspace="4px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        <cl:columns length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="10" unit="PIXEL" autoSizing="true" minlength="0"/>
+        <cl:columns length="16" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-b0906d84" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,87 @@
+
+/* 라디오 버튼 */
+.cl-radiobutton.toggle {
+    text-align: center;     
+    
+    /* 라디오 버튼 아이템 */
+    .cl-radiobutton-item {
+        /* 아이콘 정렬을 설정 */
+        
+        .cl-icon-wrapper {
+            // 기본 icon영역 제거
+            width : 0px !important;                 
+        }           
+        
+        // 텍스트 영역 확대(텍스트외 전체 버튼 클릭동작을 위해 적용)
+        .cl-radiobutton-field {
+            width : 100%;
+            height : 100%;
+        }
+        
+        /* 라디오 버튼 아이템 텍스트 */
+        .cl-text {
+            // 기본 padding-left : 3px 제거
+            padding: 0px;           
+        }
+        
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        
+        &:not(.cl-first-column) {
+            border-left: 1px solid #ddd;
+        }
+        
+        &.cl-first-column {
+            border-left: 1px solid #ddd;
+            border-radius: 2px 0px 0px 2px;
+        }
+        
+        //
+        &.cl-last-column {
+            border-right: 1px solid #ddd;
+            border-radius: 0px 2px 2px 0px;
+        }
+        
+        /* 라디오아이템 아이콘 스타일 */
+        .cl-radiobutton-icon {
+            width: 0px;
+            visibility: hidden;
+            display: block !important;
+        }
+        
+        /* 라디오아이템 hover시 아이콘 스타일 */
+        &:hover,
+        &.cl-hover {
+            .cl-radiobutton-icon {
+                // background-image:url(icons/radio-hover.png);
+            }
+        }
+        
+        /* 선택된 라디오아이템 아이콘 스타일 */
+        &.cl-selected {
+            color : #0055b9;
+            border: 1px solid #0055b9; 
+            background-color: rgba(0, 85, 185, 0.08);                  
+            
+            .cl-radiobutton-icon {
+                // background-image:url(icons/radio-selected.png);
+            }
+            
+            /* 선택된 라디오아이템 hover시 아이콘 스타일 */
+            &:hover,
+            &.cl-hover {
+                .cl-radiobutton-icon {
+                    // background-image:url(icons/radio-hover-selected.png);
+                }
+            }
+            
+            + .cl-radiobutton-item {
+                border-left: 0px;
+            }
+        }
+        
+        &:not(.cl-selected) {
+            background-color: #FFFFFF;
+        }
+    }
+}
