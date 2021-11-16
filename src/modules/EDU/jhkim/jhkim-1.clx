@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-953e8320" version="1.0.3388">
+  <head std:sid="head-bcf92ee5">
+    <screen std:sid="screen-b8b5b98e" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-72fc283c" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-96c0d1dc" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-910f7baf"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-33179b81">
+    <cl:formlayout std:sid="f-layout-849fd2b6" scrollable="false" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
