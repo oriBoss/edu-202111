@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4f2a5d97" version="1.0.3167">
+  <head std:sid="head-04327031">
+    <screen std:sid="screen-859d3d27" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-2ee726d6" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-5a2ee02a" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-ad7c1968"/>
+    <cl:appspec preferred-width="1280" dev-comment="templates/normal/NormalBasicLayout.clx 템플릿 사용하여 작성 함."/>
+  </head>
+  <body std:sid="body-b2ea43ef">
+    <cl:group std:sid="group-644cc1ce" id="grp1" class="search-box">
+      <std:metadata>
+        <std:property key="template-uuid" value="3e037c2d-fec7-4915-8d3c-85690bdb79a5"/>
+        <std:property key="template-rev" value="9"/>
+      </std:metadata>
+      <cl:attribute name="templateId" value="tplNormalSearch1Row"/>
+      <cl:formdata std:sid="f-data-c042beed" row="0" col="0" rowspan="1" colspan="1"/>
+      <cl:group std:sid="group-b5958c79" id="grp2">
+        <std:metadata>
+          <std:property key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:attribute name="templateId" value="tplNormalSearchComponent"/>
+        <cl:formdata std:sid="f-data-15d6e4b8" row="0" col="0"/>
+        <cl:output std:sid="output-7819b092" id="opt1" value="Output">
+          <cl:formdata std:sid="f-data-67ce2290" row="0" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-1a49cbce" id="ipb1" showclearbutton="true">
+          <cl:formdata std:sid="f-data-226d6566" valign="CENTER" height="32" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-a107822c" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="120" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-29c79118" id="grp3">
+        <std:metadata>
+          <std:property key="template-uuid" value="69b15cee-c51c-4b5c-8287-d205cbbac7f4"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:attribute name="templateId" value="tplNormalSearchComponent"/>
+        <cl:formdata std:sid="f-data-06688cd3" row="0" col="1"/>
+        <cl:output std:sid="output-945f6bd8" id="opt2" value="Output">
+          <cl:formdata std:sid="f-data-e3a83cbb" row="0" col="0"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-e086dfdc" id="cmb1">
+          <cl:formdata std:sid="f-data-0b4f4dca" valign="CENTER" height="32" row="0" col="1"/>
+        </cl:combobox>
+        <cl:formlayout std:sid="f-layout-0a77bd28" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="120" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-8d2d03f4" id="grp4">
+        <cl:attribute name="templateId" value="tplNormalSearchButton"/>
+        <cl:formdata std:sid="f-data-1dac34ce" row="0" col="2"/>
+        <cl:button std:sid="button-cfd55955" id="btn1" value="초기화">
+          <cl:formdata std:sid="f-data-dddc1c17" valign="CENTER" height="32" row="0" col="1"/>
+        </cl:button>
+        <cl:button std:sid="button-653e7269" id="btn2" class="secondary" value="검색">
+          <cl:formdata std:sid="f-data-5254bf73" valign="CENTER" height="32" row="0" col="2"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-e99c4347" hspace="8px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="80" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="80" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-b5047620" hspace="60px" vspace="12px" top-margin="20px" right-margin="20px" bottom-margin="20px" left-margin="20px">
+        <cl:rows length="32" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-b75d2e2b" hspace="0px" vspace="30px" top-margin="30px" right-margin="30px" bottom-margin="30px" left-margin="30px">
+      <cl:rows length="72" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="72"/>
+      <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
