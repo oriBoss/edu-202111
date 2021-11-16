@@ -61,7 +61,7 @@ typings/
 .next
 
 # eclipse ignore
-#.project
+.project
 
 # ignore all compiled source
 build/**
