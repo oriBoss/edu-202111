@@ -4,10 +4,8 @@
  *
  * @author Miracom
  ************************************************/
-//var SiteServiceUrls = cpr.core.Module.require("config/SiteServiceUrls").SiteServiceUrls;
-
-var SERVICE_URL = "https://developers.miracom.co.kr";
-var CONTEXT_PATH = "/berlin";
+var SERVICE_URL = "http://localhost:0000";
+var CONTEXT_PATH = "";
 
 var CoreServiceUrls ={
     CONTEXT_PATH : CONTEXT_PATH,
@@ -25,8 +23,8 @@ var CoreServiceUrls ={
 	
 	PUSH_SERVER_URL: SERVICE_URL + CONTEXT_PATH + "/mesplus",
 	
-	CLOUD_STORAGE_SERVICE_URL: "https://mes-dev.miracom.co.kr" + CONTEXT_PATH + "/v1/",
-	REDIRECT_SERVICE_URL: "https://mes-dev.miracom.co.kr" + CONTEXT_PATH,
+	CLOUD_STORAGE_SERVICE_URL: SERVICE_URL + CONTEXT_PATH + "/v1/",
+	REDIRECT_SERVICE_URL: SERVICE_URL + CONTEXT_PATH,
 }
 
 var ServiceUrls = Object.assign(CoreServiceUrls, {} /*SiteServiceUrls*/);
