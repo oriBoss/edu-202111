@@ -16,10 +16,24 @@
           <cl:datacolumn std:sid="d-column-f8e8cb2d" name="searchWord"/>
         </cl:datacolumnlist>
       </cl:datamap>
-      <cl:submission std:sid="submission-f770b4f1" id="smsGetfunctions" mediatype="application/x-www-form-urlencoded;simple">
+      <cl:datamap std:sid="d-map-5dddfcac" id="dmFunction">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-ad96fe4f" name="funcCode"/>
+          <cl:datacolumn std:sid="d-column-5230c3e8" name="funcDesc"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-f770b4f1" id="smsGetfunctions" method="get" mediatype="application/x-www-form-urlencoded;simple">
         <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions&quot;"/>
         <cl:requestdata dataid="dmSearch"/>
-        <cl:responsedata dataid="dsFunctionList" isadd="false"/>
+        <cl:responsedata dataid="dsFunctionList" alias="list" isadd="false"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-9d561b1c" id="smsGetFunction" method="get" mediatype="application/x-www-form-urlencoded;simple">
+        <cl:listener std:sid="listener-2e431539" name="submit-success" handler="onSmsGetFunctionSubmitSuccess"/>
+        <cl:responsedata dataid="dmFunction"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-0c440cd3" id="smsPostFunctions" method="put" mediatype="application/json">
+        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions/&quot; + #dmFunction.funcCode"/>
+        <cl:requestdata dataid="dmFunction"/>
       </cl:submission>
     </cl:model>
     <cl:appspec/>
@@ -27,7 +41,41 @@
   <body std:sid="body-c7ee684f">
     <cl:button std:sid="button-0f056d65" id="btn1" value="Button">
       <cl:listener std:sid="listener-eebd9e93" name="click" handler="onBtn1Click"/>
-      <cl:xylayoutdata std:sid="xyl-data-8239fba3" top="57px" left="75px" width="138px" height="47px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:xylayoutdata std:sid="xyl-data-8239fba3" top="37px" left="36px" width="138px" height="47px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:grid std:sid="grid-f3b27cd0" id="grd1" datasetid="dsFunctionList">
+      <cl:listener std:sid="listener-ee23f7c7" name="selection-change" handler="onGrd1SelectionChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-4ad6697c" top="93px" left="36px" width="724px" height="239px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-5fb0bffd"/>
+      <cl:gridcolumn std:sid="g-column-fa3fedce"/>
+      <cl:gridheader std:sid="gh-band-6797bfe6">
+        <cl:gridrow std:sid="g-row-8673c46b"/>
+        <cl:gridcell std:sid="gh-cell-30cae9dc" rowindex="0" colindex="0" text="기능 코드"/>
+        <cl:gridcell std:sid="gh-cell-9716bed7" rowindex="0" colindex="1" text="기능 설명"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-9e73580a">
+        <cl:gridrow std:sid="g-row-34e1b879"/>
+        <cl:gridcell std:sid="gd-cell-34524cc4" rowindex="0" colindex="0" columnname="funcCode"/>
+        <cl:gridcell std:sid="gd-cell-c8469140" rowindex="0" colindex="1" columnname="funcDesc"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:output std:sid="output-c217b844" id="opt1" value="기능 코드">
+      <cl:xylayoutdata std:sid="xyl-data-c73dc22a" top="391px" left="43px" width="175px" height="35px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-ad46afb8" id="opt2" value="기능 설명">
+      <cl:xylayoutdata std:sid="xyl-data-53e631ae" top="457px" left="43px" width="175px" height="35px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:inputbox std:sid="i-box-77770209" id="ipbFuncCode">
+      <cl:datamapbind property="value" datacontrolid="dmFunction" columnname="funcCode"/>
+      <cl:xylayoutdata std:sid="xyl-data-9a07e423" top="390px" left="283px" width="180px" height="35px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:inputbox std:sid="i-box-0abf6f79" id="ipbFuncDesc">
+      <cl:datamapbind property="value" datacontrolid="dmFunction" columnname="funcDesc"/>
+      <cl:xylayoutdata std:sid="xyl-data-18a47f46" top="457px" left="277px" width="180px" height="35px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:button std:sid="button-bcaca8b6" id="btn2" value="SAVE">
+      <cl:listener std:sid="listener-26065475" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-2595a02a" top="399px" left="589px" width="171px" height="71px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:xylayout std:sid="xylayout-0d55a8aa"/>
   </body>

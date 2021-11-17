@@ -14,5 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "tui-jsdoc-template": "^1.2.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
   }
 }
