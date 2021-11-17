@@ -12,7 +12,7 @@
     <cl:group std:sid="group-ca731b54" id="tplNormalGrid">
       <std:metadata>
         <std:property key="template-uuid" value="f12dd661-efc0-47cf-b60d-7767e11f0d0c"/>
-        <std:property key="template-rev" value="11"/>
+        <std:property key="template-rev" value="12"/>
       </std:metadata>
       <cl:attribute name="templateId" value="tplNormalGrid"/>
       <cl:formdata std:sid="f-data-c3e42575" row="0" col="0"/>
@@ -40,13 +40,13 @@
           <cl:combobox std:sid="c-box-5f7eb8bd" id="cmbPageSize" class="page-size" value="20" preventinput="true">
             <cl:formdata std:sid="f-data-20a773b0" valign="FILL" height="24" row="0" col="3"/>
             <cl:item std:sid="t-item-1e46e11f" value="20">
-              <cl:expbind property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+              <cl:expbind property="label" category="PROPERTY" expression="value + &quot;개씩 보기&quot;"/>
             </cl:item>
             <cl:item std:sid="t-item-8e4a4d1c" label="50개씩 보기" value="50">
-              <cl:expbind property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+              <cl:expbind property="label" category="PROPERTY" expression="value + &quot;개씩 보기&quot;"/>
             </cl:item>
             <cl:item std:sid="t-item-4273141e" label="100개씩 보기" value="100">
-              <cl:expbind property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+              <cl:expbind property="label" category="PROPERTY" expression="value + &quot;개씩 보기&quot;"/>
             </cl:item>
           </cl:combobox>
           <cl:formlayout std:sid="f-layout-d5f25af1" hspace="4px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
@@ -110,11 +110,7 @@
           <cl:griddetail std:sid="gd-band-ead92260">
             <cl:gridrow std:sid="g-row-f9192e7d" height="30px"/>
             <cl:gridcell std:sid="gd-cell-c62de14c" rowindex="0" colindex="0" columntype="checkbox"/>
-            <cl:gridcell std:sid="gd-cell-125c6578" rowindex="0" colindex="1" columntype="normal">
-              <cl:output std:sid="output-1cde73a0">
-                <cl:expbind property="value" category="PROPERTY" expression="#cmbPageSize ? (getIndex() + 1) + (Number(#cmbPageSize.value) * (#pixIndexer.currentPageIndex - 1)) : (getIndex() + 1)"/>
-              </cl:output>
-            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-125c6578" rowindex="0" colindex="1" columntype="rowindex"/>
             <cl:gridcell std:sid="gd-cell-b35b8a32" rowindex="0" colindex="2">
               <cl:button std:sid="button-9b523c72" class="ic-detail"/>
             </cl:gridcell>
