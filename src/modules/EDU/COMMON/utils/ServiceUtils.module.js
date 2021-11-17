@@ -167,137 +167,137 @@ ServiceUtils.prototype._getAuthCode = function () {
 	return undefined;
 }
 
-var send = cpr.protocols.Submission.prototype.send;
-cpr.protocols.Submission.prototype.send = function () {
-	
-	var LogUtils = cpr.core.Module.require("utils/LogUtils").LogUtils;
-	var application;
-	
-	this._send = send;
-	
-	LogUtils.debug("Start REST CALL- [" + this.method + "] action - " + this.action + " mediaType = " + this.mediaType);
-	
-	application = this.getAppInstance();
-	// create ShellComponent...
-	if (application) {
-		var shellComponent = application.lookup('$rest-progress-spin');
-		if (shellComponent === undefined) {
-			shellComponent = new cpr.controls.UIControlShell("$rest-progress-spin");
-	
-			shellComponent.addEventListener("load", function(e){
-			
-				var opts = {
-				  lines: 12, // The number of lines to draw
-				  length: 29, // The length of each line
-				  width: 12, // The line thickness
-				  radius: 42, // The radius of the inner circle
-				  scale: 0.45, // Scales overall size of the spinner
-				  corners: 1, // Corner roundness (0..1)
-				  speed: 1.1, // Rounds per second
-				  rotate: 25, // The rotation offset
-				  animation: 'spinner-line-fade-quick', // The CSS animation name for the lines
-				  direction: 1, // 1: clockwise, -1: counterclockwise
-				  color: '#6e6e6e', //'#4f94ab', // CSS color or array of colors
-				  fadeColor: 'transparent', // CSS color or array of colors
-				  top: '51%', // Top position relative to parent
-				  left: '51%', // Left position relative to parent
-				  shadow: '0 0 1px transparent', // Box-shadow for the lines
-				  zIndex: 2000000000, // The z-index (defaults to 2e9)
-				  className: 'spinner', // The CSS class to assign to the spinner
-				  position: 'absolute', // Element positioning
-				};
-				
-				var spinner = new Spin.Spinner(opts).spin(e.content);
-			});
-			var actualRect = application.getActualRect();
-			application.floatControl(shellComponent, cpr.controls.layouts.XYLayout.createConstraintWithRect(new cpr.geometry.Rectangle((actualRect.width / 2) - 25, (actualRect.height / 2) - 25)));
-		}
-		
-		shellComponent.visible = true;
-	}
-	return this._send();	
-}
-
-cpr.events.EventBus.INSTANCE.addFilter("submit-success", function (e) {
-	var LogUtils = cpr.core.Module.require("utils/LogUtils").LogUtils;
-	
-	LogUtils.debug("SUCCESS REST CALL- [" + this.method + "] action - " + this.action + " mediaType = " + this.mediaType);
-});
-	
-cpr.events.EventBus.INSTANCE.addFilter("submit-error", function (e) {
-	var LogUtils = cpr.core.Module.require("utils/LogUtils").LogUtils;
-	
-	LogUtils.debug("ERROR REST CALL- [" + this.method + "] action - " + this.action + " mediaType = " + this.mediaType);
-	LogUtils.debug("ERROR Message - " + e.message);
-});
-	
-cpr.events.EventBus.INSTANCE.addFilter("submit-done", function(e) {
-	
-	var LogUtils = cpr.core.Module.require("utils/LogUtils").LogUtils;
-	var application = this.getAppInstance();
-	
-	if (application) {
-		var progressSpin = application.lookup("$rest-progress-spin")
-		if (progressSpin) {
-			progressSpin.visible = false;
-		}
-	}
-	LogUtils.debug("End REST CALL- [" + this.method + "] action - " + this.action + " mediaType = " + this.mediaType);	
-});
-
-/*
- * 서브미션 에러에 대해 공통 처리하기 위한 로직 
- */
-var addEventListener = cpr.protocols.Submission.prototype.addEventListener; 
-cpr.protocols.Submission.prototype.addEventListener = function(type, listener) {
-	this._addEventListener = addEventListener;
-	if (!this.listeners) {
-		this.listeners = [];
-	}	
-	this.listeners.push(type);
-	
-	this._addEventListener(type, listener);
-}
-
-cpr.events.EventBus.INSTANCE.addFilter("error-status", function(e) {
-	if (!(e.control instanceof cpr.protocols.Submission)) {
-		return;
-	}
-	
-	/** @type cpr.protocols.Submission */
-	var submission = e.control;
-
-	if (!submission.listeners || submission.listeners.indexOf("error-status") < 0) {
-		e.preventDefault();
-	}
-});
-
-cpr.events.EventBus.INSTANCE.addFilter("submit-error", function(e) {
-	var CommonUtils = cpr.core.Module.require("utils/CommonUtils").CommonUtils;
-	
-	if (!(e.control instanceof cpr.protocols.Submission)) {
-		return;
-	}
-	
-	/** @type cpr.protocols.Submission */
-	var submission = e.control;
-	var httpRequest = submission.xhr;
-	
-	if (httpRequest.status === 401) {
-		// TODO 인증 오류일 경우 공통에서 처리, 인증 오류에 대한 처리 로직 추가 필요
-		e.preventDefault();
-		e.stopPropagation();
-	} else if (httpRequest.status === 400) {
-		// TODO 에러 표시 방식에 대한 결정 필요
-		if (!submission.listeners || submission.listeners.indexOf("submit-error") < 0) {
-			var response = JSON.parse(httpRequest.responseText);
-			CommonUtils.alert(submission.getAppInstance(), "에러", response.code + " : " + response.description);
-		}
-	} else{
-		// TODO 그 외 오류는 공통에서 처리
-		CommonUtils.alert(submission.getAppInstance(), "에러", "네트워크 에러가 발생했습니다.");
-	}
-});
+//var send = cpr.protocols.Submission.prototype.send;
+//cpr.protocols.Submission.prototype.send = function () {
+//	
+//	var LogUtils = cpr.core.Module.require("utils/LogUtils").LogUtils;
+//	var application;
+//	
+//	this._send = send;
+//	
+//	LogUtils.debug("Start REST CALL- [" + this.method + "] action - " + this.action + " mediaType = " + this.mediaType);
+//	
+//	application = this.getAppInstance();
+//	// create ShellComponent...
+//	if (application) {
+//		var shellComponent = application.lookup('$rest-progress-spin');
+//		if (shellComponent === undefined) {
+//			shellComponent = new cpr.controls.UIControlShell("$rest-progress-spin");
+//	
+//			shellComponent.addEventListener("load", function(e){
+//			
+//				var opts = {
+//				  lines: 12, // The number of lines to draw
+//				  length: 29, // The length of each line
+//				  width: 12, // The line thickness
+//				  radius: 42, // The radius of the inner circle
+//				  scale: 0.45, // Scales overall size of the spinner
+//				  corners: 1, // Corner roundness (0..1)
+//				  speed: 1.1, // Rounds per second
+//				  rotate: 25, // The rotation offset
+//				  animation: 'spinner-line-fade-quick', // The CSS animation name for the lines
+//				  direction: 1, // 1: clockwise, -1: counterclockwise
+//				  color: '#6e6e6e', //'#4f94ab', // CSS color or array of colors
+//				  fadeColor: 'transparent', // CSS color or array of colors
+//				  top: '51%', // Top position relative to parent
+//				  left: '51%', // Left position relative to parent
+//				  shadow: '0 0 1px transparent', // Box-shadow for the lines
+//				  zIndex: 2000000000, // The z-index (defaults to 2e9)
+//				  className: 'spinner', // The CSS class to assign to the spinner
+//				  position: 'absolute', // Element positioning
+//				};
+//				
+//				var spinner = new Spin.Spinner(opts).spin(e.content);
+//			});
+//			var actualRect = application.getActualRect();
+//			application.floatControl(shellComponent, cpr.controls.layouts.XYLayout.createConstraintWithRect(new cpr.geometry.Rectangle((actualRect.width / 2) - 25, (actualRect.height / 2) - 25)));
+//		}
+//		
+//		shellComponent.visible = true;
+//	}
+//	return this._send();	
+//}
+//
+//cpr.events.EventBus.INSTANCE.addFilter("submit-success", function (e) {
+//	var LogUtils = cpr.core.Module.require("utils/LogUtils").LogUtils;
+//	
+//	LogUtils.debug("SUCCESS REST CALL- [" + this.method + "] action - " + this.action + " mediaType = " + this.mediaType);
+//});
+//	
+//cpr.events.EventBus.INSTANCE.addFilter("submit-error", function (e) {
+//	var LogUtils = cpr.core.Module.require("utils/LogUtils").LogUtils;
+//	
+//	LogUtils.debug("ERROR REST CALL- [" + this.method + "] action - " + this.action + " mediaType = " + this.mediaType);
+//	LogUtils.debug("ERROR Message - " + e.message);
+//});
+//	
+//cpr.events.EventBus.INSTANCE.addFilter("submit-done", function(e) {
+//	
+//	var LogUtils = cpr.core.Module.require("utils/LogUtils").LogUtils;
+//	var application = this.getAppInstance();
+//	
+//	if (application) {
+//		var progressSpin = application.lookup("$rest-progress-spin")
+//		if (progressSpin) {
+//			progressSpin.visible = false;
+//		}
+//	}
+//	LogUtils.debug("End REST CALL- [" + this.method + "] action - " + this.action + " mediaType = " + this.mediaType);	
+//});
+//
+///*
+// * 서브미션 에러에 대해 공통 처리하기 위한 로직 
+// */
+//var addEventListener = cpr.protocols.Submission.prototype.addEventListener; 
+//cpr.protocols.Submission.prototype.addEventListener = function(type, listener) {
+//	this._addEventListener = addEventListener;
+//	if (!this.listeners) {
+//		this.listeners = [];
+//	}	
+//	this.listeners.push(type);
+//	
+//	this._addEventListener(type, listener);
+//}
+//
+//cpr.events.EventBus.INSTANCE.addFilter("error-status", function(e) {
+//	if (!(e.control instanceof cpr.protocols.Submission)) {
+//		return;
+//	}
+//	
+//	/** @type cpr.protocols.Submission */
+//	var submission = e.control;
+//
+//	if (!submission.listeners || submission.listeners.indexOf("error-status") < 0) {
+//		e.preventDefault();
+//	}
+//});
+//
+//cpr.events.EventBus.INSTANCE.addFilter("submit-error", function(e) {
+//	var CommonUtils = cpr.core.Module.require("utils/CommonUtils").CommonUtils;
+//	
+//	if (!(e.control instanceof cpr.protocols.Submission)) {
+//		return;
+//	}
+//	
+//	/** @type cpr.protocols.Submission */
+//	var submission = e.control;
+//	var httpRequest = submission.xhr;
+//	
+//	if (httpRequest.status === 401) {
+//		// TODO 인증 오류일 경우 공통에서 처리, 인증 오류에 대한 처리 로직 추가 필요
+//		e.preventDefault();
+//		e.stopPropagation();
+//	} else if (httpRequest.status === 400) {
+//		// TODO 에러 표시 방식에 대한 결정 필요
+//		if (!submission.listeners || submission.listeners.indexOf("submit-error") < 0) {
+//			var response = JSON.parse(httpRequest.responseText);
+//			CommonUtils.alert(submission.getAppInstance(), "에러", response.code + " : " + response.description);
+//		}
+//	} else{
+//		// TODO 그 외 오류는 공통에서 처리
+//		CommonUtils.alert(submission.getAppInstance(), "에러", "네트워크 에러가 발생했습니다.");
+//	}
+//});
 
 
 exports.ServiceUtils = ServiceUtils;
