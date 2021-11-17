@@ -4,7 +4,7 @@
  *
  * @author Miracom
  ************************************************/
-var SERVICE_URL = "http://localhost:0000";
+var SERVICE_URL = "http://localhost:3333";
 var CONTEXT_PATH = "";
 
 var CoreServiceUrls ={
