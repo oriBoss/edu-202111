@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-279bee52" version="1.0.3388">
+  <head std:sid="head-ee7eb562">
+    <screen std:sid="screen-8df5a8df" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-a0bac5c4" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-27e894e6" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-a80ca7a8">
+      <cl:dataset std:sid="d-set-cc633713" id="dsFunctionList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-c1132a21" name="funcCode"/>
+          <cl:datacolumn std:sid="d-column-408891c9" name="funcDesc"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-f3c6dc06" id="dmSearch">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-f8e8cb2d" name="searchWord"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-f770b4f1" id="smsGetfunctions" mediatype="application/x-www-form-urlencoded;simple">
+        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions&quot;"/>
+        <cl:requestdata dataid="dmSearch"/>
+        <cl:responsedata dataid="dsFunctionList" isadd="false"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-c7ee684f">
+    <cl:button std:sid="button-0f056d65" id="btn1" value="Button">
+      <cl:listener std:sid="listener-eebd9e93" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-8239fba3" top="57px" left="75px" width="138px" height="47px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-0d55a8aa"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
