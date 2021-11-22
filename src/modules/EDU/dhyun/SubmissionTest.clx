@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-fab85ea3" version="1.0.3388">
+  <head std:sid="head-4fb53ee6">
+    <screen std:sid="screen-27068f1a" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-e403c3ce" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-c51410b6" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-c8942c52">
+      <cl:dataset std:sid="d-set-dce4a878" id="dsFunctionList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-bd8cd17a" name="funcCode"/>
+          <cl:datacolumn std:sid="d-column-074bf34b" name="funcDesc"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-1e10af3d" id="dmSearch">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-96145140" name="searchWord" datatype="string"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-28cdca20" id="dmFunction">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-1ef21743" name="funcCode"/>
+          <cl:datacolumn std:sid="d-column-bb3d95c5" name="funcDesc"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-b5214d8e" id="smsGetFunctions" method="get">
+        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions&quot;"/>
+        <cl:requestdata dataid="dmSearch"/>
+        <cl:responsedata dataid="dsFunctionList" alias="list"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-ee64eec6" id="smsGetFunction" method="get" mediatype="application/x-www-form-urlencoded;simple">
+        <cl:listener std:sid="listener-bb5f2574" name="submit-success" handler="onSmsGetFunctionSubmitSuccess"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-5c7d3e06" id="smsPostFunctions" method="put" mediatype="application/json">
+        <cl:requestdata dataid="dmFunction"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-badc42ae">
+    <cl:button std:sid="button-65c71c06" id="btn1" value="List">
+      <cl:listener std:sid="listener-4c48430f" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-a4967213" top="75px" left="81px" width="106px" height="50px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:grid std:sid="grid-15c1945b" id="grd1" datasetid="dsFunctionList">
+      <cl:listener std:sid="listener-1bcef067" name="selection-change" handler="onGrd1SelectionChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-25bbe9d1" top="169px" left="81px" width="550px" height="295px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-28f8ebe2"/>
+      <cl:gridcolumn std:sid="g-column-ef54cbc9"/>
+      <cl:gridheader std:sid="gh-band-ed578132">
+        <cl:gridrow std:sid="g-row-7da068fd"/>
+        <cl:gridcell std:sid="gh-cell-cf4eb563" rowindex="0" colindex="0" text="기능 코드"/>
+        <cl:gridcell std:sid="gh-cell-a7e78ea0" rowindex="0" colindex="1" text="기능 설명"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-94b9591d">
+        <cl:gridrow std:sid="g-row-cec56207"/>
+        <cl:gridcell std:sid="gd-cell-b5ea383c" rowindex="0" colindex="0" columnname="funcCode"/>
+        <cl:gridcell std:sid="gd-cell-fd9cb2b5" rowindex="0" colindex="1" columnname="funcDesc"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:output std:sid="output-f4d21752" id="opt1" value="기능 코드">
+      <cl:xylayoutdata std:sid="xyl-data-7ecc20d1" top="75px" left="298px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-79ddbb91" id="opt2" value="기능 설명">
+      <cl:xylayoutdata std:sid="xyl-data-a5579b13" top="105px" left="298px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:inputbox std:sid="i-box-c3ce2626" id="ipbFuncCode">
+      <cl:datamapbind property="value" datacontrolid="dmFunction" columnname="funcCode"/>
+      <cl:xylayoutdata std:sid="xyl-data-5a56ffaf" top="75px" left="414px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:inputbox std:sid="i-box-490c055c" id="ipbFuncDesc">
+      <cl:datamapbind property="value" datacontrolid="dmFunction" columnname="funcDesc"/>
+      <cl:xylayoutdata std:sid="xyl-data-ca65edd1" top="105px" left="414px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:button std:sid="button-d56ecc96" id="btn2" class="primary" value="Save">
+      <cl:listener std:sid="listener-95ebd806" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-7f2588a9" top="75px" left="531px" width="100px" height="50px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-08d9c920"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
