@@ -209,8 +209,8 @@
             <cl:gridcell std:sid="gh-cell-cd605658" rowindex="0" colindex="9" sortable="false" filterable="false" text="자동차부품"/>
             <cl:gridcell std:sid="gh-cell-1d99e56b" rowindex="0" colindex="10" sortable="false" filterable="false" text="기능 Lib"/>
             <cl:gridcell std:sid="gh-cell-ddbc3763" rowindex="0" colindex="11" sortable="false" filterable="false" text="기능 연결"/>
-            <cl:gridcell rowindex="0" colindex="12" text="매개 변수"/>
-            <cl:gridcell rowindex="0" colindex="13" text="태그"/>
+            <cl:gridcell std:sid="gh-cell-06176bd7" rowindex="0" colindex="12" text="매개 변수"/>
+            <cl:gridcell std:sid="gh-cell-e7e9636e" rowindex="0" colindex="13" text="태그"/>
           </cl:gridheader>
           <cl:griddetail std:sid="gd-band-61279b86">
             <cl:gridrow std:sid="g-row-fcd0554d" height="30px"/>
@@ -238,8 +238,8 @@
             </cl:gridcell>
             <cl:gridcell std:sid="gd-cell-46e6a55d" rowindex="0" colindex="10" columnname="funcLib"/>
             <cl:gridcell std:sid="gd-cell-aa32d919" rowindex="0" colindex="11" columnname="funcLink"/>
-            <cl:gridcell rowindex="0" colindex="12" columnname="funcParams"/>
-            <cl:gridcell rowindex="0" colindex="13" columnname="tags"/>
+            <cl:gridcell std:sid="gd-cell-02c79896" rowindex="0" colindex="12" columnname="funcParams"/>
+            <cl:gridcell std:sid="gd-cell-10fe5ba2" rowindex="0" colindex="13" columnname="tags"/>
           </cl:griddetail>
         </cl:grid>
         <cl:group std:sid="group-2f8a5342" id="grp9">
