@@ -5,6 +5,17 @@
     <screen std:sid="screen-d455f53d" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
     <screen std:sid="screen-1b1c6f5c" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
     <cl:model std:sid="model-f7903e64">
+      <cl:dataset std:sid="d-set-c7d6b859" id="dsFuncParams">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-915e9b22" name="param" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-542c93a8" name="value"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-dc362d28" id="dsTags">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-003615c1" name="tag"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
       <cl:datamap std:sid="d-map-5ee688e8" id="dm1">
         <cl:datacolumnlist>
           <cl:datacolumn std:sid="d-column-0766fbae" name="funcCode"/>
@@ -16,12 +27,12 @@
           <cl:datacolumn std:sid="d-column-fce72881" name="moduleDesc"/>
           <cl:datacolumn std:sid="d-column-b1bf510d" name="funcLib"/>
           <cl:datacolumn std:sid="d-column-ab8f869b" name="funcLink"/>
+          <cl:datacolumn std:sid="d-column-1cf718f7" name="id"/>
         </cl:datacolumnlist>
       </cl:datamap>
       <cl:submission std:sid="submission-d59b1520" id="sms1" method="get" mediatype="application/x-www-form-urlencoded;simple">
-        <cl:listener std:sid="listener-b882235b" name="submit-success" handler="onSms1SubmitSuccess"/>
-        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions&quot; + &quot;/&quot; + data"/>
-        <cl:requestdata dataid="dm1"/>
+        <cl:listener std:sid="listener-ae2fbb01" name="submit-success" handler="onSms1SubmitSuccess"/>
+        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions/&quot; + #dm1.id"/>
         <cl:responsedata dataid="dm1" alias="list"/>
       </cl:submission>
     </cl:model>
@@ -31,7 +42,7 @@
     <cl:listener std:sid="listener-d24d20ee" name="load" handler="onBodyLoad"/>
     <cl:group std:sid="group-5835fa16" id="grpTitle">
       <cl:formdata std:sid="f-data-3f402eec" row="0" col="0" rowspan="1" colspan="1"/>
-      <cl:output std:sid="output-0371f7b0" id="opt1" style="white-space:normal;" class="mrc-popup-title-large" value="메뉴기능 상세내역">
+      <cl:output std:sid="output-0371f7b0" id="opt1" style="white-space:normal;" class="mrc-popup-title-large" value="">
         <cl:formdata std:sid="f-data-6dd6bdfa" row="0" col="0" rowspan="1" colspan="1"/>
       </cl:output>
       <cl:output comment="optClose" std:sid="output-43e4517f" class="opus-ic-close-line-m" value="">
@@ -137,52 +148,40 @@
               </cl:button>
               <cl:xylayout std:sid="xylayout-ff08aa5b"/>
             </cl:group>
-            <cl:grid std:sid="grid-1b693807" id="grd1">
-              <cl:formdata std:sid="f-data-424f44a6" row="5" col="1"/>
-              <cl:gridcolumn std:sid="g-column-d127f6fc"/>
-              <cl:gridcolumn std:sid="g-column-155daebb"/>
-              <cl:gridcolumn std:sid="g-column-f5b45275"/>
-              <cl:gridcolumn std:sid="g-column-81077d1f"/>
-              <cl:gridcolumn std:sid="g-column-66212df3"/>
-              <cl:gridheader std:sid="gh-band-c062b535">
-                <cl:gridrow std:sid="g-row-2e4c57de"/>
-                <cl:gridcell std:sid="gh-cell-a59c1b1a" rowindex="0" colindex="0"/>
-                <cl:gridcell std:sid="gh-cell-b30071d0" rowindex="0" colindex="1"/>
-                <cl:gridcell std:sid="gh-cell-ba7f7206" rowindex="0" colindex="2"/>
-                <cl:gridcell std:sid="gh-cell-4a2c3642" rowindex="0" colindex="3"/>
-                <cl:gridcell std:sid="gh-cell-a569a4f7" rowindex="0" colindex="4"/>
+            <cl:grid std:sid="grid-1b693807" id="grd1" datasetid="dsFuncParams" resizablecolumns="all" columnMovable="true">
+              <cl:formdata std:sid="f-data-4820db1f" row="5" col="0" rowspan="1" colspan="2"/>
+              <cl:gridcolumn std:sid="g-column-8a375a9b" width="25px"/>
+              <cl:gridcolumn std:sid="g-column-e290db28"/>
+              <cl:gridcolumn std:sid="g-column-72bb1874"/>
+              <cl:gridheader std:sid="gh-band-4edc8227">
+                <cl:gridrow std:sid="g-row-997d3d1b"/>
+                <cl:gridcell std:sid="gh-cell-25885cee" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+                <cl:gridcell std:sid="gh-cell-9c2bb9c8" rowindex="0" colindex="1" targetcolumnname="param" sortable="false" filterable="false" text="param"/>
+                <cl:gridcell std:sid="gh-cell-6f326e0c" rowindex="0" colindex="2" targetcolumnname="value" sortable="false" filterable="false" text="value"/>
               </cl:gridheader>
-              <cl:griddetail std:sid="gd-band-07e2d506">
-                <cl:gridrow std:sid="g-row-019e38f6"/>
-                <cl:gridcell std:sid="gd-cell-ec1a822a" rowindex="0" colindex="0"/>
-                <cl:gridcell std:sid="gd-cell-c815bf73" rowindex="0" colindex="1"/>
-                <cl:gridcell std:sid="gd-cell-8ac61f3c" rowindex="0" colindex="2"/>
-                <cl:gridcell std:sid="gd-cell-22ce768b" rowindex="0" colindex="3"/>
-                <cl:gridcell std:sid="gd-cell-e7b42d0c" rowindex="0" colindex="4"/>
+              <cl:griddetail std:sid="gd-band-46109ef7">
+                <cl:gridrow std:sid="g-row-4803c7a6"/>
+                <cl:gridcell std:sid="gd-cell-01378b5c" rowindex="0" colindex="0" columntype="checkbox"/>
+                <cl:gridcell std:sid="gd-cell-10c45ac8" rowindex="0" colindex="1" columnname="param"/>
+                <cl:gridcell std:sid="gd-cell-122a7c54" rowindex="0" colindex="2" columnname="value"/>
               </cl:griddetail>
             </cl:grid>
-            <cl:grid std:sid="grid-3f2cae3a" id="grd2">
-              <cl:formdata std:sid="f-data-4ac043ab" row="5" col="3"/>
-              <cl:gridcolumn std:sid="g-column-d86434bf"/>
-              <cl:gridcolumn std:sid="g-column-5401bdf3"/>
-              <cl:gridcolumn std:sid="g-column-8fbdc9c0"/>
-              <cl:gridcolumn std:sid="g-column-90ec47a8"/>
-              <cl:gridcolumn std:sid="g-column-b73eb6f2"/>
-              <cl:gridheader std:sid="gh-band-1f94f05f">
-                <cl:gridrow std:sid="g-row-71e8fe50"/>
-                <cl:gridcell std:sid="gh-cell-0e40cf96" rowindex="0" colindex="0"/>
-                <cl:gridcell std:sid="gh-cell-1e486121" rowindex="0" colindex="1"/>
-                <cl:gridcell std:sid="gh-cell-2fa6dd69" rowindex="0" colindex="2"/>
-                <cl:gridcell std:sid="gh-cell-4edca864" rowindex="0" colindex="3"/>
-                <cl:gridcell std:sid="gh-cell-2a0eed3e" rowindex="0" colindex="4"/>
+            <cl:grid std:sid="grid-3f2cae3a" id="grd2" datasetid="dsTags" resizablecolumns="all" columnMovable="true">
+              <cl:formdata std:sid="f-data-112f3499" row="5" col="2" rowspan="1" colspan="2"/>
+              <cl:gridcolumn std:sid="g-column-e04ebe00" width="25px"/>
+              <cl:gridcolumn std:sid="g-column-f9c30288" width="50px"/>
+              <cl:gridcolumn std:sid="g-column-0cafd6ef"/>
+              <cl:gridheader std:sid="gh-band-6a0ad73e">
+                <cl:gridrow std:sid="g-row-33ed43b1"/>
+                <cl:gridcell std:sid="gh-cell-9118dfc4" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+                <cl:gridcell std:sid="gh-cell-18eac746" rowindex="0" colindex="1" sortable="false" filterable="false"/>
+                <cl:gridcell std:sid="gh-cell-21944efd" rowindex="0" colindex="2" targetcolumnname="tag" sortable="false" filterable="false" text="tag"/>
               </cl:gridheader>
-              <cl:griddetail std:sid="gd-band-7db15e58">
-                <cl:gridrow std:sid="g-row-708d132b"/>
-                <cl:gridcell std:sid="gd-cell-bde46237" rowindex="0" colindex="0"/>
-                <cl:gridcell std:sid="gd-cell-1a705c8a" rowindex="0" colindex="1"/>
-                <cl:gridcell std:sid="gd-cell-5d89ba65" rowindex="0" colindex="2"/>
-                <cl:gridcell std:sid="gd-cell-e25e3e5e" rowindex="0" colindex="3"/>
-                <cl:gridcell std:sid="gd-cell-721e9698" rowindex="0" colindex="4"/>
+              <cl:griddetail std:sid="gd-band-1f1bdd35">
+                <cl:gridrow std:sid="g-row-6dff9d43"/>
+                <cl:gridcell std:sid="gd-cell-25b96d74" rowindex="0" colindex="0" columntype="checkbox"/>
+                <cl:gridcell std:sid="gd-cell-f592d556" rowindex="0" colindex="1" columntype="rowindex"/>
+                <cl:gridcell std:sid="gd-cell-28cb983b" rowindex="0" colindex="2" columnname="tag"/>
               </cl:griddetail>
             </cl:grid>
             <cl:formlayout std:sid="f-layout-cb66790e" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
@@ -212,7 +211,7 @@
         <cl:xylayoutdata std:sid="xyl-data-ed32066b" top="34px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
       </cl:output>
       <cl:inputbox std:sid="i-box-22edc2e9" id="ipb14" readonly="true">
-        <cl:datamapbind property="value" datacontrolid="dm1" columnname="funcCode"/>
+        <cl:datamapbind property="value" datacontrolid="dm1" columnname="id"/>
         <cl:xylayoutdata std:sid="xyl-data-214b74f0" top="33px" left="130px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
       </cl:inputbox>
       <cl:xylayout std:sid="xylayout-07581256"/>

@@ -18,6 +18,7 @@
           <cl:datacolumn std:sid="d-column-14c51530" name="funcLink"/>
           <cl:datacolumn std:sid="d-column-5bcca1df" name="funcParams"/>
           <cl:datacolumn std:sid="d-column-8b978528" name="tags"/>
+          <cl:datacolumn std:sid="d-column-1a1a0021" name="id"/>
         </cl:datacolumnlist>
       </cl:dataset>
       <cl:datamap std:sid="d-map-fbbcc65b" id="dmSearch">
@@ -30,7 +31,8 @@
         </cl:datacolumnlist>
       </cl:datamap>
       <cl:submission std:sid="submission-93864f36" id="smsGetFunctions" method="get" mediatype="application/x-www-form-urlencoded;simple">
-        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions&quot;"/>
+        <cl:listener std:sid="listener-270ea522" name="submit-success" handler="onSmsGetFunctionsSubmitSuccess"/>
+        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions/&quot;"/>
         <cl:requestdata dataid="dmSearch"/>
         <cl:responsedata dataid="dsFunctionList" alias="list"/>
       </cl:submission>
@@ -270,7 +272,9 @@
             <cl:gridcell std:sid="gd-cell-8a1b4d57" rowindex="0" colindex="0" columntype="checkbox"/>
             <cl:gridcell std:sid="gd-cell-d739e3f0" rowindex="0" colindex="1" columntype="rowindex"/>
             <cl:gridcell std:sid="gd-cell-21aeb3a4" rowindex="0" colindex="2">
-              <cl:button std:sid="button-2d15b24a" id="btn6" class="ic-detail"/>
+              <cl:button std:sid="button-2d15b24a" id="btn6" class="ic-detail">
+                <cl:listener std:sid="listener-f54d45ac" name="click" handler="onBtn6Click"/>
+              </cl:button>
             </cl:gridcell>
             <cl:gridcell std:sid="gd-cell-399908ef" rowindex="0" colindex="3" style="text-align:center;" columnname="funcCode"/>
             <cl:gridcell std:sid="gd-cell-1aa08fe1" rowindex="0" colindex="4" style="text-align:left;" columnname="funcDesc"/>
