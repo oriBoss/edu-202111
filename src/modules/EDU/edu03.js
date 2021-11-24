@@ -1,7 +1,7 @@
 /************************************************
- * admSetupFunctionPopup.js
- * Created at 2021. 11. 22. 오후 3:51:58.
+ * edu03.js
+ * Created at 2021. 11. 18. 오후 1:53:53.
  *
- * @author oricaptain
+ * @author student
  ************************************************/
 

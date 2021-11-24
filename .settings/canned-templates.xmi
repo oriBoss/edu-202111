@@ -465,11 +465,11 @@
       </layout>
     </control>
   </settings:CannedTemplate>
-  <settings:CannedTemplate uuid="f12dd661-efc0-47cf-b60d-7767e11f0d0c" name="[일반] 그리드 템플릿 (Grid)" preferredWidth="1280" preferredHeight="768" revision="11">
+  <settings:CannedTemplate uuid="f12dd661-efc0-47cf-b60d-7767e11f0d0c" name="[일반] 그리드 템플릿 (Grid)" preferredWidth="1280" preferredHeight="768" revision="12">
     <control xsi:type="cl:Group">
       <metaData>
         <properties key="template-uuid" value="f12dd661-efc0-47cf-b60d-7767e11f0d0c"/>
-        <properties key="template-rev" value="10"/>
+        <properties key="template-rev" value="11"/>
       </metaData>
       <userAttributes key="templateId" value="tplNormalGrid"/>
       <layoutData xsi:type="cl:FormData" rowIndex="0" colIndex="0"/>
@@ -497,13 +497,13 @@
           <controls xsi:type="cl:ComboBox" class="page-size" value="20" preventInput="true">
             <layoutData xsi:type="cl:FormData" verticalAlign="FILL" height="24" rowIndex="0" colIndex="3"/>
             <items value="20">
-              <binders xsi:type="cl:ExpressionBind" property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+              <binders xsi:type="cl:ExpressionBind" property="label" category="PROPERTY" expression="value + &quot;개씩 보기&quot;"/>
             </items>
             <items label="50개씩 보기" value="50">
-              <binders xsi:type="cl:ExpressionBind" property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+              <binders xsi:type="cl:ExpressionBind" property="label" category="PROPERTY" expression="value + &quot;개씩 보기&quot;"/>
             </items>
             <items label="100개씩 보기" value="100">
-              <binders xsi:type="cl:ExpressionBind" property="label" category="PROPERTY" expression="Intl.get(&quot;Views&quot;, { size: value })"/>
+              <binders xsi:type="cl:ExpressionBind" property="label" category="PROPERTY" expression="value + &quot;개씩 보기&quot;"/>
             </items>
           </controls>
           <layout xsi:type="cl:FormLayout" horizontalSpacing="4px" verticalSpacing="0px" topMargin="0px" rightMargin="0px" bottomMargin="0px" leftMargin="0px">
@@ -567,9 +567,7 @@
           <gridDetail>
             <gridRows height="30px"/>
             <gridCells rowIndex="0" colIndex="0" columnType="checkbox"/>
-            <gridCells rowIndex="0" colIndex="1" columnType="normal">
-              <control xsi:type="cl:Output"/>
-            </gridCells>
+            <gridCells rowIndex="0" colIndex="1" columnType="rowindex"/>
             <gridCells rowIndex="0" colIndex="2">
               <control xsi:type="cl:Button" class="ic-detail"/>
             </gridCells>
