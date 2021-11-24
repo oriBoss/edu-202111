@@ -1,6 +1,6 @@
 /************************************************
  * admSetupFunctionsPopup.js
- * Created at 2021. 11. 23. 오후 3:10:45.
+ * Created at 2021. 11. 24. 오후 2:18:12.
  *
  * @author 쭈주니
  ************************************************/
@@ -24,4 +24,7 @@
 function onOutputClick(/* cpr.events.CMouseEvent */ e){
 	app.close();
 }
+
+
+
 
