@@ -50,15 +50,6 @@ function requireValidate(){
 	/* id명 */ var ipbFuncCode = app.lookup("ipbFuncCode"); // 기능 코드 
 	/* id명 */ var ipbFuncDesc = app.lookup("ipbFuncDesc"); // 기능명
 	/* id명 */ var ipbFuncTypeDesc = app.lookup("ipbFuncTypeDesc"); // 기능 유형
-	/* id명 */ var colName = undefined; // 매개변수
-	
-	var grd1 = app.lookup("grd1");
-	for(var idx = 0; idx < grd1.getRowCount(); idx++){
-		/* 컬럼명 */ var colNameVal = grd1.getDataRow(idx).getValue("funcCode");
-		if (colNameVal == ""){ // 값이 입력되지 않은 행이 있는지 없는지 체크
-			colName = false; // 값 작성 여부
-		}
-	}
 	
 	var ipbFuncCodeVal = ipbFuncCode.value;
 	var ipbFuncDescVal = ipbFuncDesc.value;
@@ -73,11 +64,8 @@ function requireValidate(){
 	if (ipbFuncTypeDescVal == "" || ipbFuncTypeDescVal == null){
 		returnValArr.push("기능 유형");
 	}
-	if (colName == false){
-		returnValArr.push("매개 변수");
-	}
 	
-	return returnValArr
+	return returnValArr;
 }
 
 
@@ -147,7 +135,7 @@ function onSms1SubmitSuccess(/* cpr.events.CSubmissionEvent */ e){
 	if (funcParams){
 		var arrFuncParams = funcParams.split(",");
 		arrFuncParams.forEach(function (data){
-			dsFuncParams.pushRowData({"funcCode" : data.split("=")[0], "value" : data.split("=")[1]});
+			dsFuncParams.pushRowData({"name" : data.split("=")[0], "value" : data.split("=")[1]});
 		})
 	}
 	
@@ -251,7 +239,7 @@ function onButtonClick5(/* cpr.events.CMouseEvent */ e){
 					return {content : data["data"]["dm1"]}
 				});
 				
-				subUpdate.send();				
+				subUpdate.send();
 			}
 		}
 	}
@@ -304,6 +292,18 @@ function onDsFuncParamsDelete(/* cpr.events.CDataEvent */ e){
 	 */
 	var dsFuncParams = e.control;
 	
+	var arr = [];
+	var dataStr = "";
+	
+	var rowDatas = dsFuncParams.getRowDatasByState(cpr.data.tabledata.RowState.UNCHANGED || cpr.data.tabledata.RowState.UPDATED);
+	
+	rowDatas[1].forEach(function(rowData){
+		arr.push(rowData.value);
+	});
+	
+	dataStr = arr.join(",");
+	
+	app.lookup("dm1").setValue("funcParams", dataStr);
 }
 
 
@@ -326,7 +326,6 @@ function onDsTagsUpdate(/* cpr.events.CDataEvent */ e){
 	});
 	
 	dataStr = arr.join(",");
-	console.log(dataStr);
 	
 	app.lookup("dm1").setValue("tags", dataStr);
 }
@@ -342,6 +341,18 @@ function onDsTagsDelete(/* cpr.events.CDataEvent */ e){
 	 */
 	var dsTags = e.control;
 	
+	var arr = [];
+	var dataStr = "";
+	
+	var rowDatas = dsTags.getRowDatasByState(cpr.data.tabledata.RowState.UNCHANGED || cpr.data.tabledata.RowState.UPDATED);
+	
+	rowDatas[1].forEach(function(rowData){
+		arr.push(rowData.value);
+	});
+	
+	dataStr = arr.join(",");
+	
+	app.lookup("dm1").setValue("tags", dataStr);
 }
 
 
@@ -376,78 +387,178 @@ function onSubUpdateSubmitSuccess(/* cpr.events.CSubmissionEvent */ e){
 
 
 /*
- * 버튼(btn1)에서 click 이벤트 발생 시 호출.
+ * "Button" 버튼에서 click 이벤트 발생 시 호출.
  * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
- * 지우개버튼 누르면 지워지게 
  */
-function onBtn1Click(/* cpr.events.CMouseEvent */ e){
-    /** 
-     * @type cpr.controls.Button
-     */
-    var btn1 = e.control;
-    
-    var ipb1 = app.lookup("ipb1");
-    ipb1.value = "";
+function onButtonClick6(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var button = e.control;
+	
+	var ipb1 = app.lookup("ipb1");
+	ipb1.value = "";
 }
 
 /**
  * 
- * @param {any} grd1
- * @param {any} grd2
- * @param {cpr.data.DataSet} ds
+ * @param {cpr.controls.Grid} grd1 소스 그리드(데이터 내보낼 그리드)
+ * @param {cpr.controls.Grid} grd2 타겟 그리드(데이터 받을 그리드)
+ * @param {cpr.data.DataSet} ds 소스 데이터 셋
  */
 function moveRow(grd1, grd2, ds){
-    var checkRowIndices = grd1.getCheckRowIndices(); //배열
-    var dsFuncCode = app.lookup("dsFuncCode");
-    
-    checkRowIndices.forEach(function(index){
-       
-        grd2.insertRowData(grd2.rowCount, true ,grd1.getRow(index).getRowData()); 
-        ds.deleteRow(index);
-    });
+	var checkRowIndices = grd1.getCheckRowIndices();
+	
+	checkRowIndices.forEach(function(index){
+		grd2.insertRowData(grd2.rowCount, true, grd1.getRow(index).getRowData());
+		ds.deleteRow(index);
+	});
 }
 
 
 /*
- * 버튼(btn7)에서 click 이벤트 발생 시 호출.
+ * ">" 버튼에서 click 이벤트 발생 시 호출.
  * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
- * 왼쪽 -> 오른쪽 마지막으로 이동
  */
-function onBtn7Click(/* cpr.events.CMouseEvent */ e){
-    /** 
-     * @type cpr.controls.Button
-     */
-    var btn7 = e.control;
-    
-    var grd3 = app.lookup("grd3");
-    var grd4 = app.lookup("grd4");
-    var dsFuncCode = app.lookup("dsFuncCode");
-//     
-//    var checkRowIndices = grd3.getCheckRowIndices(); //배열
-//    checkRowIndices.forEach(function(index){
-////    	console.log(index);
-////        console.log(grd3.getRow(index).getRowData());        
-//        grd4.insertRowData(grd4.rowCount, true ,grd3.getRow(index).getRowData()); 
-//        dsFuncCode.deleteRow(index);
-//    });
-//       
-    moveRow(grd3, grd4, dsFuncCode);
+function onButtonClick7(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var button = e.control;
+	
+	var grd3 = app.lookup("grd3");
+	var checkRowIndices = grd3.getCheckRowIndices();
+	
+	var grd4 = app.lookup("grd4");
+	
+	var funcCodeDatas = [];
+	for(var idx = 0; idx < grd4.rowCount; idx++){
+		funcCodeDatas.push(grd4.getRow(idx).getRowData().funcCode);
+	}
+	
+	checkRowIndices.forEach(function(index){
+		var indexof = funcCodeDatas.indexOf(grd3.getRow(index).getRowData().funcCode);
+		if (indexof == -1){
+			grd4.insertRowData(grd4.rowCount, true, grd3.getRow(index).getRowData());
+		}
+		else {
+			alert("기능 코드값이 동일한 데이터는 추가되지 않습니다.");
+		}
+	});
 }
 
 
 /*
- * 버튼(btn8)에서 click 이벤트 발생 시 호출.
+ * "<" 버튼에서 click 이벤트 발생 시 호출.
  * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
  */
-function onBtn8Click(/* cpr.events.CMouseEvent */ e){
-    /** 
-     * @type cpr.controls.Button
-     */
-    var btn8 = e.control;
-    var grd4 = app.lookup("grd4");
-    var grd3 = app.lookup("grd3");
-    var checkRowIndices = grd4.getCheckRowIndices();
-    checkRowIndices.forEach(function(index){
-    	grd3.insertRowData(grd3.rowCount,true,grd4.getRow(index).getRowData());
-    });
+function onButtonClick8(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var button = e.control;
+	
+	var grd4 = app.lookup("grd4");
+	var checkRowIndices = grd4.getCheckRowIndices();
+	
+	var grd3 = app.lookup("grd3");
+	
+	checkRowIndices.forEach(function(index){
+		grd3.insertRowData(grd3.rowCount, true, grd4.getRow(index).getRowData())
+	});
 }
+
+
+/*
+ * "조회" 버튼에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onButtonClick9(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var button = e.control;
+	
+	var subSearchRel = app.lookup("subSearchRel");
+	
+	subSearchRel.send();
+}
+
+
+/*
+ * "최상단" 버튼에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onButtonClick10(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var button = e.control;
+	
+	var grd4 = app.lookup("grd4");
+	var checkRowIndices = grd4.getCheckRowIndices();
+	for(var i=0; i<checkRowIndices.length; i++) {
+		grd4.dataSet.moveRowIndex(checkRowIndices[i], i, false);
+	}
+	grd4.redraw();
+}
+
+
+/*
+ * "한칸 위" 버튼에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onButtonClick11(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var button = e.control;
+	
+	var grd4 = app.lookup("grd4");
+	var checkRowIndices = grd4.getCheckRowIndices();
+	for(var i=0; i<checkRowIndices.length; i++) {
+		grd4.dataSet.moveRowIndex(checkRowIndices[i], checkRowIndices[i]-1, false);
+	}
+	grd4.redraw();
+}
+
+
+/*
+ * "한칸 아래" 버튼에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onButtonClick12(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var button = e.control;
+	
+	var grd4 = app.lookup("grd4");
+	var checkRowIndices = grd4.getCheckRowIndices();
+	for(var i=checkRowIndices.length-1; i>=0; i--) {
+		grd4.dataSet.moveRowIndex(checkRowIndices[i], checkRowIndices[i]+1, true);
+	}
+	grd4.redraw();
+}
+
+
+/*
+ * "최하단" 버튼에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onButtonClick13(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var button = e.control;
+	
+	var grd4 = app.lookup("grd4");
+	var checkRowIndices = grd4.getCheckRowIndices();
+	var vnRowCount = grd4.rowCount;
+	for(var i=0; i<checkRowIndices.length; i++) {
+		grd4.dataSet.moveRowIndex(checkRowIndices[i]-i, vnRowCount-1, true);
+	}
+	grd4.redraw();
+}
+
+

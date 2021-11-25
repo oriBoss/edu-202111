@@ -50,15 +50,17 @@ function requireValidate(){
 	/* id명 */ var ipbFuncCode = app.lookup("ipbFuncCode"); // 기능 코드 
 	/* id명 */ var ipbFuncDesc = app.lookup("ipbFuncDesc"); // 기능명
 	/* id명 */ var ipbFuncTypeDesc = app.lookup("ipbFuncTypeDesc"); // 기능 유형
-	/* id명 */ var colName = undefined; // 매개변수
 	
-	var grd1 = app.lookup("grd1");
-	for(var idx = 0; idx < grd1.getRowCount(); idx++){
-		/* 컬럼명 */ var colNameVal = grd1.getDataRow(idx).getValue("funcCode");
-		if (colNameVal == ""){ // 값이 입력되지 않은 행이 있는지 없는지 체크
-			colName = false; // 값 작성 여부
-		}
-	}
+	//유효성 검사하는건데 여기서 필요없어서 삭제
+//	/* id명 */ var colName = undefined; // 매개변수
+//	
+//	var grd1 = app.lookup("grd1");
+//	for(var idx = 0; idx < grd1.getRowCount(); idx++){
+//		/* 컬럼명 */ var colNameVal = grd1.getDataRow(idx).getValue("name");
+//		if (colNameVal == ""){ // 값이 입력되지 않은 행이 있는지 없는지 체크
+//			colName = false; // 값 작성 여부
+//		}
+//	}
 	
 	var ipbFuncCodeVal = ipbFuncCode.value;
 	var ipbFuncDescVal = ipbFuncDesc.value;
@@ -73,10 +75,10 @@ function requireValidate(){
 	if (ipbFuncTypeDescVal == "" || ipbFuncTypeDescVal == null){
 		returnValArr.push("기능 유형");
 	}
-	if (colName == false){
-		returnValArr.push("매개 변수");
-	}
-	
+//	if (colName == false){
+//		returnValArr.push("매개 변수");
+//	}
+//	
 	return returnValArr
 }
 
@@ -147,7 +149,7 @@ function onSms1SubmitSuccess(/* cpr.events.CSubmissionEvent */ e){
 	if (funcParams){
 		var arrFuncParams = funcParams.split(",");
 		arrFuncParams.forEach(function (data){
-			dsFuncParams.pushRowData({"funcCode" : data.split("=")[0], "value" : data.split("=")[1]});
+			dsFuncParams.pushRowData({"name" : data.split("=")[0], "value" : data.split("=")[1]});
 		})
 	}
 	
@@ -303,7 +305,7 @@ function onDsFuncParamsDelete(/* cpr.events.CDataEvent */ e){
 	 * @type cpr.data.DataSet
 	 */
 	var dsFuncParams = e.control;
-	
+
 }
 
 
@@ -355,8 +357,9 @@ function onSubSaveSubmitSuccess(/* cpr.events.CSubmissionEvent */ e){
 	 */
 	var subSave = e.control;
 	
-	flag = true;
+	flag = true;//전역변수 
 	app.close(flag);
+
 }
 
 
@@ -376,78 +379,111 @@ function onSubUpdateSubmitSuccess(/* cpr.events.CSubmissionEvent */ e){
 
 
 /*
- * 버튼(btn1)에서 click 이벤트 발생 시 호출.
+ * "Button" 버튼에서 click 이벤트 발생 시 호출.
  * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
- * 지우개버튼 누르면 지워지게 
  */
-function onBtn1Click(/* cpr.events.CMouseEvent */ e){
-    /** 
-     * @type cpr.controls.Button
-     */
-    var btn1 = e.control;
-    
-    var ipb1 = app.lookup("ipb1");
-    ipb1.value = "";
-}
-
-/**
- * 
- * @param {any} grd1
- * @param {any} grd2
- * @param {cpr.data.DataSet} ds
- */
-function moveRow(grd1, grd2, ds){
-    var checkRowIndices = grd1.getCheckRowIndices(); //배열
-    var dsFuncCode = app.lookup("dsFuncCode");
-    
-    checkRowIndices.forEach(function(index){
-       
-        grd2.insertRowData(grd2.rowCount, true ,grd1.getRow(index).getRowData()); 
-        ds.deleteRow(index);
-    });
+function onButtonClick6(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var button = e.control;
+	
+	var ipb1 = app.lookup("ipb1");
+	ipb1.value = "";
 }
 
 
 /*
- * 버튼(btn7)에서 click 이벤트 발생 시 호출.
+ * ">" 버튼에서 click 이벤트 발생 시 호출.
  * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
- * 왼쪽 -> 오른쪽 마지막으로 이동
  */
-function onBtn7Click(/* cpr.events.CMouseEvent */ e){
-    /** 
-     * @type cpr.controls.Button
-     */
-    var btn7 = e.control;
-    
-    var grd3 = app.lookup("grd3");
+function onButtonClick7(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var button = e.control;
+// 단순 왼쪽에서 오른쪽으로 넘기기	
+//	var grd3 = app.lookup("grd3");
+//	var checkRowIndices = grd3.getCheckRowIndices();
+//	
+//	var grd4 = app.lookup("grd4");
+//	
+//	checkRowIndices.forEach(function(index){
+//		grd4.insertRowData(grd4.rowCount, true, grd3.getRow(index).getRowData())
+//	});
+
+// 중복된 값을 검사하기 위해 추가했다
+	var grd3 = app.lookup("grd3");
+    var checkRowIndices = grd3.getCheckRowIndices();    
     var grd4 = app.lookup("grd4");
+    var funcCodeDatas = [];
     var dsFuncCode = app.lookup("dsFuncCode");
-//     
-//    var checkRowIndices = grd3.getCheckRowIndices(); //배열
-//    checkRowIndices.forEach(function(index){
-////    	console.log(index);
-////        console.log(grd3.getRow(index).getRowData());        
-//        grd4.insertRowData(grd4.rowCount, true ,grd3.getRow(index).getRowData()); 
-//        dsFuncCode.deleteRow(index);
-//    });
-//       
-    moveRow(grd3, grd4, dsFuncCode);
+    
+    for(var idx = 0; idx < grd4.rowCount; idx++){
+        funcCodeDatas.push(grd4.getRow(idx).getRowData().funcCode);
+    }
+    
+    
+    checkRowIndices.forEach(function(index){
+        var indexof = funcCodeDatas.indexOf(grd3.getRow(index).getRowData().funcCode);
+        console.log(indexof);
+        if (indexof == -1){
+            grd4.insertRowData(grd4.rowCount, true, grd3.getRow(index).getRowData());
+            dsFuncCode.deleteRow(index);
+        }
+        else {
+            alert("기능 코드값이 동일한 데이터는 추가되지 않습니다.");
+        }
+    });
+	
+	
 }
 
 
 /*
- * 버튼(btn8)에서 click 이벤트 발생 시 호출.
+ * "<" 버튼에서 click 이벤트 발생 시 호출.
  * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
  */
-function onBtn8Click(/* cpr.events.CMouseEvent */ e){
+function onButtonClick8(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var button = e.control;
+    var grd4 = app.lookup("grd4");
+    var checkRowIndices = grd4.getCheckRowIndices();    
+    var grd3 = app.lookup("grd3");
+    var funcCodeDatas = [];
+    var dsFuncCode = app.lookup("dsFuncCode");
+    
+    for(var idx = 0; idx < grd3.rowCount; idx++){
+        funcCodeDatas.push(grd3.getRow(idx).getRowData().funcCode);
+    }
+    
+    
+    checkRowIndices.forEach(function(index){
+        var indexof = funcCodeDatas.indexOf(grd4.getRow(index).getRowData().funcCode);
+        console.log(indexof);
+        if (indexof == -1){
+            grd3.insertRowData(grd3.rowCount, true, grd4.getRow(index).getRowData());
+            dsFuncCode.deleteRow(index);
+        }
+        else {
+            alert("기능 코드값이 동일한 데이터는 추가되지 않습니다.");
+        }
+    });
+	
+}
+
+
+/*
+ * "Button" 버튼에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.검색시사용
+ */
+function onButtonClick9(/* cpr.events.CMouseEvent */ e){
     /** 
      * @type cpr.controls.Button
      */
-    var btn8 = e.control;
-    var grd4 = app.lookup("grd4");
-    var grd3 = app.lookup("grd3");
-    var checkRowIndices = grd4.getCheckRowIndices();
-    checkRowIndices.forEach(function(index){
-    	grd3.insertRowData(grd3.rowCount,true,grd4.getRow(index).getRowData());
-    });
+    var button = e.control;
+    app.lookup("subSearchRel").send();
+   
 }
