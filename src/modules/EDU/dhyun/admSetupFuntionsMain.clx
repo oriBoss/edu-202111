@@ -53,6 +53,7 @@
         <cl:responsedata dataid="dsFuctionList" alias="list"/>
       </cl:submission>
       <cl:submission std:sid="submission-ac70ef8d" id="subDelete" method="patch" mediatype="application/json">
+        <cl:listener std:sid="listener-bca77a3c" name="submit-success" handler="onSubDeleteSubmitSuccess"/>
         <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions:bulk-delete&quot;"/>
         <cl:requestdata dataid="dsFuctionCopy" payload="all"/>
         <cl:responsedata dataid="dsFuctionList" alias="list"/>
@@ -203,17 +204,66 @@
       </cl:output>
       <cl:group std:sid="group-767b1123" id="grp6">
         <cl:formdata std:sid="f-data-05572f30" height="24" row="1" col="0"/>
-        <cl:button std:sid="button-30fb0c17" id="btn1" class="inner" value="삭제">
-          <cl:listener std:sid="listener-03f5c4c3" name="click" handler="onBtn1Click"/>
-          <cl:formdata std:sid="f-data-cc3c3f0f" row="0" col="2"/>
-        </cl:button>
-        <cl:button std:sid="button-ee569f63" id="btn2" class="inner" value="Excel">
-          <cl:formdata std:sid="f-data-d9206320" row="0" col="5"/>
-        </cl:button>
-        <cl:button std:sid="button-93efa392" id="btn3" class="inner-primary" value="신규">
-          <cl:listener std:sid="listener-b7631922" name="click" handler="onBtn3Click"/>
-          <cl:formdata std:sid="f-data-ab0e7c6c" row="0" col="3"/>
-        </cl:button>
+        <cl:group std:sid="group-eb44a4ec" id="grp8">
+          <cl:formdata std:sid="f-data-ddeaa6ff" row="0" col="0" rowspan="1" colspan="6"/>
+          <cl:group std:sid="group-0dcb1675" id="grp11">
+            <std:metadata>
+              <std:property key="template-uuid" value="2eb88f9f-c645-42c0-bc37-6f504486300c"/>
+              <std:property key="template-rev" value="4"/>
+            </std:metadata>
+            <cl:attribute name="templateId" value="tplNormalTotalCount"/>
+            <cl:formdata std:sid="f-data-1fce964c" row="0" col="0"/>
+            <cl:output std:sid="output-be4a7287" id="opt6" value="Total">
+              <cl:formdata std:sid="f-data-6c7c850e" valign="FILL" height="18" row="0" col="0" rowspan="1" colspan="1"/>
+            </cl:output>
+            <cl:output std:sid="output-0d765a15" id="opt7" style="font-weight:bold;">
+              <cl:formdata std:sid="f-data-9a5b17ec" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-8255395d" id="opt8" class="mrc-vertical-bar">
+              <cl:formdata std:sid="f-data-098e0922" row="0" col="2"/>
+            </cl:output>
+            <cl:combobox std:sid="c-box-b5ad49ee" id="cmb1" class="page-size" value="20" preventinput="true">
+              <cl:formdata std:sid="f-data-aa07b4d7" valign="FILL" height="24" row="0" col="3"/>
+              <cl:item std:sid="t-item-732ab40c" value="20">
+                <cl:expbind property="label" category="PROPERTY" expression="value + &quot;개씩 보기&quot;"/>
+              </cl:item>
+              <cl:item std:sid="t-item-0a959f02" label="50개씩 보기" value="50">
+                <cl:expbind property="label" category="PROPERTY" expression="value + &quot;개씩 보기&quot;"/>
+              </cl:item>
+              <cl:item std:sid="t-item-440d058c" label="100개씩 보기" value="100">
+                <cl:expbind property="label" category="PROPERTY" expression="value + &quot;개씩 보기&quot;"/>
+              </cl:item>
+            </cl:combobox>
+            <cl:formlayout std:sid="f-layout-9e4a473e" hspace="4px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+              <cl:columns length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="10" unit="PIXEL" autoSizing="true" minlength="0"/>
+              <cl:columns length="16" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:button std:sid="button-500dc4a6" id="btnDelete" style="text-align:center;" class="inner" value="삭제&#x9;">
+            <cl:listener std:sid="listener-c5245a06" name="click" handler="onBtn5Click"/>
+            <cl:listener std:sid="listener-22f90142" name="click" handler="onBtnDeleteClick"/>
+            <cl:formdata std:sid="f-data-d01734cb" row="0" col="2"/>
+          </cl:button>
+          <cl:button std:sid="button-222a8f4b" id="btn6" class="inner" value="Excel">
+            <cl:formdata std:sid="f-data-e2402257" row="0" col="5"/>
+          </cl:button>
+          <cl:button std:sid="button-73a18bfd" id="btnNew" class="inner-primary" value="신규">
+            <cl:listener std:sid="listener-7dd2c16b" name="click" handler="onBtnNewClick"/>
+            <cl:formdata std:sid="f-data-aff99042" row="0" col="3"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-1a1fff41" hspace="4px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="8" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="80" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="80" unit="PIXEL" autoSizing="true" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="80" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
         <cl:formlayout std:sid="f-layout-75174071" hspace="4px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
           <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
           <cl:columns length="150" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
