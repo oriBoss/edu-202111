@@ -53,14 +53,17 @@
         </cl:datacolumnlist>
       </cl:datamap>
       <cl:submission std:sid="submission-421ed6fa" id="smsSearch" method="get" mediatype="application/x-www-form-urlencoded;simple">
+        <cl:listener std:sid="listener-d9b37bd8" name="submit-success" handler="onSmsSearchSubmitSuccess"/>
         <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions/&quot; + #dmSearch.funcCode"/>
         <cl:responsedata dataid="dmSearch"/>
       </cl:submission>
       <cl:submission std:sid="submission-b7756ec5" id="smsSave" mediatype="application/json">
+        <cl:listener std:sid="listener-ebb607a5" name="submit-success" handler="onSmsSaveSubmitSuccess"/>
         <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions/save&quot;"/>
         <cl:requestdata dataid="dmSearch"/>
       </cl:submission>
       <cl:submission std:sid="submission-db30d498" id="smsUpdate" method="put" mediatype="application/json">
+        <cl:listener std:sid="listener-3843b331" name="submit-success" handler="onSmsUpdateSubmitSuccess"/>
         <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions/&quot; + #dmSearch.funcCode"/>
         <cl:requestdata dataid="dmSearch"/>
       </cl:submission>
@@ -73,13 +76,14 @@
     <cl:appspec dev-comment="templates/normal/NormalPopup940.clx 템플릿 사용하여 작성 함.&#xA;Width : 940px&#xD;&#xA;Height : Max 700px"/>
   </head>
   <body std:sid="body-fbf5f09c">
+    <cl:listener std:sid="listener-259adbf1" name="load" handler="onBodyLoad"/>
     <cl:group std:sid="group-5835fa16" id="grpTitle">
       <cl:formdata std:sid="f-data-3f402eec" row="0" col="0" rowspan="1" colspan="1"/>
       <cl:output std:sid="output-0371f7b0" class="mrc-popup-title-large" value="메뉴기능 상세내역">
         <cl:listener std:sid="listener-ce3757bb" name="value-change" handler="onOutputValueChange"/>
         <cl:formdata std:sid="f-data-8b1367f3" row="0" col="0"/>
       </cl:output>
-      <cl:output comment="optClose" std:sid="output-43e4517f" class="opus-ic-close-line-m" value="">
+      <cl:output comment="optClose" std:sid="output-43e4517f" class="opus-ic-close-line-m" visible="false" value="">
         <cl:listener std:sid="listener-3f4a7372" name="click" handler="onOutputClick"/>
         <cl:formdata std:sid="f-data-4d54fb16" row="0" col="1"/>
       </cl:output>
@@ -101,9 +105,6 @@
       <cl:tabfolder std:sid="t-folder-4e55e442" id="fld1">
         <cl:formdata std:sid="f-data-bdb2d212" row="1" col="0" rowspan="2" colspan="4"/>
         <cl:tabitem std:sid="t-item-0368de1f" selected="true" text="일반">
-          <std:metadata>
-            <std:property key="is-active-item" value="true"/>
-          </std:metadata>
           <cl:group std:sid="group-947fe394" id="grp1">
             <std:metadata>
               <std:property key="locked" value="true"/>
@@ -222,8 +223,16 @@
                 <cl:griddetail std:sid="gd-band-d19d2720">
                   <cl:gridrow std:sid="g-row-30781ca1"/>
                   <cl:gridcell std:sid="gd-cell-588a4c33" rowindex="0" colindex="0" columntype="checkbox"/>
-                  <cl:gridcell std:sid="gd-cell-dd76204d" rowindex="0" colindex="1" columnname="name"/>
-                  <cl:gridcell std:sid="gd-cell-758c3cf9" rowindex="0" colindex="2" columnname="value"/>
+                  <cl:gridcell std:sid="gd-cell-dd76204d" rowindex="0" colindex="1" columnname="name">
+                    <cl:inputbox std:sid="i-box-b610efa7" id="ipb1">
+                      <cl:celldata std:sid="c-data-afccb345"/>
+                    </cl:inputbox>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-758c3cf9" rowindex="0" colindex="2" columnname="value">
+                    <cl:inputbox std:sid="i-box-54319d2d" id="ipb2">
+                      <cl:celldata std:sid="c-data-53238a14"/>
+                    </cl:inputbox>
+                  </cl:gridcell>
                 </cl:griddetail>
               </cl:grid>
               <cl:grid std:sid="grid-d7594b95" id="grd4" datasetid="dsTags">
@@ -238,7 +247,11 @@
                 <cl:griddetail std:sid="gd-band-b9387c47">
                   <cl:gridrow std:sid="g-row-033c5547"/>
                   <cl:gridcell std:sid="gd-cell-5ec5f06f" rowindex="0" colindex="0" columntype="checkbox"/>
-                  <cl:gridcell std:sid="gd-cell-5a230ba9" rowindex="0" colindex="1" columnname="value"/>
+                  <cl:gridcell std:sid="gd-cell-5a230ba9" rowindex="0" colindex="1" columnname="value">
+                    <cl:inputbox std:sid="i-box-e70cc898" id="ipb3">
+                      <cl:celldata std:sid="c-data-62469b58"/>
+                    </cl:inputbox>
+                  </cl:gridcell>
                 </cl:griddetail>
               </cl:grid>
               <cl:formlayout std:sid="f-layout-8cd9a3f8" scrollable="false" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
@@ -258,6 +271,9 @@
           </cl:group>
         </cl:tabitem>
         <cl:tabitem std:sid="t-item-5d83b3b0" text="연관 기능">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
           <cl:group std:sid="group-c6029ea0" id="grp2">
             <std:metadata>
               <std:property key="locked" value="true"/>
@@ -293,6 +309,7 @@
                   <cl:formdata std:sid="f-data-5eae8e0a" row="0" col="0"/>
                   <cl:inputbox std:sid="i-box-dededa43" id="ipb16" class="mrc no-border-radius inner" showclearbutton="false" placeholder="searchWord">
                     <cl:listener std:sid="listener-63c2f749" name="value-change" handler="onIpb16ValueChange"/>
+                    <cl:listener std:sid="listener-70dcaa91" name="keyup" handler="onIpb16Keyup"/>
                     <cl:datamapbind property="value" datacontrolid="dmSearchRel" columnname="searchWord"/>
                     <cl:formdata std:sid="f-data-403517fa" row="0" col="0"/>
                   </cl:inputbox>
@@ -340,15 +357,19 @@
                 <cl:group std:sid="group-d9509e52" id="grp8">
                   <cl:formdata std:sid="f-data-2309cd42" row="0" col="0"/>
                   <cl:button std:sid="button-ef1c2c3c" id="btn3" class="ic-slide-top">
+                    <cl:listener std:sid="listener-a3ccde13" name="click" handler="onBtn3Click"/>
                     <cl:formdata std:sid="f-data-b96a5055" row="0" col="0"/>
                   </cl:button>
                   <cl:button std:sid="button-8d3d6764" id="btn4" class="ic-slide-up">
+                    <cl:listener std:sid="listener-af05c256" name="click" handler="onBtn4Click"/>
                     <cl:formdata std:sid="f-data-4d6fe16e" row="0" col="1"/>
                   </cl:button>
                   <cl:button std:sid="button-0a3eb84e" id="btn5" class="ic-slide-down">
+                    <cl:listener std:sid="listener-8a747624" name="click" handler="onBtn5Click"/>
                     <cl:formdata std:sid="f-data-7816b405" row="0" col="2"/>
                   </cl:button>
                   <cl:button std:sid="button-2dbe59b1" id="btn6" class="ic-slide-bottom">
+                    <cl:listener std:sid="listener-45e629b3" name="click" handler="onBtn6Click"/>
                     <cl:formdata std:sid="f-data-097af8dd" row="0" col="3"/>
                   </cl:button>
                   <cl:formlayout std:sid="f-layout-e0453818" hspace="4px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">

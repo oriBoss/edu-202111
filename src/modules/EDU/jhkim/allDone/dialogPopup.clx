@@ -100,6 +100,9 @@
     <cl:tabfolder std:sid="t-folder-c53a3d3c">
       <cl:formdata std:sid="f-data-6d813ac0" row="1" col="0" rowspan="1" colspan="4"/>
       <cl:tabitem std:sid="t-item-5f6ba873" selected="true" text="일반">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
         <cl:group std:sid="group-8b7bf12b" id="grp1">
           <std:metadata>
             <std:property key="locked" value="true"/>
@@ -153,6 +156,7 @@
               <cl:gridcell std:sid="gd-cell-f68b3506" rowindex="0" colindex="0" columntype="checkbox"/>
               <cl:gridcell std:sid="gd-cell-9ccddc3a" rowindex="0" colindex="1" columnname="name">
                 <cl:inputbox std:sid="i-box-bc740425" id="ipbParamName">
+                  <cl:listener std:sid="listener-4aed0cd3" name="value-change" handler="onIpbParamNameValueChange"/>
                   <cl:celldata std:sid="c-data-11a69f11"/>
                 </cl:inputbox>
               </cl:gridcell>
@@ -258,9 +262,6 @@
         </cl:group>
       </cl:tabitem>
       <cl:tabitem std:sid="t-item-3bb4ba56" text="연관 기능">
-        <std:metadata>
-          <std:property key="is-active-item" value="true"/>
-        </std:metadata>
         <cl:group std:sid="group-1593caaf">
           <std:metadata>
             <std:property key="locked" value="true"/>

@@ -240,7 +240,7 @@
           <cl:listener std:sid="listener-fd671ab9" name="click" handler="onBtn3Click"/>
           <cl:formdata std:sid="f-data-21b8ae0c" row="0" col="2"/>
         </cl:button>
-        <cl:button std:sid="button-111012d1" id="btn4" class="inner" value="Excel">
+        <cl:button std:sid="button-111012d1" id="btn4" class="inner" visible="false" value="Excel">
           <cl:formdata std:sid="f-data-bc1cac7f" row="0" col="5"/>
         </cl:button>
         <cl:button std:sid="button-67d42954" id="btn5" class="inner-primary" value="New">
@@ -270,9 +270,9 @@
           <cl:gridcolumn std:sid="g-column-ef0487dd"/>
           <cl:gridcolumn std:sid="g-column-c0bc9fbd"/>
           <cl:gridcolumn std:sid="g-column-7024f4f7"/>
-          <cl:gridcolumn std:sid="g-column-2e1528b9" width="47px"/>
-          <cl:gridcolumn std:sid="g-column-86cefef1" width="47px"/>
-          <cl:gridcolumn std:sid="g-column-75663998" width="104px"/>
+          <cl:gridcolumn std:sid="g-column-2e1528b9" width="34px"/>
+          <cl:gridcolumn std:sid="g-column-86cefef1" width="40px"/>
+          <cl:gridcolumn std:sid="g-column-75663998" width="120px"/>
           <cl:gridcolumn std:sid="g-column-ac85c9c4" width="117px"/>
           <cl:gridcolumn std:sid="g-column-2b52979b" width="110px"/>
           <cl:gridcolumn std:sid="g-column-3bca3959" width="113px"/>
@@ -303,10 +303,14 @@
             <cl:gridcell std:sid="gd-cell-6653e773" rowindex="0" colindex="6" style="text-align:center;" columnname="funcTypeDesc"/>
             <cl:gridcell std:sid="gd-cell-a5ed2e90" rowindex="0" colindex="7" style="text-align:center;" columnname="moduleDesc"/>
             <cl:gridcell std:sid="gd-cell-c5641b5c" rowindex="0" colindex="8" columnname="suite1Flag">
-              <cl:checkbox std:sid="c-box-58559b38" id="cbx3"/>
+              <cl:checkbox std:sid="c-box-58559b38" id="cbx3">
+                <cl:fieldstyle style="text-align:center;"/>
+              </cl:checkbox>
             </cl:gridcell>
             <cl:gridcell std:sid="gd-cell-53b06ab1" rowindex="0" colindex="9" columnname="suite2Flag">
-              <cl:checkbox std:sid="c-box-7d01de69" id="cbx4"/>
+              <cl:checkbox std:sid="c-box-7d01de69" id="cbx4">
+                <cl:fieldstyle style="text-align:center;"/>
+              </cl:checkbox>
             </cl:gridcell>
             <cl:gridcell std:sid="gd-cell-5302b8e4" rowindex="0" colindex="10" style="text-align:left;" columnname="funcLib"/>
             <cl:gridcell std:sid="gd-cell-7fa82ae6" rowindex="0" colindex="11" style="text-align:left;" columnname="funcLink"/>

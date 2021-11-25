@@ -47,26 +47,17 @@ function gridDeleteRow(/* cpr.controls.Grid */grid){
     }
 }
 
-/**
- * 
- * @param {cpr.protocols.Submission} submission 인코딩 처리할 서브미션
- * @param {String} dataControlName 데이터 셋 id 명
- */
-function subSetRequestEncoder(submission, dataControlName){
-    submission.setRequestEncoder(function(api, data){
-        return {content : data["data"][dataControlName]}
-    });
-}
+
 
 /**
  * @return {Array} 입력 되지 않은 label 값
  */
 function requireValidate(){
-    var returnValArr = []; // 필수 입력 라벨들의 문자를 담을 배열
+    var returnValArr = [];
     
-    /* id명 */ var ipb1 = app.lookup("ipbFuncCode"); // 기능 코드 
-    /* id명 */ var ipb2 = app.lookup("ipbFuncDesc"); // 기능명
-    /* id명 */ var ipb4 = app.lookup("ipbFuncType"); // 기능 유형
+    var ipb1 = app.lookup("ipbFuncCode"); // 기능 코드 
+    var ipb2 = app.lookup("ipbFuncDesc"); // 기능명
+    var ipb4 = app.lookup("ipbFuncType"); // 기능 유형
     
     var ipbFuncCodeVal = ipb1.value;
     var ipbFuncDescVal = ipb2.value;
@@ -86,16 +77,21 @@ function requireValidate(){
 }
 
 /**
+ * 
+ * @param {cpr.protocols.Submission} submission 인코딩 처리할 서브미션
+ * @param {String} dataControlName 데이터 셋 id 명
+ */
+function subSetRequestEncoder(submission, dataControlName){
+    submission.setRequestEncoder(function(api, data){
+        return {content : data["data"][dataControlName]}
+    });
+}
+
+/**
  * 이벤트 처리 영역
  */
 
-/*
- * 아웃풋에서 click 이벤트 발생 시 호출.
- * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
- */
-function onOutputClick(/* cpr.events.CMouseEvent */ e){
-	app.close();
-}
+
 
 /*
  * 버튼(btn1)에서 click 이벤트 발생 시 호출.
@@ -135,8 +131,8 @@ function onBtn9Click(/* cpr.events.CMouseEvent */ e){
      * @type cpr.controls.Button
      */
     var btn9 = e.control;
-    var grd1 = app.lookup("grd1");
-    gridAddRow(grd1);
+    var grd3 = app.lookup("grd3");
+    gridAddRow(grd3);
 }
 
 
@@ -149,8 +145,8 @@ function onBtn10Click(/* cpr.events.CMouseEvent */ e){
      * @type cpr.controls.Button
      */
     var btn10 = e.control;
-    var grd1 = app.lookup("grd1");
-    gridDeleteRow(grd1);
+    var grd3 = app.lookup("grd3");
+    gridDeleteRow(grd3);
 }
 
 
@@ -163,8 +159,8 @@ function onBtn12Click(/* cpr.events.CMouseEvent */ e){
      * @type cpr.controls.Button
      */
     var btn12 = e.control;
-    var grd2 = app.lookup("grd2");
-    gridAddRow(grd2);
+    var grd4 = app.lookup("grd4");
+    gridAddRow(grd4);
 }
 
 
@@ -177,8 +173,8 @@ function onBtn11Click(/* cpr.events.CMouseEvent */ e){
      * @type cpr.controls.Button
      */
     var btn11 = e.control;
-    var grd2 = app.lookup("grd2");
-    gridDeleteRow(grd2);
+    var grd4 = app.lookup("grd4");
+    gridDeleteRow(grd4);
 }
 
 
@@ -272,8 +268,192 @@ function onBtn8Click(/* cpr.events.CMouseEvent */ e){
     var grd1 = app.lookup("grd1");
     
     checkRowIndices.forEach(function(index){
-        grd1.insertRowData(grd1.rowCount, true, grd4.getRow(index).getRowData())
+        grd1.insertRowData(grd1.rowCount, true, grd2.getRow(index).getRowData())
     });    
 }
 
 
+
+
+/*
+ * 루트 컨테이너에서 load 이벤트 발생 시 호출.
+ * 앱이 최초 구성된후 최초 랜더링 직후에 발생하는 이벤트 입니다.
+ */
+function onBodyLoad(/* cpr.events.CEvent */ e){
+    // initValue 반환
+    initValues = app.getHost().initValue;
+    
+    var idData = initValues.clickRowID;
+    var state = initValues.state;
+    
+    if (state == "save"){
+        app.lookup("ipbFuncCode").enabled = true;
+    }
+    
+    //1번
+    var dmSearch = app.lookup("dmSearch");
+    dmSearch.setValue("funcCode", idData);
+    app.lookup("ipbFuncCode").redraw();
+    
+    //2번
+    var smsSearch = app.lookup("smsSearch");
+    smsSearch.send();    
+}
+
+
+/*
+ * 서브미션에서 submit-success 이벤트 발생 시 호출.
+ * 통신이 성공하면 발생합니다.
+ */
+function onSmsSearchSubmitSuccess(/* cpr.events.CSubmissionEvent */ e){
+    /** 
+     * @type cpr.protocols.Submission
+     */
+    var smsSearch = e.control;
+    
+    var responseText = smsSearch.xhr.responseText;
+    var jsonData = JSON.parse(responseText);
+    
+    var dm1 = app.lookup("dmSearch");
+    dm1.build(jsonData);
+    
+    app.lookup("grp1").redraw();
+    
+    
+    var dsFuncParams = app.lookup("dsFuncParams");
+    var dsTags = app.lookup("dsTags");
+    
+    var funcParams = jsonData.funcParams;
+    var tags = jsonData.tags;
+    
+    if (funcParams){
+        var arrFuncParams = funcParams.split(",");
+        arrFuncParams.forEach(function (data){
+            dsFuncParams.pushRowData({"name" : data.split("=")[0], "value" : data.split("=")[1]});
+        })
+    }
+    
+    if(tags){
+        var arrTags = tags.split(",");
+        arrTags.forEach(function (data){
+            dsTags.pushRowData({"value" : data});
+        })
+    }    
+}
+
+
+/*
+ * 서브미션에서 submit-success 이벤트 발생 시 호출.
+ * 통신이 성공하면 발생합니다.
+ */
+function onSmsSaveSubmitSuccess(/* cpr.events.CSubmissionEvent */ e){
+    /** 
+     * @type cpr.protocols.Submission
+     */
+    var smsSave = e.control;
+    flag = true;
+    app.close(flag);
+}
+
+
+/*
+ * 서브미션에서 submit-success 이벤트 발생 시 호출.
+ * 통신이 성공하면 발생합니다.
+ */
+function onSmsUpdateSubmitSuccess(/* cpr.events.CSubmissionEvent */ e){
+    /** 
+     * @type cpr.protocols.Submission
+     */
+    var smsUpdate = e.control;
+    flag = true;
+    app.close(flag);
+}
+
+
+/*
+ * 버튼(btn3)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn3Click(/* cpr.events.CMouseEvent */ e){
+    /** 
+     * @type cpr.controls.Button
+     */
+    var btn3 = e.control;
+    var grd2 = app.lookup("grd2");
+    var checkRowIndices = grd2.getCheckRowIndices();
+    for(var i=0; i<checkRowIndices.length; i++) {
+        grd2.dataSet.moveRowIndex(checkRowIndices[i], i, false);
+    }
+    grd2.redraw();
+}
+
+
+/*
+ * 버튼(btn4)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn4Click(/* cpr.events.CMouseEvent */ e){
+    /** 
+     * @type cpr.controls.Button
+     */
+    var btn4 = e.control;
+    var grd2 = app.lookup("grd2");
+    var checkRowIndices = grd2.getCheckRowIndices();
+    for(var i=0; i<checkRowIndices.length; i++) {
+        grd2.dataSet.moveRowIndex(checkRowIndices[i], checkRowIndices[i]-1, false);
+    }
+    grd2.redraw();    
+}
+
+
+/*
+ * 버튼(btn5)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn5Click(/* cpr.events.CMouseEvent */ e){
+    /** 
+     * @type cpr.controls.Button
+     */
+    var btn5 = e.control;
+    var grd2 = app.lookup("grd2");
+    var checkRowIndices = grd2.getCheckRowIndices();
+    for(var i=checkRowIndices.length-1; i>=0; i--) {
+        grd2.dataSet.moveRowIndex(checkRowIndices[i], checkRowIndices[i]+1, true);
+    }
+    grd2.redraw();    
+}
+
+
+/*
+ * 버튼(btn6)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn6Click(/* cpr.events.CMouseEvent */ e){
+    /** 
+     * @type cpr.controls.Button
+     */
+    var btn6 = e.control;
+    var grd2 = app.lookup("grd2");
+    var checkRowIndices = grd2.getCheckRowIndices();
+    var vnRowCount = grd2.rowCount;
+    for(var i=0; i<checkRowIndices.length; i++) {
+        grd2.dataSet.moveRowIndex(checkRowIndices[i]-i, vnRowCount-1, true);
+    }
+    grd2.redraw();
+}
+
+
+///*
+// * 인풋 박스에서 keyup 이벤트 발생 시 호출.
+// * 사용자가 키에서 손을 뗄 때 발생하는 이벤트.
+// */
+//function onIpb16Keyup(/* cpr.events.CKeyboardEvent */ e){
+//    /** 
+//     * @type cpr.controls.InputBox
+//     */
+//    var ipb16 = e.control;
+//    if(e.keyCode == cpr.events.KeyCode.ENTER){
+//        var smsSearch = app.lookup("smsSearch");
+//        smsSearch.send();
+//    }
+//}
