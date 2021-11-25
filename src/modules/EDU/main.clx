@@ -53,41 +53,33 @@
       </cl:dataset>
       <cl:datamap std:sid="d-map-92868e08" id="dmSearch">
         <cl:datacolumnlist>
-          <cl:datacolumn std:sid="d-column-db2ae4bf" name="searchWord"/>
-          <cl:datacolumn std:sid="d-column-2c81f170" name="funcType"/>
-          <cl:datacolumn std:sid="d-column-86b2a512" name="moduleCode"/>
-          <cl:datacolumn std:sid="d-column-7143420a" name="suite1Flag"/>
-          <cl:datacolumn std:sid="d-column-be60db15" name="suite2Flag"/>
-        </cl:datacolumnlist>
-      </cl:datamap>
-      <cl:datamap std:sid="d-map-dcebf0dd" id="dmFunction">
-        <cl:datacolumnlist>
-          <cl:datacolumn std:sid="d-column-3d0a3d5a" name="id"/>
-          <cl:datacolumn std:sid="d-column-7cf2c1fc" name="funcCode"/>
-          <cl:datacolumn std:sid="d-column-358021b8" name="funcDesc"/>
-          <cl:datacolumn std:sid="d-column-fb917313" name="funcLocaleDesc"/>
-          <cl:datacolumn std:sid="d-column-51dfaa1e" name="funcType"/>
-          <cl:datacolumn std:sid="d-column-864c5eb0" name="funcTypeDesc"/>
-          <cl:datacolumn std:sid="d-column-ff8a43b4" name="moduleCode"/>
-          <cl:datacolumn std:sid="d-column-d44437b8" name="moduleDesc"/>
-          <cl:datacolumn std:sid="d-column-b088762d" name="funcLib"/>
-          <cl:datacolumn std:sid="d-column-5436abdb" name="funcLink"/>
-          <cl:datacolumn std:sid="d-column-2281a42e" name="funcParams"/>
-          <cl:datacolumn std:sid="d-column-ebf5dc91" name="tags"/>
-          <cl:datacolumn std:sid="d-column-ff89d331" name="suite1Flag"/>
-          <cl:datacolumn std:sid="d-column-875e89a6" name="suite2Flag"/>
-          <cl:datacolumn std:sid="d-column-09e3bafc" name="suite3Flag"/>
-          <cl:datacolumn std:sid="d-column-859560e1" name="suite4Flag"/>
-          <cl:datacolumn std:sid="d-column-c99fafed" name="suite5Flag"/>
-          <cl:datacolumn std:sid="d-column-5044d851" name="suite6Flag"/>
-          <cl:datacolumn std:sid="d-column-f23ca09f" name="suite7Flag"/>
-          <cl:datacolumn std:sid="d-column-a8ded533" name="suite8Flag"/>
-          <cl:datacolumn std:sid="d-column-fcc4a6b5" name="suite9Flag"/>
-          <cl:datacolumn std:sid="d-column-10cb379e" name="suite10Flag"/>
-          <cl:datacolumn std:sid="d-column-4e3863d8" name="createUserId"/>
-          <cl:datacolumn std:sid="d-column-fa0fc357" name="createTime"/>
-          <cl:datacolumn std:sid="d-column-3325df20" name="updateUserId"/>
-          <cl:datacolumn std:sid="d-column-b2c2d86f" name="updateTime"/>
+          <cl:datacolumn std:sid="d-column-18115b1c" name="searchWord"/>
+          <cl:datacolumn std:sid="d-column-6beca357" name="id" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-33c520d5" name="funcCode" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-839ab2c2" name="funcDesc" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-ed24d1b1" name="funcLocaleDesc" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-0b50a766" name="funcType" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-07ce0a1b" name="funcTypeDesc" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-d21ab745" name="moduleCode" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-782b519b" name="moduleDesc" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-17409a25" name="funcLib" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-987e4556" name="funcLink" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-4cb9586e" name="funcParams" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-a1dffd73" name="tags" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-e37beb8f" name="suite1Flag" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-bd6c8c69" name="suite2Flag" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-07f0d643" name="suite3Flag" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-8aff6287" name="suite4Flag" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-f0f88571" name="suite5Flag" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-61275d39" name="suite6Flag" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-482d9e82" name="suite7Flag" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-fc85a8cc" name="suite8Flag" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-64626e51" name="suite9Flag" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-84162cc7" name="suite10Flag" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-7e05042e" name="createUserId" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-998b4e12" name="createTime" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-3d38368c" name="updateUserId" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-12d23780" name="updateTime" datatype="string"/>
         </cl:datacolumnlist>
       </cl:datamap>
       <cl:submission std:sid="submission-8fd2fb73" id="subSearch" method="get" mediatype="application/x-www-form-urlencoded;simple">
@@ -96,6 +88,7 @@
         <cl:responsedata dataid="ds1" alias="list"/>
       </cl:submission>
       <cl:submission std:sid="submission-ac70ef8d" id="subDelete" method="patch" mediatype="application/json">
+        <cl:listener std:sid="listener-3aa16b4a" name="submit-success" handler="onSubDeleteSubmitSuccess"/>
         <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions:bulk-delete&quot;"/>
         <cl:requestdata dataid="ds1Copy" payload="all"/>
         <cl:responsedata dataid="ds1" alias="list"/>
@@ -136,7 +129,6 @@
       <cl:group std:sid="group-ad9e1097">
         <cl:formdata std:sid="f-data-1267010a" row="1" col="1"/>
         <cl:checkbox std:sid="c-box-3a5f4c14" id="cbx1" falsevalue="false" text="전자조립">
-          <cl:listener std:sid="listener-85d59561" name="value-change" handler="onCbx1ValueChange"/>
           <cl:datamapbind property="value" datacontrolid="dmSearch" columnname="suite1Flag"/>
           <cl:formdata std:sid="f-data-8c074ad7" row="0" col="0"/>
         </cl:checkbox>

@@ -25,56 +25,14 @@
           <cl:datacolumn std:sid="d-column-0cc7ded8" name="funcCode"/>
           <cl:datacolumn std:sid="d-column-919b9aa6" name="funcLocaleDesc"/>
         </cl:datacolumnlist>
-        <cl:datarowlist>
-          <cl:datarow>
-            <cl:datavalue columnname="funcCode">funcCode1</cl:datavalue>
-            <cl:datavalue columnname="funcLocaleDesc">funcLocaleDesc1</cl:datavalue>
-          </cl:datarow>
-          <cl:datarow>
-            <cl:datavalue columnname="funcCode">funcCode2</cl:datavalue>
-            <cl:datavalue columnname="funcLocaleDesc">funcLocaleDesc2</cl:datavalue>
-          </cl:datarow>
-          <cl:datarow>
-            <cl:datavalue columnname="funcCode">funcCode3</cl:datavalue>
-            <cl:datavalue columnname="funcLocaleDesc">funcLocaleDesc3</cl:datavalue>
-          </cl:datarow>
-          <cl:datarow>
-            <cl:datavalue columnname="funcCode">funcCode4</cl:datavalue>
-            <cl:datavalue columnname="funcLocaleDesc">funcLocaleDesc4</cl:datavalue>
-          </cl:datarow>
-          <cl:datarow>
-            <cl:datavalue columnname="funcCode">funcCode5</cl:datavalue>
-            <cl:datavalue columnname="funcLocaleDesc">funcLocaleDesc5</cl:datavalue>
-          </cl:datarow>
-        </cl:datarowlist>
+        <cl:datarowlist/>
       </cl:dataset>
       <cl:dataset std:sid="d-set-2410823b" id="dsFuncCodeRel">
         <cl:datacolumnlist>
-          <cl:datacolumn std:sid="d-column-b61d910b" name="relFuncCode"/>
-          <cl:datacolumn std:sid="d-column-3e8e2ae8" name="relFuncDesc"/>
+          <cl:datacolumn std:sid="d-column-b61d910b" name="funcCode"/>
+          <cl:datacolumn std:sid="d-column-3e8e2ae8" name="funcLocaleDesc"/>
         </cl:datacolumnlist>
-        <cl:datarowlist>
-          <cl:datarow>
-            <cl:datavalue columnname="relFuncCode"><![CDATA[funcCode1]]></cl:datavalue>
-            <cl:datavalue columnname="relFuncDesc"><![CDATA[funcLocaleDesc1]]></cl:datavalue>
-          </cl:datarow>
-          <cl:datarow>
-            <cl:datavalue columnname="relFuncCode"><![CDATA[funcCode2]]></cl:datavalue>
-            <cl:datavalue columnname="relFuncDesc"><![CDATA[funcLocaleDesc2]]></cl:datavalue>
-          </cl:datarow>
-          <cl:datarow>
-            <cl:datavalue columnname="relFuncCode"><![CDATA[funcCode3]]></cl:datavalue>
-            <cl:datavalue columnname="relFuncDesc"><![CDATA[funcLocaleDesc3]]></cl:datavalue>
-          </cl:datarow>
-          <cl:datarow>
-            <cl:datavalue columnname="relFuncCode"><![CDATA[funcCode4]]></cl:datavalue>
-            <cl:datavalue columnname="relFuncDesc"><![CDATA[funcLocaleDesc4]]></cl:datavalue>
-          </cl:datarow>
-          <cl:datarow>
-            <cl:datavalue columnname="relFuncCode"><![CDATA[funcCode5]]></cl:datavalue>
-            <cl:datavalue columnname="relFuncDesc"><![CDATA[funcLocaleDesc5]]></cl:datavalue>
-          </cl:datarow>
-        </cl:datarowlist>
+        <cl:datarowlist/>
       </cl:dataset>
       <cl:datamap std:sid="d-map-73d82c77" id="dmPopup">
         <cl:datacolumnlist>
@@ -91,10 +49,30 @@
           <cl:datacolumn std:sid="d-column-252ac516" name="funcParam"/>
         </cl:datacolumnlist>
       </cl:datamap>
+      <cl:datamap std:sid="d-map-7dfc03f1" id="dmSearchRel">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-c8f7a270" name="searchWord"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
       <cl:submission std:sid="submission-1875524b" id="smDialog" method="get" mediatype="application/x-www-form-urlencoded;simple">
         <cl:listener std:sid="listener-11217843" name="submit-success" handler="onSmDialogSubmitSuccess"/>
         <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions/&quot; + #dmPopup.id"/>
         <cl:responsedata dataid="dmPopup"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-be243433" id="subSave">
+        <cl:listener std:sid="listener-faf4688a" name="submit-success" handler="onSubSaveSubmitSuccess"/>
+        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions/save&quot;"/>
+        <cl:requestdata dataid="dmPopup"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-ae690f77" id="subUpdate" method="put" mediatype="application/json">
+        <cl:listener std:sid="listener-c17776db" name="submit-success" handler="onSubUpdateSubmitSuccess"/>
+        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions/&quot; + #dm1.funcCode"/>
+        <cl:requestdata dataid="dmPopup"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-2d91a259" id="subSearchRel" method="get" mediatype="application/x-www-form-urlencoded;simple">
+        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions&quot;"/>
+        <cl:requestdata dataid="dmSearchRel"/>
+        <cl:responsedata dataid="dsFuncCode" alias="list"/>
       </cl:submission>
     </cl:model>
     <cl:appspec dev-comment="templates/normal/NormalPopup940.clx 템플릿 사용하여 작성 함.&#xA;Width : 940px&#xD;&#xA;Height : Max 700px"/>
@@ -314,6 +292,7 @@
                 <cl:group std:sid="group-69cea6d3" id="grp8">
                   <cl:formdata std:sid="f-data-4f8e541e" row="0" col="0"/>
                   <cl:inputbox std:sid="i-box-7a037d48" id="ipbSearchWord" class="mrc no-border-radius inner" showclearbutton="true" placeholder="searchWord">
+                    <cl:datamapbind property="value" category="PROPERTY" datacontrolid="dmSearchRel" columnname="searchWord"/>
                     <cl:formdata std:sid="f-data-f6bb67fe" row="0" col="0" rowspan="1" colspan="2"/>
                   </cl:inputbox>
                   <cl:button std:sid="button-8bc9dedb" id="btn3" class="ic-clear">
@@ -321,6 +300,7 @@
                     <cl:formdata std:sid="f-data-76427f5c" row="0" col="2"/>
                   </cl:button>
                   <cl:button std:sid="button-2ee03480" id="btn4" class="ic-search">
+                    <cl:listener std:sid="listener-021d012b" name="click" handler="onBtn4Click"/>
                     <cl:formdata std:sid="f-data-9bd25832" row="0" col="3"/>
                   </cl:button>
                   <cl:formlayout std:sid="f-layout-25d112ac" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
@@ -347,28 +327,32 @@
                   <cl:gridheader std:sid="gh-band-3a6e88a3">
                     <cl:gridrow std:sid="g-row-2521da00"/>
                     <cl:gridcell std:sid="gh-cell-14e14ca5" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
-                    <cl:gridcell std:sid="gh-cell-f3b16587" rowindex="0" colindex="1" targetcolumnname="relFuncCode" sortable="false" filterable="false" text="기능 코드"/>
-                    <cl:gridcell std:sid="gh-cell-6053cd5a" rowindex="0" colindex="2" targetcolumnname="relFuncDesc" sortable="false" filterable="false" text="기능명"/>
+                    <cl:gridcell std:sid="gh-cell-f3b16587" rowindex="0" colindex="1" targetcolumnname="funcCode" sortable="false" filterable="false" text="기능 코드"/>
+                    <cl:gridcell std:sid="gh-cell-6053cd5a" rowindex="0" colindex="2" targetcolumnname="funcLocaleDesc" sortable="false" filterable="false" text="기능명"/>
                   </cl:gridheader>
                   <cl:griddetail std:sid="gd-band-30d6d4db">
                     <cl:gridrow std:sid="g-row-354e61e8"/>
                     <cl:gridcell std:sid="gd-cell-94eeced4" rowindex="0" colindex="0" columntype="checkbox"/>
-                    <cl:gridcell std:sid="gd-cell-b9d6f950" rowindex="0" colindex="1" columnname="relFuncCode"/>
-                    <cl:gridcell std:sid="gd-cell-0cb319af" rowindex="0" colindex="2" columnname="relFuncDesc"/>
+                    <cl:gridcell std:sid="gd-cell-b9d6f950" rowindex="0" colindex="1" columnname="funcCode"/>
+                    <cl:gridcell std:sid="gd-cell-0cb319af" rowindex="0" colindex="2" columnname="funcLocaleDesc"/>
                   </cl:griddetail>
                 </cl:grid>
                 <cl:group std:sid="group-3bae21cb" id="grp10">
                   <cl:formdata std:sid="f-data-969a5949" row="0" col="0"/>
                   <cl:button std:sid="button-282be6e3" id="btn7" class="ic-slide-top">
+                    <cl:listener std:sid="listener-737c614b" name="click" handler="onBtn7Click"/>
                     <cl:formdata std:sid="f-data-a61678b1" row="0" col="0"/>
                   </cl:button>
                   <cl:button std:sid="button-7393a524" id="btn8" class="ic-slide-up">
+                    <cl:listener std:sid="listener-2a7c1b42" name="click" handler="onBtn8Click"/>
                     <cl:formdata std:sid="f-data-d24c65b9" row="0" col="1"/>
                   </cl:button>
                   <cl:button std:sid="button-6b393bd4" id="btn9" class="ic-slide-down">
+                    <cl:listener std:sid="listener-21e70c78" name="click" handler="onBtn9Click"/>
                     <cl:formdata std:sid="f-data-de220df6" row="0" col="2"/>
                   </cl:button>
                   <cl:button std:sid="button-839f0c6a" id="btn10" class="ic-slide-bottom">
+                    <cl:listener std:sid="listener-3ecea236" name="click" handler="onBtn10Click"/>
                     <cl:formdata std:sid="f-data-7a891f99" row="0" col="3"/>
                   </cl:button>
                   <cl:formlayout std:sid="f-layout-0c9c8675" hspace="4px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
@@ -389,10 +373,11 @@
               <cl:group std:sid="group-1b5013b1" id="grp11">
                 <cl:formdata std:sid="f-data-7faa789e" row="0" col="1"/>
                 <cl:button std:sid="button-141e327d" id="btn11" class="ic-mapping-right">
-                  <cl:listener std:sid="listener-97dcc561" name="click" handler="onBtn11Click"/>
+                  <cl:listener std:sid="listener-5d426dc2" name="click" handler="onBtn11Click"/>
                   <cl:formdata std:sid="f-data-71ddf53a" halign="CENTER" width="32" row="1" col="0"/>
                 </cl:button>
                 <cl:button std:sid="button-dec78fd8" id="btn12" class="ic-mapping-left">
+                  <cl:listener std:sid="listener-f622d590" name="click" handler="onBtn12Click"/>
                   <cl:formdata std:sid="f-data-13c78c8b" halign="CENTER" valign="FILL" width="32" row="2" col="0"/>
                 </cl:button>
                 <cl:formlayout std:sid="f-layout-5fc9c782" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
