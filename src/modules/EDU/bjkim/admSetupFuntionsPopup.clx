@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-b0766a17" version="1.0.3388">
+  <head std:sid="head-4e792750">
+    <screen std:sid="screen-55da84cb" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-b59c8b3c" id="모달창" name="모달창" minwidth="900px" maxwidth="1023px" width="900px" height="700px" useCustomWidth="true" useCustomHeight="true" customHeight="700" customWidth="940" active="true"/>
+    <screen std:sid="screen-ec4e4d65" id="tablet" name="tablet" minwidth="500px" maxwidth="899px" width="500px" height="667px"/>
+    <screen std:sid="screen-960f3f6f" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-e375aa06">
+      <cl:dataset std:sid="d-set-f1bb6d5f" id="dsFuncParams">
+        <cl:listener std:sid="listener-60ae190c" name="update" handler="onDsFuncParamsUpdate"/>
+        <cl:listener std:sid="listener-1e15906b" name="delete" handler="onDsFuncParamsDelete"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="매개변수" std:sid="d-column-bd06f472" name="param"/>
+          <cl:datacolumn comment="값" std:sid="d-column-ea9daccb" name="value"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-1fe741fa" id="dsTags">
+        <cl:listener std:sid="listener-5433cb92" name="update" handler="onDsTagsUpdate"/>
+        <cl:listener std:sid="listener-b6bb8950" name="delete" handler="onDsTagsDelete"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-21e4453a" name="tag"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-71780878" id="dsFuncCode">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-eceda251" name="funcCode"/>
+          <cl:datacolumn std:sid="d-column-0aa96d50" name="funcLocaleDesc"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-01347cd8" id="dsFuncCodeRel">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-0e239b26" name="funcCode"/>
+          <cl:datacolumn std:sid="d-column-24037ed5" name="funcLocaleDesc"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="funcCode"><![CDATA[funcCode6]]></cl:datavalue>
+            <cl:datavalue columnname="funcLocaleDesc"><![CDATA[funcLocaleDesc1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="funcCode"><![CDATA[funcCode7]]></cl:datavalue>
+            <cl:datavalue columnname="funcLocaleDesc"><![CDATA[funcLocaleDesc2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="funcCode"><![CDATA[funcCode8]]></cl:datavalue>
+            <cl:datavalue columnname="funcLocaleDesc"><![CDATA[funcLocaleDesc3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="funcCode"><![CDATA[funcCode9]]></cl:datavalue>
+            <cl:datavalue columnname="funcLocaleDesc"><![CDATA[funcLocaleDesc4]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-e2716040" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-7ef82dd6" name="funcCode"/>
+          <cl:datacolumn std:sid="d-column-2073aca0" name="funcDesc"/>
+          <cl:datacolumn std:sid="d-column-f9be19b5" name="funcLocaleDesc"/>
+          <cl:datacolumn std:sid="d-column-0982b361" name="suite1Flag"/>
+          <cl:datacolumn std:sid="d-column-0eaf69e7" name="suite2Flag"/>
+          <cl:datacolumn std:sid="d-column-3b581115" name="funcTypeDesc"/>
+          <cl:datacolumn std:sid="d-column-6326e642" name="moduleDesc"/>
+          <cl:datacolumn std:sid="d-column-28daea1a" name="funcLib"/>
+          <cl:datacolumn std:sid="d-column-e4eb4f36" name="funcLink"/>
+          <cl:datacolumn std:sid="d-column-8a8b8d6e" name="id"/>
+          <cl:datacolumn std:sid="d-column-e2a56928" name="funcParams"/>
+          <cl:datacolumn std:sid="d-column-5fd290fb" name="tags"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-51ab64a0" id="dmSearchRel">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-0acd0128" name="searchWord"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-079e40dd" id="sms1" method="get" mediatype="application/x-www-form-urlencoded;simple">
+        <cl:listener std:sid="listener-6180c37f" name="submit-success" handler="onSms1SubmitSuccess2"/>
+        <cl:listener std:sid="listener-2c29b125" name="submit-success" handler="onSms1SubmitSuccess"/>
+        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions/&quot; + #dm1.id"/>
+        <cl:requestdata dataid="dm1"/>
+        <cl:responsedata dataid="dm1" alias="list"/>
+        <cl:responsedata dataid="dsTags"/>
+        <cl:responsedata dataid="dsFuncParams"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-6d114e90" id="subSave">
+        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions/&quot; + &quot;save&quot;&quot;"/>
+        <cl:requestdata dataid="dm1"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-a547173b" id="subSearch" method="get" mediatype="application/x-www-form-urlencoded;simple">
+        <cl:expbind property="action" category="PROPERTY" expression="ServiceUrls.ADM_SERVICE_URL + &quot;functions/&quot;"/>
+        <cl:requestdata dataid="dmSearchRel"/>
+        <cl:responsedata dataid="dsFuncCode" alias="list"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-c793fae8" id="subUpdate">
+        <cl:requestdata dataid="dm1"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="메뉴기능 상세내역"/>
+  </head>
+  <body std:sid="body-676bddb6" style="border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none;" class="required">
+    <cl:listener std:sid="listener-59d7c4ce" name="load" handler="onBodyLoad"/>
+    <cl:output std:sid="output-fbd4dcba" id="opt2" class="required" value="기능 코드">
+      <cl:xylayoutdata std:sid="xyl-data-8663203f" top="10px" left="10px" width="90px" height="32px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:inputbox std:sid="i-box-d7d2f24c" id="ipbFuncCode" enabled="false">
+      <cl:datamapbind property="value" datacontrolid="dm1" columnname="id"/>
+      <cl:xylayoutdata std:sid="xyl-data-4f2e44c2" top="10px" left="110px" width="195px" height="32px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:tabfolder std:sid="t-folder-1e2b48bf" id="fld1">
+      <cl:xylayoutdata std:sid="xyl-data-39486d46" top="62px" left="10px" width="869px" height="544px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:tabitem std:sid="t-item-f0526b53" selected="true" text="일반">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-3c67d75b" id="grp1">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:output std:sid="output-a9e56db6" id="opt3" class="required" value="기능명">
+            <cl:formdata std:sid="f-data-bc9cfbca" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-9692087b" id="opt4" value="업종 구분">
+            <cl:formdata std:sid="f-data-c88cbe17" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-dc032d62" id="opt5" class="required" value="기능 유형">
+            <cl:formdata std:sid="f-data-51d2d7fe" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-8203bbd6" id="opt6" value="기능 Lip">
+            <cl:formdata std:sid="f-data-72c7524c" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-4e696d46" id="opt9" value="다국어명">
+            <cl:formdata std:sid="f-data-e7648990" row="0" col="2"/>
+          </cl:output>
+          <cl:output std:sid="output-ebb3a358" id="opt10" value="모듈">
+            <cl:formdata std:sid="f-data-289eb067" row="2" col="2"/>
+          </cl:output>
+          <cl:output std:sid="output-b83873aa" id="opt12" value="기능 연결">
+            <cl:formdata std:sid="f-data-6305b349" row="3" col="2"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-cbded722" id="ipbFuncDesc">
+            <cl:datamapbind property="value" datacontrolid="dm1" columnname="funcDesc"/>
+            <cl:formdata std:sid="f-data-3239f09e" row="0" col="1"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-f239dfd2" id="ipbFuncTypeDesc">
+            <cl:datamapbind property="value" datacontrolid="dm1" columnname="funcTypeDesc"/>
+            <cl:formdata std:sid="f-data-73547fe9" row="2" col="1"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-e190b5a8" id="ipb5">
+            <cl:datamapbind property="value" datacontrolid="dm1" columnname="funcLib"/>
+            <cl:formdata std:sid="f-data-098807c8" row="3" col="1"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-cc7e6399" id="ipb10">
+            <cl:datamapbind property="value" datacontrolid="dm1" columnname="funcLocaleDesc"/>
+            <cl:formdata std:sid="f-data-3108567a" row="0" col="3"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-4592fd95" id="ipb11">
+            <cl:datamapbind property="value" datacontrolid="dm1" columnname="moduleDesc"/>
+            <cl:formdata std:sid="f-data-983142de" row="2" col="3"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-7eaafc86" id="ipb13">
+            <cl:datamapbind property="value" datacontrolid="dm1" columnname="funcLink"/>
+            <cl:formdata std:sid="f-data-1214df0c" row="3" col="3"/>
+          </cl:inputbox>
+          <cl:group std:sid="group-b3e648fe" id="grp6">
+            <cl:formdata std:sid="f-data-8c3e7fe4" row="4" col="1"/>
+            <cl:button std:sid="button-b61d6a92" id="btn1" value="+">
+              <cl:listener std:sid="listener-b6c3a7d4" name="click" handler="onBtn1Click"/>
+              <cl:formdata std:sid="f-data-f4cd2a71" row="0" col="2"/>
+            </cl:button>
+            <cl:button std:sid="button-43cc80c9" id="btn2" value="-">
+              <cl:listener std:sid="listener-a74978ab" name="click" handler="onBtn2Click"/>
+              <cl:formdata std:sid="f-data-3aedb297" row="0" col="3"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-48060ef9" scrollable="false" hspace="5px" vspace="5px" top-margin="1px" right-margin="1px" bottom-margin="1px" left-margin="1px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="100" unit="PIXEL"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-a035a19b" id="grp4">
+            <cl:formdata std:sid="f-data-23353008" row="4" col="3"/>
+            <cl:button std:sid="button-87909426" id="btn3" value="+">
+              <cl:listener std:sid="listener-678c0b18" name="click" handler="onBtn3Click"/>
+              <cl:formdata std:sid="f-data-7a9ee1c2" row="0" col="2"/>
+            </cl:button>
+            <cl:button std:sid="button-41604562" id="btn4" value="-">
+              <cl:listener std:sid="listener-daa3021e" name="click" handler="onBtn4Click"/>
+              <cl:formdata std:sid="f-data-849c6458" row="0" col="3"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-a1a990d7" scrollable="false" hspace="5px" vspace="5px" top-margin="1px" right-margin="1px" bottom-margin="1px" left-margin="1px">
+              <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-64fc051d" id="grp5">
+            <cl:formdata std:sid="f-data-39211a10" row="1" col="1"/>
+            <cl:checkbox std:sid="c-box-39feb8c1" id="cbx2" text="전자조립">
+              <cl:datamapbind property="value" datacontrolid="dm1" columnname="suite1Flag"/>
+              <cl:xylayoutdata std:sid="xyl-data-5e077e7e" top="0px" right="200px" left="20px" height="25px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+            </cl:checkbox>
+            <cl:checkbox std:sid="c-box-ba20758e" id="cbx1" text="자동차부품">
+              <cl:datamapbind property="value" datacontrolid="dm1" columnname="suite2Flag"/>
+              <cl:xylayoutdata std:sid="xyl-data-113b1431" top="0px" right="20px" left="170px" height="25px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+            </cl:checkbox>
+            <cl:xylayout std:sid="xylayout-06883143"/>
+          </cl:group>
+          <cl:group std:sid="group-a18408aa" id="grp3">
+            <cl:formdata std:sid="f-data-71abc57f" row="5" col="0" rowspan="1" colspan="4"/>
+            <cl:grid std:sid="grid-a4ac14e6" id="grd2" datasetid="dsTags">
+              <cl:formdata std:sid="f-data-98600133" row="0" col="2" rowspan="1" colspan="2"/>
+              <cl:gridcolumn std:sid="g-column-76a16192" width="25px"/>
+              <cl:gridcolumn std:sid="g-column-d87459ca"/>
+              <cl:gridheader std:sid="gh-band-48892d1b">
+                <cl:gridrow std:sid="g-row-d56d58aa"/>
+                <cl:gridcell std:sid="gh-cell-8b12c922" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+                <cl:gridcell std:sid="gh-cell-6cfba480" rowindex="0" colindex="1" targetcolumnname="tag" sortable="false" filterable="false" text="태그"/>
+              </cl:gridheader>
+              <cl:griddetail std:sid="gd-band-5580ed20">
+                <cl:gridrow std:sid="g-row-cbaf03cd"/>
+                <cl:gridcell std:sid="gd-cell-37552d1e" rowindex="0" colindex="0" columntype="checkbox"/>
+                <cl:gridcell std:sid="gd-cell-89b0f549" rowindex="0" colindex="1" columnname="tag"/>
+              </cl:griddetail>
+            </cl:grid>
+            <cl:grid std:sid="grid-0600c419" id="grd1" datasetid="dsFuncParams">
+              <cl:formdata std:sid="f-data-4c90483a" row="0" col="0" rowspan="1" colspan="2"/>
+              <cl:gridcolumn std:sid="g-column-0f50483a" width="25px"/>
+              <cl:gridcolumn std:sid="g-column-2f5d64b4"/>
+              <cl:gridcolumn std:sid="g-column-81a4a961"/>
+              <cl:gridheader std:sid="gh-band-4027bf23">
+                <cl:gridrow std:sid="g-row-f3537404"/>
+                <cl:gridcell std:sid="gh-cell-224cd3dc" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+                <cl:gridcell std:sid="gh-cell-e045fb59" rowindex="0" colindex="1" targetcolumnname="param" sortable="false" filterable="false" text="매개변수"/>
+                <cl:gridcell std:sid="gh-cell-f6bce657" rowindex="0" colindex="2" targetcolumnname="value" sortable="false" filterable="false" text="값"/>
+              </cl:gridheader>
+              <cl:griddetail std:sid="gd-band-7346f787">
+                <cl:gridrow std:sid="g-row-7f01049c"/>
+                <cl:gridcell std:sid="gd-cell-b16a5b97" rowindex="0" colindex="0" columntype="checkbox"/>
+                <cl:gridcell std:sid="gd-cell-62ee6829" rowindex="0" colindex="1" class="required" columnname="param"/>
+                <cl:gridcell std:sid="gd-cell-923ba50c" rowindex="0" colindex="2" columnname="value"/>
+              </cl:griddetail>
+            </cl:grid>
+            <cl:group std:sid="group-33a7654c" id="grp13">
+              <cl:formdata std:sid="f-data-da55e147" row="1" col="0" rowspan="1" colspan="4"/>
+              <cl:group std:sid="group-86fbed27" id="grp14">
+                <cl:formdata std:sid="f-data-329926c7" row="0" col="3" rowspan="1" colspan="1"/>
+                <cl:button std:sid="button-c81e2094" id="btn6" class="primary" value="저장">
+                  <cl:listener std:sid="listener-1096586f" name="click" handler="onBtn6Click"/>
+                  <cl:formdata std:sid="f-data-5114f148" row="0" col="0"/>
+                </cl:button>
+                <cl:formlayout std:sid="f-layout-5f2fc677" scrollable="false" hspace="5px" vspace="5px">
+                  <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="90" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-81c19d42" scrollable="false" hspace="5px" vspace="5px" top-margin="1px" right-margin="20px" bottom-margin="1px" left-margin="1px">
+                <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="100" unit="PIXEL"/>
+                <cl:columns length="1" unit="FRACTION"/>
+                <cl:columns length="100" unit="PIXEL"/>
+                <cl:columns length="90" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:formlayout std:sid="f-layout-3f4fe1ae" scrollable="false" hspace="10px" vspace="10px" top-margin="10px">
+              <cl:rows length="259" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="100" unit="PIXEL"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="100" unit="PIXEL"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-cc8152c3" scrollable="false" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="100" unit="PIXEL"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="100" unit="PIXEL"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-1e1975ce" text="연관 기능">
+        <cl:group std:sid="group-815ae77e" id="grp2">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-5b159660" id="grp7">
+            <std:metadata>
+              <std:property key="template-uuid" value="c6cfe3c8-561a-43b5-842b-96a837308a68"/>
+              <std:property key="template-rev" value="9"/>
+            </std:metadata>
+            <cl:attribute name="templateId" value="tplNormalGridMapping"/>
+            <cl:xylayoutdata std:sid="xyl-data-4891e8ca" top="20px" right="69px" left="40px" height="430px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+            <cl:group std:sid="group-5b8236fc" id="grp8">
+              <cl:formdata std:sid="f-data-8d350d8d" row="0" col="0"/>
+              <cl:grid std:sid="grid-e1f4cd35" id="grd3" datasetid="dsFuncCode" showdeletedrow="false" nodatamessage="No data to display.">
+                <cl:formdata std:sid="f-data-1e9f3e7e" row="1" col="0"/>
+                <cl:gridcolumn std:sid="g-column-738d10c8" width="25px"/>
+                <cl:gridcolumn std:sid="g-column-a12c2f07"/>
+                <cl:gridcolumn std:sid="g-column-c2182857"/>
+                <cl:gridheader std:sid="gh-band-6bc40e93">
+                  <cl:gridrow std:sid="g-row-614022d1"/>
+                  <cl:gridcell std:sid="gh-cell-a44bcb45" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+                  <cl:gridcell std:sid="gh-cell-928c2f89" rowindex="0" colindex="1" targetcolumnname="funcCode" sortable="false" filterable="false" text="기능코드"/>
+                  <cl:gridcell std:sid="gh-cell-272d7119" rowindex="0" colindex="2" targetcolumnname="funcLocaleDesc" sortable="false" filterable="false" text="기능명"/>
+                </cl:gridheader>
+                <cl:griddetail std:sid="gd-band-68efa1d1">
+                  <cl:gridrow std:sid="g-row-51e5a86e"/>
+                  <cl:gridcell std:sid="gd-cell-f7200f32" rowindex="0" colindex="0" columntype="checkbox"/>
+                  <cl:gridcell std:sid="gd-cell-8678b3d7" rowindex="0" colindex="1" columnname="funcCode"/>
+                  <cl:gridcell std:sid="gd-cell-10e1d0de" rowindex="0" colindex="2" columnname="funcLocaleDesc"/>
+                </cl:griddetail>
+              </cl:grid>
+              <cl:group std:sid="group-cc763f6c" id="grp9">
+                <cl:datamapcontext datacontrolid="dm1"/>
+                <cl:formdata std:sid="f-data-ca31eb9b" row="0" col="0"/>
+                <cl:inputbox std:sid="i-box-1229ce20" id="ipb3" class="mrc no-border-radius inner" showclearbutton="true" placeholder="컬럼 1">
+                  <cl:listener std:sid="listener-36fc22c8" name="keyup" handler="onIpb3Keyup"/>
+                  <cl:datamapbind property="value" datacontrolid="dmSearchRel" columnname="searchWord"/>
+                  <cl:formdata std:sid="f-data-e63b3a40" row="0" col="0" rowspan="1" colspan="1"/>
+                </cl:inputbox>
+                <cl:button std:sid="button-636d6144" id="btn5" class="ic-clear">
+                  <cl:listener std:sid="listener-677dc389" name="click" handler="onBtn5Click"/>
+                  <cl:formdata std:sid="f-data-67674da6" row="0" col="1"/>
+                </cl:button>
+                <cl:button std:sid="button-9b728fd3" id="btn7" class="ic-search">
+                  <cl:listener std:sid="listener-d0f12f9f" name="click" handler="onBtn7Click"/>
+                  <cl:formdata std:sid="f-data-d983f139" row="0" col="2"/>
+                </cl:button>
+                <cl:formlayout std:sid="f-layout-6d894b3e" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-33e1b673" hspace="0px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:group std:sid="group-09e012ba" id="grp10">
+              <cl:formdata std:sid="f-data-9980e622" row="0" col="2"/>
+              <cl:grid std:sid="grid-a473cf03" id="grd4" datasetid="dsFuncCodeRel" showdeletedrow="false" nodatamessage="No data to display.">
+                <cl:formdata std:sid="f-data-cccc5068" row="1" col="0"/>
+                <cl:gridcolumn std:sid="g-column-28c64f05" width="25px"/>
+                <cl:gridcolumn std:sid="g-column-23381779"/>
+                <cl:gridcolumn std:sid="g-column-ee2d1cf4"/>
+                <cl:gridheader std:sid="gh-band-c810d659">
+                  <cl:gridrow std:sid="g-row-e50455a3"/>
+                  <cl:gridcell std:sid="gh-cell-7c7561ac" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+                  <cl:gridcell std:sid="gh-cell-57202c58" rowindex="0" colindex="1" targetcolumnname="funcCode" sortable="false" filterable="false" text="기능코드"/>
+                  <cl:gridcell std:sid="gh-cell-121b7c45" rowindex="0" colindex="2" targetcolumnname="funcLocaleDesc" sortable="false" filterable="false" text="기능명"/>
+                </cl:gridheader>
+                <cl:griddetail std:sid="gd-band-7a7e07f3">
+                  <cl:gridrow std:sid="g-row-a50e3934"/>
+                  <cl:gridcell std:sid="gd-cell-1de51af3" rowindex="0" colindex="0" columntype="checkbox"/>
+                  <cl:gridcell std:sid="gd-cell-82a283bd" rowindex="0" colindex="1" columnname="funcCode"/>
+                  <cl:gridcell std:sid="gd-cell-6a80a7e8" rowindex="0" colindex="2" columnname="funcLocaleDesc"/>
+                </cl:griddetail>
+              </cl:grid>
+              <cl:group std:sid="group-ea8d57d2" id="grp11">
+                <cl:formdata std:sid="f-data-22ae91d9" row="0" col="0"/>
+                <cl:button std:sid="button-895c74b5" id="btn8" class="ic-slide-top">
+                  <cl:formdata std:sid="f-data-a9568267" row="0" col="0"/>
+                </cl:button>
+                <cl:button std:sid="button-b7f91fba" id="btn9" class="ic-slide-up">
+                  <cl:formdata std:sid="f-data-1e524bbb" row="0" col="1"/>
+                </cl:button>
+                <cl:button std:sid="button-82714e0d" id="btn10" class="ic-slide-down">
+                  <cl:formdata std:sid="f-data-c955afd4" row="0" col="2"/>
+                </cl:button>
+                <cl:button std:sid="button-c29bb945" id="btn11" class="ic-slide-bottom">
+                  <cl:formdata std:sid="f-data-39d3d7d4" row="0" col="3"/>
+                </cl:button>
+                <cl:formlayout std:sid="f-layout-87895283" hspace="4px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-cc9028a5" hspace="0px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:group std:sid="group-0e48c116" id="grp12">
+              <cl:formdata std:sid="f-data-149479b7" row="0" col="1" rowspan="1" colspan="1"/>
+              <cl:button std:sid="button-8e23a303" id="btn12" class="ic-mapping-right">
+                <cl:listener std:sid="listener-b8ee6680" name="click" handler="onBtn12Click"/>
+                <cl:formdata std:sid="f-data-8ac6aced" halign="CENTER" width="32" row="1" col="0"/>
+              </cl:button>
+              <cl:button std:sid="button-0ebf7022" id="btn13" class="ic-mapping-left">
+                <cl:listener std:sid="listener-30ef5d55" name="click" handler="onBtn13Click"/>
+                <cl:formdata std:sid="f-data-023990d2" halign="CENTER" valign="FILL" width="32" row="2" col="0"/>
+              </cl:button>
+              <cl:formlayout std:sid="f-layout-1b55b4b4" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="32" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="32" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:formlayout std:sid="f-layout-3574fbec" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:button std:sid="button-5c444281" id="btn14" class="primary" value="저장">
+            <cl:listener std:sid="listener-c55382e3" name="click" handler="onBtn14Click"/>
+            <cl:xylayoutdata std:sid="xyl-data-c3a34f18" top="460px" left="754px" width="90px" height="35px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-245c027c"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:tabfolder>
+    <cl:xylayout std:sid="xylayout-0d8cde36"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler>
+      <std:guide position="911"/>
+      <std:guide position="1116"/>
+    </std:hruler>
+    <std:vruler>
+      <std:guide position="78"/>
+    </std:vruler>
+  </std:studiosetting>
+</html>
